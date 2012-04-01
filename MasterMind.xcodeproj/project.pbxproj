@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
+		F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
+		F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
+		F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA3D1528A964006FB6EC /* InfoPlist.strings */; };
+		F83ABA411528A964006FB6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA401528A964006FB6EC /* main.m */; };
+		F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA441528A964006FB6EC /* AppDelegate.m */; };
+		F83ABA481528A964006FB6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
+		F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */; };
+		F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F83ABA301528A964006FB6EC /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83ABA341528A964006FB6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F83ABA361528A964006FB6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F83ABA381528A964006FB6EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F83ABA3C1528A964006FB6EC /* MasterMind-Info.plist */ = {isa = PBXFileReference; path = "MasterMind-Info.plist"; sourceTree = "<group>"; };
+		F83ABA3E1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F83ABA401528A964006FB6EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F83ABA421528A964006FB6EC /* MasterMind-Prefix.pch */ = {isa = PBXFileReference; path = "MasterMind-Prefix.pch"; sourceTree = "<group>"; };
+		F83ABA431528A964006FB6EC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F83ABA441528A964006FB6EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F83ABA461528A964006FB6EC /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		F83ABA471528A964006FB6EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F83ABA4A1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		F83ABA4D1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F83ABA2D1528A964006FB6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */,
+				F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */,
+				F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F83ABA251528A964006FB6EC = {
+			isa = PBXGroup;
+			children = (
+				F83ABA3A1528A964006FB6EC /* MasterMind */,
+				F83ABA331528A964006FB6EC /* Frameworks */,
+				F83ABA311528A964006FB6EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F83ABA311528A964006FB6EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F83ABA301528A964006FB6EC /* MasterMind.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F83ABA331528A964006FB6EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F83ABA341528A964006FB6EC /* UIKit.framework */,
+				F83ABA361528A964006FB6EC /* Foundation.framework */,
+				F83ABA381528A964006FB6EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F83ABA3A1528A964006FB6EC /* MasterMind */ = {
+			isa = PBXGroup;
+			children = (
+				F83ABA431528A964006FB6EC /* AppDelegate.h */,
+				F83ABA441528A964006FB6EC /* AppDelegate.m */,
+				F83ABA461528A964006FB6EC /* ViewController.h */,
+				F83ABA471528A964006FB6EC /* ViewController.m */,
+				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,
+				F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */,
+				F83ABA3B1528A964006FB6EC /* Supporting Files */,
+			);
+			path = MasterMind;
+			sourceTree = "<group>";
+		};
+		F83ABA3B1528A964006FB6EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F83ABA3C1528A964006FB6EC /* MasterMind-Info.plist */,
+				F83ABA3D1528A964006FB6EC /* InfoPlist.strings */,
+				F83ABA401528A964006FB6EC /* main.m */,
+				F83ABA421528A964006FB6EC /* MasterMind-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F83ABA2F1528A964006FB6EC /* MasterMind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F83ABA511528A964006FB6EC /* Build configuration list for PBXNativeTarget "MasterMind" */;
+			buildPhases = (
+				F83ABA2C1528A964006FB6EC /* Sources */,
+				F83ABA2D1528A964006FB6EC /* Frameworks */,
+				F83ABA2E1528A964006FB6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterMind;
+			productName = MasterMind;
+			productReference = F83ABA301528A964006FB6EC /* MasterMind.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F83ABA271528A964006FB6EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F83ABA251528A964006FB6EC;
+			productRefGroup = F83ABA311528A964006FB6EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F83ABA2F1528A964006FB6EC /* MasterMind */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F83ABA2E1528A964006FB6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */,
+				F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */,
+				F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F83ABA2C1528A964006FB6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83ABA411528A964006FB6EC /* main.m in Sources */,
+				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
+				F83ABA481528A964006FB6EC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F83ABA3D1528A964006FB6EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F83ABA3E1528A964006FB6EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F83ABA4A1528A964006FB6EC /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F83ABA4D1528A964006FB6EC /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F83ABA4F1528A964006FB6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F83ABA501528A964006FB6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F83ABA521528A964006FB6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasterMind/MasterMind-Prefix.pch";
+				INFOPLIST_FILE = "MasterMind/MasterMind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F83ABA531528A964006FB6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasterMind/MasterMind-Prefix.pch";
+				INFOPLIST_FILE = "MasterMind/MasterMind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F83ABA4F1528A964006FB6EC /* Debug */,
+				F83ABA501528A964006FB6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F83ABA511528A964006FB6EC /* Build configuration list for PBXNativeTarget "MasterMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F83ABA521528A964006FB6EC /* Debug */,
+				F83ABA531528A964006FB6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F83ABA271528A964006FB6EC /* Project object */;
+}
