@@ -44,6 +44,7 @@
                                                    andGuess: self.guess.text] stringValue];
     self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: self.secretCode.text
                                                            andGuess: self.guess.text] stringValue];
+    [mmCode release];
 }
 
 - (void)viewDidUnload
