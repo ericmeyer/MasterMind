@@ -1,7 +1,7 @@
 #import "OCDSpec/OCDSpec.h"
 #import "MMCode.h"
 
-CONTEXT(MMCode)
+CONTEXT(MMCodeSpec)
 {
     __block MMCode* mmCode;
     

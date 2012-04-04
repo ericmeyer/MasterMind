@@ -1,13 +1,8 @@
-//
-//  ViewController.h
-//  MasterMind
-//
-//  Created by Eric Meyer on 4/1/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UILabel* numberCorrect;
+}
+@property (nonatomic, retain) UILabel* numberCorrect;
 
 @end

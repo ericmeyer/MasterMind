@@ -54,6 +54,8 @@
 		F83ABA481528A964006FB6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 		F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */; };
 		F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */; };
+		F8C3EDF8152BD2FC005F7183 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */; };
+		F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +140,7 @@
 		F83ABA471528A964006FB6EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F83ABA4A1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		F83ABA4D1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = ../../../Fun/MasterMind/Specs/ViewControllerSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,7 @@
 			children = (
 				F812EFD1152BC795005E5D13 /* OCDSpec */,
 				F812F00A152BCD90005E5D13 /* MMCodeSpec.m */,
+				F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -619,6 +623,8 @@
 				F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */,
 				F812F009152BCB7F005E5D13 /* MMCode.m in Sources */,
 				F812F00B152BCD90005E5D13 /* MMCodeSpec.m in Sources */,
+				F8C3EDF8152BD2FC005F7183 /* ViewControllerSpec.m in Sources */,
+				F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +826,7 @@
 				F812EFC3152BC6E1005E5D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F812EFFD152BC795005E5D13 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
@@ -828,6 +835,7 @@
 				F812EFFF152BC795005E5D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */ = {
 			isa = XCConfigurationList;

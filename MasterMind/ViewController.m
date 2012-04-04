@@ -1,14 +1,8 @@
-//
-//  ViewController.m
-//  MasterMind
-//
-//  Created by Eric Meyer on 4/1/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @implementation ViewController
+
+@synthesize numberCorrect;
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +15,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.numberCorrect.text = @"";
 }
 
 - (void)viewDidUnload
