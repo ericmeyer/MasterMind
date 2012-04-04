@@ -2,7 +2,7 @@
 
 @implementation ViewController
 
-@synthesize numberCorrect;
+@synthesize numberCorrect, numberInWrongSpot;
 
 - (void)didReceiveMemoryWarning
 {
@@ -16,6 +16,7 @@
 {
     [super viewDidLoad];
     self.numberCorrect.text = @"";
+    self.numberInWrongSpot.text = @"";
 }
 
 - (void)viewDidUnload
