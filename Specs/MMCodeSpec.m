@@ -44,5 +44,16 @@ CONTEXT(MMCodeSpec)
                     NSNumber* numberInWrongSpot = [mmCode numberInWrongSpotForCode: @"1122" andGuess: @"1212"];
                     [expect(numberInWrongSpot) toBeEqualTo: [NSNumber numberWithInt: 2]];
                 }),
+             it(@"has four in the wrong spot",
+                ^{
+                    
+                    NSNumber* numberInWrongSpot = [mmCode numberInWrongSpotForCode: @"1122" andGuess: @"2211"];
+                    [expect(numberInWrongSpot) toBeEqualTo: [NSNumber numberWithInt: 4]];
+                }),
+             it(@"has 3 in the right spot",
+                ^{
+                    NSNumber* numberInWrongSpot = [mmCode numberInWrongSpotForCode: @"1123" andGuess: @"3311"];
+                    [expect(numberInWrongSpot) toBeEqualTo: [NSNumber numberWithInt: 3]];
+                }),
              nil);
 }
