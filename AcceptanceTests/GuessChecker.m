@@ -6,7 +6,7 @@
 @synthesize code, guess, mmCode;
 
 -(void) execute {
-    self.mmCode = [[MMCode alloc] init];
+    self.mmCode = [[[MMCode alloc] init] autorelease];
 }
 
 -(int) numberCorrect {

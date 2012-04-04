@@ -7,11 +7,11 @@ CONTEXT(ViewControllerSpec)
     
     describe(@"ViewController",
              beforeEach(^{
-                    controller = [[ViewController alloc] init];
-                    controller.numberCorrect = [[UILabel alloc] init];
-                    controller.numberInWrongSpot = [[UILabel alloc] init];
-                    controller.secretCode = [[UITextField alloc] init];
-                    controller.guess = [[UITextField alloc] init];
+                    controller = [[[ViewController alloc] init] autorelease];
+                    controller.numberCorrect = [[[UILabel alloc] init] autorelease];
+                    controller.numberInWrongSpot = [[[UILabel alloc] init] autorelease];
+                    controller.secretCode = [[[UITextField alloc] init] autorelease];
+                    controller.guess = [[[UITextField alloc] init] autorelease];
                 }),
              it(@"sets the number correct to empty on viewDidLoad",
                 ^{
@@ -41,11 +41,11 @@ CONTEXT(ViewControllerSpec)
     
     describe(@"taking a guess",
              beforeEach(^{
-                    controller = [[ViewController alloc] init];
-                    controller.numberCorrect = [[UILabel alloc] init];
-                    controller.numberInWrongSpot = [[UILabel alloc] init];
-                    controller.secretCode = [[UITextField alloc] init];
-                    controller.guess = [[UITextField alloc] init];
+                    controller = [[[ViewController alloc] init] autorelease];
+                    controller.numberCorrect = [[[UILabel alloc] init] autorelease];
+                    controller.numberInWrongSpot = [[[UILabel alloc] init] autorelease];
+                    controller.secretCode = [[[UITextField alloc] init] autorelease];
+                    controller.guess = [[[UITextField alloc] init] autorelease];
                 }),
              it(@"sets the number correct",
                 ^{
