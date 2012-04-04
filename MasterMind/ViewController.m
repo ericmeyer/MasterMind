@@ -1,4 +1,5 @@
 #import "ViewController.h"
+#import "MMCode.h"
 
 @implementation ViewController
 
@@ -34,6 +35,15 @@
     [self setInitialGuessResults];
     [self setInitialSecretCode];
     [self setInitialGuess];
+}
+
+-(IBAction) takeGuess
+{
+    MMCode* mmCode = [[MMCode alloc] init];
+    self.numberCorrect.text = [[mmCode numberCorrectForCode: self.secretCode.text
+                                                   andGuess: self.guess.text] stringValue];
+    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: self.secretCode.text
+                                                           andGuess: self.guess.text] stringValue];
 }
 
 - (void)viewDidUnload

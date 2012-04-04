@@ -42,10 +42,28 @@ CONTEXT(ViewControllerSpec)
     describe(@"taking a guess",
              beforeEach(^{
                     controller = [[ViewController alloc] init];
+                    controller.numberCorrect = [[UILabel alloc] init];
+                    controller.numberInWrongSpot = [[UILabel alloc] init];
+                    controller.secretCode = [[UITextField alloc] init];
+                    controller.guess = [[UITextField alloc] init];
                 }),
-             it(@"uses the guess validator for the number correct",
+             it(@"sets the number correct",
                 ^{
+                    controller.secretCode.text = @"YYRR";
+                    controller.guess.text = @"YYYY";
                     
+                    [controller takeGuess];
+                    
+                    [expect(controller.numberCorrect.text) toBeEqualTo: @"2"];
+                }),
+             it(@"sets the number in the wrong spot",
+                ^{
+                    controller.secretCode.text = @"YRGG";
+                    controller.guess.text = @"RGYG";
+                    
+                    [controller takeGuess];
+                    
+                    [expect(controller.numberInWrongSpot.text) toBeEqualTo: @"3"];
                 }),
              nil);
 }

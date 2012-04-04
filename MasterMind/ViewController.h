@@ -11,4 +11,6 @@
 @property (nonatomic, retain) UITextField* secretCode;
 @property (nonatomic, retain) UITextField* guess;
 
+-(IBAction) takeGuess;
+
 @end
