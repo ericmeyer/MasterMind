@@ -12,13 +12,28 @@
 
 #pragma mark - View lifecycle
 
+- (void)setInitialGuessResults
+{
+    self.numberCorrect.text = @"";
+    self.numberInWrongSpot.text = @"";
+}
+
+- (void)setInitialSecretCode
+{
+    self.secretCode.text = @"YGRB";
+}
+
+- (void)setInitialGuess
+{
+    self.guess.text = @"GGGG";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.numberCorrect.text = @"";
-    self.numberInWrongSpot.text = @"";
-    self.secretCode.text = @"YGRB";
-    self.guess.text = @"GGGG";
+    [self setInitialGuessResults];
+    [self setInitialSecretCode];
+    [self setInitialGuess];
 }
 
 - (void)viewDidUnload
