@@ -40,6 +40,7 @@
 		F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFF7152BC795005E5D13 /* unitTestMain.m */; };
 		F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */; };
 		F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */; };
+		F812F004152BC9FF005E5D13 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F003152BC9FF005E5D13 /* GuessChecker.m */; };
 		F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -86,8 +87,6 @@
 		F812EFBD152BC6E1005E5D13 /* RunSlimTestsHeadless */ = {isa = PBXFileReference; lastKnownFileType = text; name = RunSlimTestsHeadless; path = ../bin/iPhoneRunner/RunSlimTestsHeadless; sourceTree = "<group>"; };
 		F812EFBE152BC6E1005E5D13 /* RunSlimTestsOnSimulator */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsOnSimulator; path = ../bin/iPhoneRunner/RunSlimTestsOnSimulator; sourceTree = "<group>"; };
 		F812EFBF152BC6E1005E5D13 /* RunSlimTestsTargetWithSlimPort */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsTargetWithSlimPort; path = ../bin/iPhoneRunner/RunSlimTestsTargetWithSlimPort; sourceTree = "<group>"; };
-		F812EFC0152BC6E1005E5D13 /* content.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = content.txt; path = ../example_tests/content.txt; sourceTree = "<group>"; };
-		F812EFC1152BC6E1005E5D13 /* properties.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = properties.xml; path = ../example_tests/properties.xml; sourceTree = "<group>"; };
 		F812EFCB152BC795005E5D13 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F812EFD3152BC795005E5D13 /* DescriptionRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DescriptionRunner.h; path = OCDSpec/OCDSpec/Protocols/DescriptionRunner.h; sourceTree = "<group>"; };
 		F812EFD4152BC795005E5D13 /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Example.h; path = OCDSpec/OCDSpec/Protocols/Example.h; sourceTree = "<group>"; };
@@ -116,6 +115,8 @@
 		F812EFF7152BC795005E5D13 /* unitTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = "<group>"; };
 		F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunIPhoneUnitTest.sh; path = OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
 		F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		F812F002152BC9FF005E5D13 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessChecker.h; path = ../../../Fun/MasterMind/AcceptanceTests/GuessChecker.h; sourceTree = "<group>"; };
+		F812F003152BC9FF005E5D13 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessChecker.m; path = ../../../Fun/MasterMind/AcceptanceTests/GuessChecker.m; sourceTree = "<group>"; };
 		F83ABA301528A964006FB6EC /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83ABA341528A964006FB6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F83ABA361528A964006FB6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -169,9 +170,9 @@
 		F812EF84152BC6E1005E5D13 /* AcceptanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				F812EFC0152BC6E1005E5D13 /* content.txt */,
-				F812EFC1152BC6E1005E5D13 /* properties.xml */,
 				F812EF85152BC6E1005E5D13 /* cslim */,
+				F812F002152BC9FF005E5D13 /* GuessChecker.h */,
+				F812F003152BC9FF005E5D13 /* GuessChecker.m */,
 			);
 			path = AcceptanceTests;
 			sourceTree = "<group>";
@@ -586,6 +587,7 @@
 				F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */,
 				F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */,
 				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
+				F812F004152BC9FF005E5D13 /* GuessChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
