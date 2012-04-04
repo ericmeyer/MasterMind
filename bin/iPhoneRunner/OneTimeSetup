@@ -1,0 +1,3 @@
+chmod -R 0755 ./bin/
+java -jar fitnesse.jar -e 0 -i
+mv example_tests FitNesseRoot/AcceptanceTests

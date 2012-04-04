@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
+		F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
+		F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
+		F812EF89152BC6E1005E5D13 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF88152BC6E1005E5D13 /* SocketServer.c */; };
+		F812EF8B152BC6E1005E5D13 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8A152BC6E1005E5D13 /* TcpComLink.c */; };
+		F812EF8E152BC6E1005E5D13 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8D152BC6E1005E5D13 /* ListExecutor.c */; };
+		F812EF90152BC6E1005E5D13 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8F152BC6E1005E5D13 /* Slim.c */; };
+		F812EF92152BC6E1005E5D13 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */; };
+		F812EF94152BC6E1005E5D13 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF93152BC6E1005E5D13 /* SlimList.c */; };
+		F812EF96152BC6E1005E5D13 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */; };
+		F812EF98152BC6E1005E5D13 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */; };
+		F812EF9A152BC6E1005E5D13 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF99152BC6E1005E5D13 /* SlimUtil.c */; };
+		F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */; };
+		F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFB0152BC6E1005E5D13 /* Fixtures.m */; };
+		F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */; };
+		F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */; };
+		F812EFB7152BC6E1005E5D13 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EFB6152BC6E1005E5D13 /* Main.c */; };
 		F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -19,6 +36,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F812EF88152BC6E1005E5D13 /* SocketServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = "<group>"; };
+		F812EF8A152BC6E1005E5D13 /* TcpComLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = "<group>"; };
+		F812EF8D152BC6E1005E5D13 /* ListExecutor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = "<group>"; };
+		F812EF8F152BC6E1005E5D13 /* Slim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Slim.c; path = cslim/src/CSlim/Slim.c; sourceTree = "<group>"; };
+		F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimConnectionHandler.c; path = cslim/src/CSlim/SlimConnectionHandler.c; sourceTree = "<group>"; };
+		F812EF93152BC6E1005E5D13 /* SlimList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimList.c; path = cslim/src/CSlim/SlimList.c; sourceTree = "<group>"; };
+		F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimListDeserializer.c; path = cslim/src/CSlim/SlimListDeserializer.c; sourceTree = "<group>"; };
+		F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimListSerializer.c; path = cslim/src/CSlim/SlimListSerializer.c; sourceTree = "<group>"; };
+		F812EF99152BC6E1005E5D13 /* SlimUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimUtil.c; path = cslim/src/CSlim/SlimUtil.c; sourceTree = "<group>"; };
+		F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = cslim/src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = "<group>"; };
+		F812EFA0152BC6E1005E5D13 /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = cslim/include/Com/SocketServer.h; sourceTree = "<group>"; };
+		F812EFA1152BC6E1005E5D13 /* TcpComLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = cslim/include/Com/TcpComLink.h; sourceTree = "<group>"; };
+		F812EFA3152BC6E1005E5D13 /* Fixtures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = cslim/include/CSlim/Fixtures.h; sourceTree = "<group>"; };
+		F812EFA4152BC6E1005E5D13 /* ListExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
+		F812EFA5152BC6E1005E5D13 /* Slim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = "<group>"; };
+		F812EFA6152BC6E1005E5D13 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = cslim/include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
+		F812EFA7152BC6E1005E5D13 /* SlimList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimList.h; path = cslim/include/CSlim/SlimList.h; sourceTree = "<group>"; };
+		F812EFA8152BC6E1005E5D13 /* SlimListDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimListDeserializer.h; path = cslim/include/CSlim/SlimListDeserializer.h; sourceTree = "<group>"; };
+		F812EFA9152BC6E1005E5D13 /* SlimListSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimListSerializer.h; path = cslim/include/CSlim/SlimListSerializer.h; sourceTree = "<group>"; };
+		F812EFAA152BC6E1005E5D13 /* SlimUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimUtil.h; path = cslim/include/CSlim/SlimUtil.h; sourceTree = "<group>"; };
+		F812EFAB152BC6E1005E5D13 /* StatementExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatementExecutor.h; path = cslim/include/CSlim/StatementExecutor.h; sourceTree = "<group>"; };
+		F812EFAD152BC6E1005E5D13 /* SymbolTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = "<group>"; };
+		F812EFAF152BC6E1005E5D13 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = fitnesse.jar; path = ../fitnesse.jar; sourceTree = "<group>"; };
+		F812EFB0152BC6E1005E5D13 /* Fixtures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = SupportingFiles/Fixtures.m; sourceTree = "<group>"; };
+		F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = SupportingFiles/InfoPlist.strings; sourceTree = "<group>"; };
+		F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "SupportingFiles/iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		F812EFB6152BC6E1005E5D13 /* Main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = "<group>"; };
+		F812EFBA152BC6E1005E5D13 /* OneTimeSetup */ = {isa = PBXFileReference; lastKnownFileType = text; name = OneTimeSetup; path = ../bin/iPhoneRunner/OneTimeSetup; sourceTree = "<group>"; };
+		F812EFBB152BC6E1005E5D13 /* StartFitnesse */ = {isa = PBXFileReference; lastKnownFileType = text; name = StartFitnesse; path = ../bin/StartFitnesse; sourceTree = "<group>"; };
+		F812EFBC152BC6E1005E5D13 /* RunSlimTests */ = {isa = PBXFileReference; lastKnownFileType = text; name = RunSlimTests; path = ../bin/iPhoneRunner/RunSlimTests; sourceTree = "<group>"; };
+		F812EFBD152BC6E1005E5D13 /* RunSlimTestsHeadless */ = {isa = PBXFileReference; lastKnownFileType = text; name = RunSlimTestsHeadless; path = ../bin/iPhoneRunner/RunSlimTestsHeadless; sourceTree = "<group>"; };
+		F812EFBE152BC6E1005E5D13 /* RunSlimTestsOnSimulator */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsOnSimulator; path = ../bin/iPhoneRunner/RunSlimTestsOnSimulator; sourceTree = "<group>"; };
+		F812EFBF152BC6E1005E5D13 /* RunSlimTestsTargetWithSlimPort */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsTargetWithSlimPort; path = ../bin/iPhoneRunner/RunSlimTestsTargetWithSlimPort; sourceTree = "<group>"; };
+		F812EFC0152BC6E1005E5D13 /* content.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = content.txt; path = ../example_tests/content.txt; sourceTree = "<group>"; };
+		F812EFC1152BC6E1005E5D13 /* properties.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = properties.xml; path = ../example_tests/properties.xml; sourceTree = "<group>"; };
 		F83ABA301528A964006FB6EC /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83ABA341528A964006FB6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F83ABA361528A964006FB6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +89,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F812EF7B152BC6E1005E5D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */,
+				F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */,
+				F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F83ABA2D1528A964006FB6EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +112,149 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F812EF84152BC6E1005E5D13 /* AcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFC0152BC6E1005E5D13 /* content.txt */,
+				F812EFC1152BC6E1005E5D13 /* properties.xml */,
+				F812EF85152BC6E1005E5D13 /* cslim */,
+			);
+			path = AcceptanceTests;
+			sourceTree = "<group>";
+		};
+		F812EF85152BC6E1005E5D13 /* cslim */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF86152BC6E1005E5D13 /* src */,
+				F812EF9E152BC6E1005E5D13 /* include */,
+				F812EFAE152BC6E1005E5D13 /* SupportingFiles */,
+				F812EFB8152BC6E1005E5D13 /* bin */,
+			);
+			name = cslim;
+			sourceTree = "<group>";
+		};
+		F812EF86152BC6E1005E5D13 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF87152BC6E1005E5D13 /* Com */,
+				F812EF8C152BC6E1005E5D13 /* CSlim */,
+				F812EF9B152BC6E1005E5D13 /* ExecutorObjectiveC */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		F812EF87152BC6E1005E5D13 /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF88152BC6E1005E5D13 /* SocketServer.c */,
+				F812EF8A152BC6E1005E5D13 /* TcpComLink.c */,
+			);
+			name = Com;
+			sourceTree = "<group>";
+		};
+		F812EF8C152BC6E1005E5D13 /* CSlim */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF8D152BC6E1005E5D13 /* ListExecutor.c */,
+				F812EF8F152BC6E1005E5D13 /* Slim.c */,
+				F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */,
+				F812EF93152BC6E1005E5D13 /* SlimList.c */,
+				F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */,
+				F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */,
+				F812EF99152BC6E1005E5D13 /* SlimUtil.c */,
+			);
+			name = CSlim;
+			sourceTree = "<group>";
+		};
+		F812EF9B152BC6E1005E5D13 /* ExecutorObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */,
+			);
+			name = ExecutorObjectiveC;
+			sourceTree = "<group>";
+		};
+		F812EF9E152BC6E1005E5D13 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F812EF9F152BC6E1005E5D13 /* Com */,
+				F812EFA2152BC6E1005E5D13 /* CSlim */,
+				F812EFAC152BC6E1005E5D13 /* ExecutorC */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		F812EF9F152BC6E1005E5D13 /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFA0152BC6E1005E5D13 /* SocketServer.h */,
+				F812EFA1152BC6E1005E5D13 /* TcpComLink.h */,
+			);
+			name = Com;
+			sourceTree = "<group>";
+		};
+		F812EFA2152BC6E1005E5D13 /* CSlim */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFA3152BC6E1005E5D13 /* Fixtures.h */,
+				F812EFA4152BC6E1005E5D13 /* ListExecutor.h */,
+				F812EFA5152BC6E1005E5D13 /* Slim.h */,
+				F812EFA6152BC6E1005E5D13 /* SlimConnectionHandler.h */,
+				F812EFA7152BC6E1005E5D13 /* SlimList.h */,
+				F812EFA8152BC6E1005E5D13 /* SlimListDeserializer.h */,
+				F812EFA9152BC6E1005E5D13 /* SlimListSerializer.h */,
+				F812EFAA152BC6E1005E5D13 /* SlimUtil.h */,
+				F812EFAB152BC6E1005E5D13 /* StatementExecutor.h */,
+			);
+			name = CSlim;
+			sourceTree = "<group>";
+		};
+		F812EFAC152BC6E1005E5D13 /* ExecutorC */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFAD152BC6E1005E5D13 /* SymbolTable.h */,
+			);
+			name = ExecutorC;
+			sourceTree = "<group>";
+		};
+		F812EFAE152BC6E1005E5D13 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFAF152BC6E1005E5D13 /* fitnesse.jar */,
+				F812EFB0152BC6E1005E5D13 /* Fixtures.m */,
+				F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */,
+				F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */,
+				F812EFB6152BC6E1005E5D13 /* Main.c */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F812EFB8152BC6E1005E5D13 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFBB152BC6E1005E5D13 /* StartFitnesse */,
+				F812EFB9152BC6E1005E5D13 /* iPhoneRunner */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		F812EFB9152BC6E1005E5D13 /* iPhoneRunner */ = {
+			isa = PBXGroup;
+			children = (
+				F812EFBA152BC6E1005E5D13 /* OneTimeSetup */,
+				F812EFBC152BC6E1005E5D13 /* RunSlimTests */,
+				F812EFBD152BC6E1005E5D13 /* RunSlimTestsHeadless */,
+				F812EFBE152BC6E1005E5D13 /* RunSlimTestsOnSimulator */,
+				F812EFBF152BC6E1005E5D13 /* RunSlimTestsTargetWithSlimPort */,
+			);
+			name = iPhoneRunner;
+			sourceTree = "<group>";
+		};
 		F83ABA251528A964006FB6EC = {
 			isa = PBXGroup;
 			children = (
 				F83ABA3A1528A964006FB6EC /* MasterMind */,
+				F812EF84152BC6E1005E5D13 /* AcceptanceTests */,
 				F83ABA331528A964006FB6EC /* Frameworks */,
 				F83ABA311528A964006FB6EC /* Products */,
 			);
@@ -62,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				F83ABA301528A964006FB6EC /* MasterMind.app */,
+				F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +307,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F812EF7E152BC6E1005E5D13 /* AcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F812EFC4152BC6E1005E5D13 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
+			buildPhases = (
+				F812EF7A152BC6E1005E5D13 /* Sources */,
+				F812EF7B152BC6E1005E5D13 /* Frameworks */,
+				F812EF7C152BC6E1005E5D13 /* Resources */,
+				F812EF7D152BC6E1005E5D13 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcceptanceTests;
+			productName = AcceptanceTests;
+			productReference = F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F83ABA2F1528A964006FB6EC /* MasterMind */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F83ABA511528A964006FB6EC /* Build configuration list for PBXNativeTarget "MasterMind" */;
@@ -142,11 +363,21 @@
 			projectRoot = "";
 			targets = (
 				F83ABA2F1528A964006FB6EC /* MasterMind */,
+				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F812EF7C152BC6E1005E5D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */,
+				F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F83ABA2E1528A964006FB6EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,7 +390,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F812EF7D152BC6E1005E5D13 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./bin/iPhoneRunner/RunSlimTests;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F812EF7A152BC6E1005E5D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F812EF89152BC6E1005E5D13 /* SocketServer.c in Sources */,
+				F812EF8B152BC6E1005E5D13 /* TcpComLink.c in Sources */,
+				F812EF8E152BC6E1005E5D13 /* ListExecutor.c in Sources */,
+				F812EF90152BC6E1005E5D13 /* Slim.c in Sources */,
+				F812EF92152BC6E1005E5D13 /* SlimConnectionHandler.c in Sources */,
+				F812EF94152BC6E1005E5D13 /* SlimList.c in Sources */,
+				F812EF96152BC6E1005E5D13 /* SlimListDeserializer.c in Sources */,
+				F812EF98152BC6E1005E5D13 /* SlimListSerializer.c in Sources */,
+				F812EF9A152BC6E1005E5D13 /* SlimUtil.c in Sources */,
+				F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */,
+				F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */,
+				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F83ABA2C1528A964006FB6EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +466,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F812EFC2152BC6E1005E5D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcceptanceTests/SupportingFiles/iPhone-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F812EFC3152BC6E1005E5D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcceptanceTests/SupportingFiles/iPhone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		F83ABA4F1528A964006FB6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +571,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F812EFC4152BC6E1005E5D13 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F812EFC2152BC6E1005E5D13 /* Debug */,
+				F812EFC3152BC6E1005E5D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +595,7 @@
 				F83ABA531528A964006FB6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
