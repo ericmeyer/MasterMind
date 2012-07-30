@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075BA90D15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
+		075BA90E15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
+		075BA90F15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
+		075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91015C60DE5002E0086 /* MMCodeSpec.m */; };
+		075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91115C60DE5002E0086 /* ViewControllerSpec.m */; };
+		075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91515C60DF9002E0086 /* GuessChecker.m */; };
 		F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -40,11 +46,6 @@
 		F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFF7152BC795005E5D13 /* unitTestMain.m */; };
 		F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */; };
 		F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */; };
-		F812F004152BC9FF005E5D13 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F003152BC9FF005E5D13 /* GuessChecker.m */; };
-		F812F007152BCB7F005E5D13 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F006152BCB7F005E5D13 /* MMCode.m */; };
-		F812F008152BCB7F005E5D13 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F006152BCB7F005E5D13 /* MMCode.m */; };
-		F812F009152BCB7F005E5D13 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F006152BCB7F005E5D13 /* MMCode.m */; };
-		F812F00B152BCD90005E5D13 /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F812F00A152BCD90005E5D13 /* MMCodeSpec.m */; };
 		F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -54,11 +55,16 @@
 		F83ABA481528A964006FB6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 		F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */; };
 		F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */; };
-		F8C3EDF8152BD2FC005F7183 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */; };
 		F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075BA90B15C60DD5002E0086 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCode.h; sourceTree = "<group>"; };
+		075BA90C15C60DD5002E0086 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCode.m; sourceTree = "<group>"; };
+		075BA91015C60DE5002E0086 /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeSpec.m; sourceTree = "<group>"; };
+		075BA91115C60DE5002E0086 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
+		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
+		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
 		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F812EF88152BC6E1005E5D13 /* SocketServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = "<group>"; };
 		F812EF8A152BC6E1005E5D13 /* TcpComLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = "<group>"; };
@@ -121,11 +127,6 @@
 		F812EFF7152BC795005E5D13 /* unitTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = "<group>"; };
 		F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunIPhoneUnitTest.sh; path = OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
 		F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = "<group>"; };
-		F812F002152BC9FF005E5D13 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuessChecker.h; path = ../../../Fun/MasterMind/AcceptanceTests/GuessChecker.h; sourceTree = "<group>"; };
-		F812F003152BC9FF005E5D13 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuessChecker.m; path = ../../../Fun/MasterMind/AcceptanceTests/GuessChecker.m; sourceTree = "<group>"; };
-		F812F005152BCB7F005E5D13 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMCode.h; path = ../../../Fun/MasterMind/MasterMind/MMCode.h; sourceTree = "<group>"; };
-		F812F006152BCB7F005E5D13 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCode.m; path = ../../../Fun/MasterMind/MasterMind/MMCode.m; sourceTree = "<group>"; };
-		F812F00A152BCD90005E5D13 /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = ../../../Fun/MasterMind/Specs/MMCodeSpec.m; sourceTree = "<group>"; };
 		F83ABA301528A964006FB6EC /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83ABA341528A964006FB6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F83ABA361528A964006FB6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,7 +141,6 @@
 		F83ABA471528A964006FB6EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F83ABA4A1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		F83ABA4D1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = ../../../Fun/MasterMind/Specs/ViewControllerSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				F812EF85152BC6E1005E5D13 /* cslim */,
-				F812F002152BC9FF005E5D13 /* GuessChecker.h */,
-				F812F003152BC9FF005E5D13 /* GuessChecker.m */,
+				075BA91415C60DF9002E0086 /* GuessChecker.h */,
+				075BA91515C60DF9002E0086 /* GuessChecker.m */,
 			);
 			path = AcceptanceTests;
 			sourceTree = "<group>";
@@ -319,8 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				F812EFD1152BC795005E5D13 /* OCDSpec */,
-				F812F00A152BCD90005E5D13 /* MMCodeSpec.m */,
-				F8C3EDF7152BD2FC005F7183 /* ViewControllerSpec.m */,
+				075BA91015C60DE5002E0086 /* MMCodeSpec.m */,
+				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -421,11 +421,11 @@
 				F83ABA441528A964006FB6EC /* AppDelegate.m */,
 				F83ABA461528A964006FB6EC /* ViewController.h */,
 				F83ABA471528A964006FB6EC /* ViewController.m */,
+				075BA90B15C60DD5002E0086 /* MMCode.h */,
+				075BA90C15C60DD5002E0086 /* MMCode.m */,
 				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,
 				F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */,
 				F83ABA3B1528A964006FB6EC /* Supporting Files */,
-				F812F005152BCB7F005E5D13 /* MMCode.h */,
-				F812F006152BCB7F005E5D13 /* MMCode.m */,
 			);
 			path = MasterMind;
 			sourceTree = "<group>";
@@ -503,7 +503,7 @@
 		F83ABA271528A964006FB6EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -601,8 +601,8 @@
 				F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */,
 				F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */,
 				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
-				F812F004152BC9FF005E5D13 /* GuessChecker.m in Sources */,
-				F812F008152BCB7F005E5D13 /* MMCode.m in Sources */,
+				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
+				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,10 +621,10 @@
 				F812EFF1152BC795005E5D13 /* OCDSpecPostCondition.m in Sources */,
 				F812EFF3152BC795005E5D13 /* OCDSpecCondition.m in Sources */,
 				F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */,
-				F812F009152BCB7F005E5D13 /* MMCode.m in Sources */,
-				F812F00B152BCD90005E5D13 /* MMCodeSpec.m in Sources */,
-				F8C3EDF8152BD2FC005F7183 /* ViewControllerSpec.m in Sources */,
 				F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */,
+				075BA90F15C60DD5002E0086 /* MMCode.m in Sources */,
+				075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */,
+				075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +635,7 @@
 				F83ABA411528A964006FB6EC /* main.m in Sources */,
 				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
 				F83ABA481528A964006FB6EC /* ViewController.m in Sources */,
-				F812F007152BCB7F005E5D13 /* MMCode.m in Sources */,
+				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,7 +679,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AcceptanceTests/SupportingFiles/iPhone-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INFOPLIST_FILE = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,7 +695,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AcceptanceTests/SupportingFiles/iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INFOPLIST_FILE = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -714,7 +714,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${TARGET_NAME}/OCDSpec/OCDSpec/iPhone-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
 				INFOPLIST_FILE = "";
@@ -735,7 +735,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${TARGET_NAME}/OCDSpec/OCDSpec/iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
 				INFOPLIST_FILE = "";
