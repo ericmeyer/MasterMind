@@ -9,13 +9,16 @@
 @synthesize activePeg, activePegLabel;
 
 -(IBAction) clickPeg:(id) sender {
-    NSString* clickedPeg = [NSString stringWithFormat: @"%d", ((UIButton*)sender).tag];
+    UIButton* clickedButton = ((UIButton*)sender);
+    NSString* clickedPeg = [NSString stringWithFormat: @"%d", clickedButton.tag];
     if ([activePeg isEqualToString: clickedPeg]) {
         self.activePeg = NULL;
         self.activePegLabel.text = NULL;
+        clickedButton.backgroundColor = [UIColor blueColor];
     } else {
         self.activePeg = clickedPeg;
         self.activePegLabel.text = clickedPeg;
+        clickedButton.backgroundColor = [UIColor whiteColor];
     }
 }
 

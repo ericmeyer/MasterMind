@@ -8,17 +8,19 @@ CONTEXT(MMSecretCodeViewControllerSpec)
     __block MMAvailablePegsViewController* availablePegs;
     
     describe(@"on init",
-             it(@"starts with no pegOne",
+             beforeEach(
                 ^{
                     controller = [MMSecretCodeViewController new];
-                    
-                    expectTruth(controller.pegOne == NULL);
+                    controller.pegOne = [UIButton new];
+                    controller.pegTwo = [UIButton new];
+                }),
+             it(@"starts with no pegOne",
+                ^{                    
+                    expectTruth(controller.pegOne.titleLabel.text == NULL);
                 }),
              it(@"starts with no pegTwo",
                 ^{
-                    controller = [MMSecretCodeViewController new];
-                    
-                    expectTruth(controller.pegTwo == NULL);
+                    expectTruth(controller.pegTwo.titleLabel.text == NULL);
                 }),
              nil);
     
@@ -26,6 +28,8 @@ CONTEXT(MMSecretCodeViewControllerSpec)
              beforeEach(
                 ^{
                     controller = [MMSecretCodeViewController new];
+                    controller.pegOne = [UIButton new];
+                    controller.pegTwo = [UIButton new];
                     availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
@@ -35,16 +39,16 @@ CONTEXT(MMSecretCodeViewControllerSpec)
                     
                     [controller touchPegOne];
                     
-                    [expect(controller.pegOne) toBeEqualTo: @"Y"];
+                    [expect(controller.pegOne.titleLabel.text) toBeEqualTo: @"Y"];
                 }),
              it(@"does not clear pegOne if there is no activePeg",
                 ^{
-                    controller.pegOne = @"B";
+                    controller.pegOne.titleLabel.text = @"B";
                     availablePegs.activePeg = NULL;
                     
                     [controller touchPegOne];
                     
-                    [expect(controller.pegOne) toBeEqualTo: @"B"];
+                    [expect(controller.pegOne.titleLabel.text) toBeEqualTo: @"B"];
                 }),
              nil);
     
@@ -52,6 +56,8 @@ CONTEXT(MMSecretCodeViewControllerSpec)
              beforeEach(
                 ^{
                     controller = [MMSecretCodeViewController new];
+                    controller.pegOne = [UIButton new];
+                    controller.pegTwo = [UIButton new];
                     availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
@@ -61,16 +67,16 @@ CONTEXT(MMSecretCodeViewControllerSpec)
                     
                     [controller touchPegTwo];
                     
-                    [expect(controller.pegTwo) toBeEqualTo: @"Y"];
+                    [expect(controller.pegTwo.titleLabel.text) toBeEqualTo: @"Y"];
                 }),
              it(@"does not clear pegTwo if there is no activePeg",
                 ^{
-                    controller.pegTwo = @"B";
+                    controller.pegTwo.titleLabel.text = @"B";
                     availablePegs.activePeg = NULL;
                     
                     [controller touchPegTwo];
                     
-                    [expect(controller.pegTwo) toBeEqualTo: @"B"];
+                    [expect(controller.pegTwo.titleLabel.text) toBeEqualTo: @"B"];
                 }),
              nil);
     

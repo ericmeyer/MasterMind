@@ -10,13 +10,13 @@
 
 -(IBAction) touchPegOne {
     if (self.availablePegsController.activePeg != NULL) {
-        self.pegOne = self.availablePegsController.activePeg;
+        self.pegOne.titleLabel.text = self.availablePegsController.activePeg;
     }
 }
 
 -(IBAction) touchPegTwo {
     if (self.availablePegsController.activePeg != NULL) {
-        self.pegTwo = self.availablePegsController.activePeg;
+        self.pegTwo.titleLabel.text = self.availablePegsController.activePeg;
     }
 }
 

@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
+		0722557D15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
+		0722557E15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
+		0722557F15C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
+		0722558015C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
+		0722558115C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
+		0722558215C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
+		0722558315C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
+		0722558415C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
+		0722558515C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
+		0722558615C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
+		0722558715C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
+		0722558815C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
+		0722558915C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
+		0722558A15C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
+		0722558B15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
+		0722558C15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
+		0722558D15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
+		0722558E15C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
+		0722558F15C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
+		0722559015C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
+		0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
+		0722559215C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
+		0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
@@ -73,6 +97,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0722557415C80AB3008EFF3F /* blue_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg.png; sourceTree = "<group>"; };
+		0722557515C80AB3008EFF3F /* blue_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg_active.png; sourceTree = "<group>"; };
+		0722557615C80AB3008EFF3F /* orange_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_peg.png; sourceTree = "<group>"; };
+		0722557715C80AB3008EFF3F /* orange_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_peg_active.png; sourceTree = "<group>"; };
+		0722557815C80AB3008EFF3F /* red_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_peg.png; sourceTree = "<group>"; };
+		0722557915C80AB3008EFF3F /* red_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_peg_active.png; sourceTree = "<group>"; };
+		0722557A15C80AB3008EFF3F /* yellow_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_peg.png; sourceTree = "<group>"; };
+		0722557B15C80AB3008EFF3F /* yellow_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_peg_active.png; sourceTree = "<group>"; };
 		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMSecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecretCodeViewController.xib; sourceTree = "<group>"; };
@@ -199,6 +231,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0722557315C80AB3008EFF3F /* pegs */ = {
+			isa = PBXGroup;
+			children = (
+				0722557415C80AB3008EFF3F /* blue_peg.png */,
+				0722557515C80AB3008EFF3F /* blue_peg_active.png */,
+				0722557615C80AB3008EFF3F /* orange_peg.png */,
+				0722557715C80AB3008EFF3F /* orange_peg_active.png */,
+				0722557815C80AB3008EFF3F /* red_peg.png */,
+				0722557915C80AB3008EFF3F /* red_peg_active.png */,
+				0722557A15C80AB3008EFF3F /* yellow_peg.png */,
+				0722557B15C80AB3008EFF3F /* yellow_peg_active.png */,
+			);
+			path = pegs;
+			sourceTree = "<group>";
+		};
 		075BA91915C6BD8A002E0086 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +518,7 @@
 		F83ABA3B1528A964006FB6EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0722557315C80AB3008EFF3F /* pegs */,
 				F83ABA3C1528A964006FB6EC /* MasterMind-Info.plist */,
 				F83ABA3D1528A964006FB6EC /* InfoPlist.strings */,
 				F83ABA401528A964006FB6EC /* main.m */,
@@ -571,6 +619,14 @@
 				F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */,
 				074A146D15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
 				074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
+				0722557D15C80AB3008EFF3F /* blue_peg.png in Resources */,
+				0722558015C80AB3008EFF3F /* blue_peg_active.png in Resources */,
+				0722558315C80AB3008EFF3F /* orange_peg.png in Resources */,
+				0722558615C80AB3008EFF3F /* orange_peg_active.png in Resources */,
+				0722558915C80AB3008EFF3F /* red_peg.png in Resources */,
+				0722558C15C80AB3008EFF3F /* red_peg_active.png in Resources */,
+				0722558F15C80AB3008EFF3F /* yellow_peg.png in Resources */,
+				0722559215C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +638,14 @@
 				F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */,
 				074A146E15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
 				074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
+				0722557E15C80AB3008EFF3F /* blue_peg.png in Resources */,
+				0722558115C80AB3008EFF3F /* blue_peg_active.png in Resources */,
+				0722558415C80AB3008EFF3F /* orange_peg.png in Resources */,
+				0722558715C80AB3008EFF3F /* orange_peg_active.png in Resources */,
+				0722558A15C80AB3008EFF3F /* red_peg.png in Resources */,
+				0722558D15C80AB3008EFF3F /* red_peg_active.png in Resources */,
+				0722559015C80AB3008EFF3F /* yellow_peg.png in Resources */,
+				0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +658,14 @@
 				F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */,
 				074A146C15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
 				074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
+				0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */,
+				0722557F15C80AB3008EFF3F /* blue_peg_active.png in Resources */,
+				0722558215C80AB3008EFF3F /* orange_peg.png in Resources */,
+				0722558515C80AB3008EFF3F /* orange_peg_active.png in Resources */,
+				0722558815C80AB3008EFF3F /* red_peg.png in Resources */,
+				0722558B15C80AB3008EFF3F /* red_peg_active.png in Resources */,
+				0722558E15C80AB3008EFF3F /* yellow_peg.png in Resources */,
+				0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

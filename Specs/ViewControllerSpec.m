@@ -37,6 +37,25 @@ CONTEXT(ViewControllerSpec)
 
                     [expect(controller.guess.text) toBeEqualTo: @"GGGG"];
                 }),
+             it(@"has a secrect code view controller",
+                ^{
+                    [controller viewDidLoad];
+
+                    expectFalse(controller.secretCodeViewController == NULL);
+                }),
+             it(@"has an available pegs view controller",
+                ^{
+                    [controller viewDidLoad];
+                    
+                    expectFalse(controller.availablePegsViewController == NULL);
+                }),
+             it(@"sets the secret code's availablePegs",
+                ^{
+                    [controller viewDidLoad];
+                    
+                    [expect(controller.secretCodeViewController.availablePegsController)
+                     toBeEqualTo: controller.availablePegsViewController];
+                }),
              nil);
     
     describe(@"taking a guess",
