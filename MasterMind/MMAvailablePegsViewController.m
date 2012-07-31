@@ -1,4 +1,5 @@
 #import "MMAvailablePegsViewController.h"
+#import "MMAvailablePeg.h"
 
 @interface MMAvailablePegsViewController ()
 
@@ -6,7 +7,7 @@
 
 @implementation MMAvailablePegsViewController
 
-@synthesize activePeg, activePegLabel;
+@synthesize activePeg, activePegLabel, availablePegs;
 
 -(IBAction) clickPeg:(id) sender {
     UIButton* clickedButton = ((UIButton*)sender);
@@ -22,11 +23,42 @@
     }
 }
 
+-(IBAction) setPegActive:(id) sender {
+    NSLog(@"sender: %@", sender);
+//    [self.activePeg deactivate];
+//    [clickedPeg activate];
+//    self.activePeg = clickedPeg;
+}
+
+- (void)initAvailablePegs
+{
+    self.availablePegs = [NSArray arrayWithObjects:
+                          [MMAvailablePeg pegWithColor: @"red"],
+                          [MMAvailablePeg pegWithColor: @"blue"],
+                          [MMAvailablePeg pegWithColor: @"orange"],
+                          [MMAvailablePeg pegWithColor: @"yellow"],
+                          nil];
+    for (MMAvailablePeg* availablePeg in self.availablePegs) {
+        [availablePeg addTarget: self
+                         action: @selector(setPegActive:)
+               forControlEvents: UIControlEventTouchUpInside];
+    }
+}
+
+- (void)displayAvailablePegs
+{
+    for (int i=0; i<[self.availablePegs count]; i++) {
+        MMAvailablePeg* availablePeg = [self.availablePegs objectAtIndex: i];
+        availablePeg.frame = CGRectMake(0, i*90.0, 90, 90);
+        [self.view addSubview: availablePeg];
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self initAvailablePegs];
     }
     return self;
 }
@@ -34,7 +66,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self displayAvailablePegs];
 }
 
 - (void)viewDidUnload

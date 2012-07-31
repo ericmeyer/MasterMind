@@ -36,15 +36,16 @@
 		0722559B15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
 		0722559C15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
 		0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameSpec.m */; };
+		072255A115C8149A008EFF3F /* MMAvailablePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMAvailablePeg.m */; };
+		072255A215C8149A008EFF3F /* MMAvailablePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMAvailablePeg.m */; };
+		072255A415C814CF008EFF3F /* MMAvailablePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */; };
 		074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
-		074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146C15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
 		074A146D15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
 		074A146E15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
 		074A147715C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */; };
 		074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
-		074A147C15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
 		074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
@@ -115,6 +116,9 @@
 		0722559815C80E6E008EFF3F /* MMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGame.h; sourceTree = "<group>"; };
 		0722559915C80E6E008EFF3F /* MMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGame.m; sourceTree = "<group>"; };
 		0722559D15C80F17008EFF3F /* MMGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameSpec.m; sourceTree = "<group>"; };
+		0722559F15C8149A008EFF3F /* MMAvailablePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePeg.h; sourceTree = "<group>"; };
+		072255A015C8149A008EFF3F /* MMAvailablePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePeg.m; sourceTree = "<group>"; };
+		072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegSpec.m; sourceTree = "<group>"; };
 		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMSecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecretCodeViewController.xib; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 				074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */,
 				074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */,
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
+				0722559F15C8149A008EFF3F /* MMAvailablePeg.h */,
+				072255A015C8149A008EFF3F /* MMAvailablePeg.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
 				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
 				0722559D15C80F17008EFF3F /* MMGameSpec.m */,
+				072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -734,8 +741,6 @@
 				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
 				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
-				074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
-				074A147C15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				0722559715C80D58008EFF3F /* GameRunner.m in Sources */,
 				0722559B15C80E6E008EFF3F /* MMGame.m in Sources */,
 			);
@@ -766,6 +771,8 @@
 				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
 				0722559C15C80E6E008EFF3F /* MMGame.m in Sources */,
 				0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */,
+				072255A215C8149A008EFF3F /* MMAvailablePeg.m in Sources */,
+				072255A415C814CF008EFF3F /* MMAvailablePegSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +787,7 @@
 				074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				0722559A15C80E6E008EFF3F /* MMGame.m in Sources */,
+				072255A115C8149A008EFF3F /* MMAvailablePeg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

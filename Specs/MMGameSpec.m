@@ -24,4 +24,17 @@ CONTEXT(MMGameSpec)
                 }),
              nil);
     
+    describe(@"taking a guess",
+             beforeEach(
+                ^{
+                    game = [MMGame new];
+                }),
+             it(@"uses a remaining guess",
+                ^{
+                    game.secretCode = @"1234";
+                    [game takeGuess: @"5678"];
+                    
+                    [expect(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
+                }),
+             nil);
 }

@@ -2,7 +2,7 @@
 
 @implementation MMGame
 
-@synthesize numberOfRemainingGuesses;
+@synthesize numberOfRemainingGuesses, secretCode;
 
 -(id) init {
     if ((self = [super init])) {
@@ -17,6 +17,10 @@
 
 -(BOOL) didWin {
     return NO;
+}
+
+-(void) takeGuess:(NSString*) guess {
+    self.numberOfRemainingGuesses = [NSNumber numberWithInt: self.numberOfRemainingGuesses.intValue - 1];
 }
 
 @end
