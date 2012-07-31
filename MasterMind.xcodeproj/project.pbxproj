@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
+		074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
+		074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
+		074A146C15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
+		074A146D15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
+		074A146E15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
+		074A147715C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */; };
+		074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
+		074A147C15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
+		074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
+		074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
+		074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
+		074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
+		074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */; };
 		075BA90D15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA90E15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA90F15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91015C60DE5002E0086 /* MMCodeSpec.m */; };
 		075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91115C60DE5002E0086 /* ViewControllerSpec.m */; };
 		075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91515C60DF9002E0086 /* GuessChecker.m */; };
-		075BA91815C6BD74002E0086 /* SecretCodeViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91715C6BD74002E0086 /* SecretCodeViewControllerSpec.m */; };
-		075BA91C15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91B15C6BDAC002E0086 /* SecretCodeViewController.m */; };
-		075BA91D15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91B15C6BDAC002E0086 /* SecretCodeViewController.m */; };
-		075BA91E15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91B15C6BDAC002E0086 /* SecretCodeViewController.m */; };
-		075BA92115C6C061002E0086 /* MMAvailablePegsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA92015C6C061002E0086 /* MMAvailablePegsController.m */; };
-		075BA92215C6C061002E0086 /* MMAvailablePegsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA92015C6C061002E0086 /* MMAvailablePegsController.m */; };
-		075BA92315C6C061002E0086 /* MMAvailablePegsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA92015C6C061002E0086 /* MMAvailablePegsController.m */; };
 		F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -66,17 +73,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
+		074A146715C74A14003B1953 /* MMSecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewController.m; sourceTree = "<group>"; };
+		074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecretCodeViewController.xib; sourceTree = "<group>"; };
+		074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewControllerSpec.m; sourceTree = "<group>"; };
+		074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePegsViewController.h; sourceTree = "<group>"; };
+		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
+		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
+		074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewControllerSpec.m; sourceTree = "<group>"; };
 		075BA90B15C60DD5002E0086 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCode.h; sourceTree = "<group>"; };
 		075BA90C15C60DD5002E0086 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCode.m; sourceTree = "<group>"; };
 		075BA91015C60DE5002E0086 /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeSpec.m; sourceTree = "<group>"; };
 		075BA91115C60DE5002E0086 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
 		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
-		075BA91715C6BD74002E0086 /* SecretCodeViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretCodeViewControllerSpec.m; sourceTree = "<group>"; };
-		075BA91A15C6BDAC002E0086 /* SecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecretCodeViewController.h; sourceTree = "<group>"; };
-		075BA91B15C6BDAC002E0086 /* SecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretCodeViewController.m; sourceTree = "<group>"; };
-		075BA91F15C6C061002E0086 /* MMAvailablePegsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePegsController.h; sourceTree = "<group>"; };
-		075BA92015C6C061002E0086 /* MMAvailablePegsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsController.m; sourceTree = "<group>"; };
 		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F812EF88152BC6E1005E5D13 /* SocketServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = "<group>"; };
 		F812EF8A152BC6E1005E5D13 /* TcpComLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = "<group>"; };
@@ -192,10 +202,12 @@
 		075BA91915C6BD8A002E0086 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				075BA91F15C6C061002E0086 /* MMAvailablePegsController.h */,
-				075BA92015C6C061002E0086 /* MMAvailablePegsController.m */,
-				075BA91A15C6BDAC002E0086 /* SecretCodeViewController.h */,
-				075BA91B15C6BDAC002E0086 /* SecretCodeViewController.m */,
+				074A146615C74A14003B1953 /* MMSecretCodeViewController.h */,
+				074A146715C74A14003B1953 /* MMSecretCodeViewController.m */,
+				074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */,
+				074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */,
+				074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */,
+				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,7 +356,8 @@
 				F812EFD1152BC795005E5D13 /* OCDSpec */,
 				075BA91015C60DE5002E0086 /* MMCodeSpec.m */,
 				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
-				075BA91715C6BD74002E0086 /* SecretCodeViewControllerSpec.m */,
+				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
+				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -556,6 +569,8 @@
 			files = (
 				F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */,
 				F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */,
+				074A146D15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
+				074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +580,8 @@
 			files = (
 				F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */,
 				F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */,
+				074A146E15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
+				074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +592,8 @@
 				F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */,
 				F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */,
 				F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */,
+				074A146C15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */,
+				074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,8 +647,8 @@
 				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
 				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
-				075BA91D15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */,
-				075BA92215C6C061002E0086 /* MMAvailablePegsController.m in Sources */,
+				074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
+				074A147C15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,9 +671,10 @@
 				075BA90F15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */,
 				075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */,
-				075BA91815C6BD74002E0086 /* SecretCodeViewControllerSpec.m in Sources */,
-				075BA91E15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */,
-				075BA92315C6C061002E0086 /* MMAvailablePegsController.m in Sources */,
+				074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
+				074A147715C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m in Sources */,
+				074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
+				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,8 +686,8 @@
 				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
 				F83ABA481528A964006FB6EC /* ViewController.m in Sources */,
 				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
-				075BA91C15C6BDAC002E0086 /* SecretCodeViewController.m in Sources */,
-				075BA92115C6C061002E0086 /* MMAvailablePegsController.m in Sources */,
+				074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
+				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

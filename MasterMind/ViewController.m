@@ -4,6 +4,7 @@
 @implementation ViewController
 
 @synthesize numberCorrect, numberInWrongSpot, secretCode, guess;
+@synthesize secretCodeViewController, secretCodeView, availablePegsViewController;
 
 - (void)didReceiveMemoryWarning
 {
@@ -32,6 +33,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.secretCodeViewController = [[MMSecretCodeViewController alloc] initWithNibName: @"MMSecretCodeViewController"
+                                                                                 bundle: nil];
+    self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
+                                                                                       bundle: nil];
+//    self.secretCodeView = self.secretCodeViewController.view;
+    float availablePegsWidth = CGRectGetWidth(self.availablePegsViewController.view.frame);
+    [self.secretCodeViewController.view setFrame: CGRectMake(availablePegsWidth, 0.0, 400.0, 96.0)];
+    [self.view addSubview: self.availablePegsViewController.view];
+    [self.view addSubview: self.secretCodeViewController.view];
     [self setInitialGuessResults];
     [self setInitialSecretCode];
     [self setInitialGuess];
@@ -78,7 +88,7 @@
 {
     // Return YES for supported orientations
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationLandscapeLeft);
+        return (interfaceOrientation != UIInterfaceOrientationLandscapeLeft && interfaceOrientation != UIInterfaceOrientationLandscapeRight);
     } else {
         return YES;
     }

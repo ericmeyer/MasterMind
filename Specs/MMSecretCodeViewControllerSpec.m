@@ -1,22 +1,22 @@
-#import "OCDSpec/OCDSpec.h"
-#import "SecretCodeViewController.h"
-#import "MMAvailablePegsController.h"
+#import "OCDSpec/OCDSpec.h" 
+#import "MMSecretCodeViewController.h"
+#import "MMAvailablePegsViewController.h"
 
-CONTEXT(SecretCodeViewControllerSpec)
+CONTEXT(MMSecretCodeViewControllerSpec)
 {
-    __block SecretCodeViewController* controller;
-    __block MMAvailablePegsController* availablePegs;
+    __block MMSecretCodeViewController* controller;
+    __block MMAvailablePegsViewController* availablePegs;
     
     describe(@"on init",
              it(@"starts with no pegOne",
                 ^{
-                    controller = [SecretCodeViewController new];
+                    controller = [MMSecretCodeViewController new];
                     
                     expectTruth(controller.pegOne == NULL);
                 }),
              it(@"starts with no pegTwo",
                 ^{
-                    controller = [SecretCodeViewController new];
+                    controller = [MMSecretCodeViewController new];
                     
                     expectTruth(controller.pegTwo == NULL);
                 }),
@@ -25,8 +25,8 @@ CONTEXT(SecretCodeViewControllerSpec)
     describe(@"clicking pegOne",
              beforeEach(
                 ^{
-                    controller = [SecretCodeViewController new];
-                    availablePegs = [MMAvailablePegsController new];
+                    controller = [MMSecretCodeViewController new];
+                    availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
              it(@"sets pegOne to the activePeg from the available pegs",
@@ -51,8 +51,8 @@ CONTEXT(SecretCodeViewControllerSpec)
     describe(@"clicking pegTwo",
              beforeEach(
                 ^{
-                    controller = [SecretCodeViewController new];
-                    availablePegs = [MMAvailablePegsController new];
+                    controller = [MMSecretCodeViewController new];
+                    availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
              it(@"sets pegTwo to the activePeg from the available pegs",
@@ -73,5 +73,5 @@ CONTEXT(SecretCodeViewControllerSpec)
                     [expect(controller.pegTwo) toBeEqualTo: @"B"];
                 }),
              nil);
-
+    
 }
