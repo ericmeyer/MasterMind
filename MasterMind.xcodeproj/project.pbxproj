@@ -31,6 +31,11 @@
 		0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559215C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
+		0722559715C80D58008EFF3F /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559615C80D58008EFF3F /* GameRunner.m */; };
+		0722559A15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
+		0722559B15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
+		0722559C15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
+		0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameSpec.m */; };
 		074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
@@ -105,6 +110,11 @@
 		0722557915C80AB3008EFF3F /* red_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_peg_active.png; sourceTree = "<group>"; };
 		0722557A15C80AB3008EFF3F /* yellow_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_peg.png; sourceTree = "<group>"; };
 		0722557B15C80AB3008EFF3F /* yellow_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_peg_active.png; sourceTree = "<group>"; };
+		0722559515C80D58008EFF3F /* GameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRunner.h; sourceTree = "<group>"; };
+		0722559615C80D58008EFF3F /* GameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunner.m; sourceTree = "<group>"; };
+		0722559815C80E6E008EFF3F /* MMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGame.h; sourceTree = "<group>"; };
+		0722559915C80E6E008EFF3F /* MMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGame.m; sourceTree = "<group>"; };
+		0722559D15C80F17008EFF3F /* MMGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameSpec.m; sourceTree = "<group>"; };
 		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMSecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecretCodeViewController.xib; sourceTree = "<group>"; };
@@ -265,6 +275,8 @@
 				F812EF85152BC6E1005E5D13 /* cslim */,
 				075BA91415C60DF9002E0086 /* GuessChecker.h */,
 				075BA91515C60DF9002E0086 /* GuessChecker.m */,
+				0722559515C80D58008EFF3F /* GameRunner.h */,
+				0722559615C80D58008EFF3F /* GameRunner.m */,
 			);
 			path = AcceptanceTests;
 			sourceTree = "<group>";
@@ -405,6 +417,7 @@
 				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
 				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
 				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
+				0722559D15C80F17008EFF3F /* MMGameSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -511,6 +524,8 @@
 				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,
 				F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */,
 				F83ABA3B1528A964006FB6EC /* Supporting Files */,
+				0722559815C80E6E008EFF3F /* MMGame.h */,
+				0722559915C80E6E008EFF3F /* MMGame.m */,
 			);
 			path = MasterMind;
 			sourceTree = "<group>";
@@ -721,6 +736,8 @@
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
 				074A146A15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
 				074A147C15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
+				0722559715C80D58008EFF3F /* GameRunner.m in Sources */,
+				0722559B15C80E6E008EFF3F /* MMGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +764,8 @@
 				074A147715C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m in Sources */,
 				074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
+				0722559C15C80E6E008EFF3F /* MMGame.m in Sources */,
+				0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +779,7 @@
 				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
 				074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
+				0722559A15C80E6E008EFF3F /* MMGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
