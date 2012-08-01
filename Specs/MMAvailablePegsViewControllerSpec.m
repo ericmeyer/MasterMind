@@ -1,11 +1,11 @@
 #import "OCDSpec/OCDSpec.h"
 #import "MMAvailablePegsViewController.h"
-#import "MMAvailablePeg.h"
+#import "MMCodePeg.h"
 
 CONTEXT(MMAvailablePegsViewControllerSpec)
 {
     __block MMAvailablePegsViewController* controller;
-    __block MMAvailablePeg* clickedPeg;
+    __block MMCodePeg* clickedPeg;
     
     describe(@"on init",
              it(@"has no activePegString",
@@ -26,7 +26,7 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
                 ^{
                     controller = [MMAvailablePegsViewController new];
                     controller.activePegLabel = [UILabel new];
-                    clickedPeg = [MMAvailablePeg pegWithColor: @"red"];
+                    clickedPeg = [MMCodePeg pegWithColor: @"red"];
                 }),
              it(@"sets the activePeg to the clicked peg",
                 ^{
@@ -36,7 +36,7 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
                 }),
              it(@"deactivates the previously clicked peg",
                 ^{
-                    MMAvailablePeg* secondPeg = [MMAvailablePeg pegWithColor: @"blue"];
+                    MMCodePeg* secondPeg = [MMCodePeg pegWithColor: @"blue"];
                     [controller clickPeg: clickedPeg];
                     [controller clickPeg: secondPeg];
                     

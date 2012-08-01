@@ -1,5 +1,5 @@
 #import "MMAvailablePegsViewController.h"
-#import "MMAvailablePeg.h"
+#import "MMCodePeg.h"
 #import "ConciseKit.h"
 
 @interface MMAvailablePegsViewController ()
@@ -11,7 +11,7 @@
 @synthesize activePegString, activePegLabel, availablePegs, activePeg;
 
 -(IBAction) clickPeg:(id) sender {
-    MMAvailablePeg* clickedButton = ((MMAvailablePeg*)sender);
+    MMCodePeg* clickedButton = ((MMCodePeg*)sender);
     [self.activePeg deactivate];
     if (self.activePeg == clickedButton) {
         [self setActivePeg: NULL];
@@ -27,7 +27,7 @@
     NSArray* colors = $arr(@"red", @"blue", @"orange", @"yellow");
     self.availablePegs = [NSMutableArray array];
     for (NSString* color in colors) {
-        MMAvailablePeg* availablePeg = [MMAvailablePeg pegWithColor: color];
+        MMCodePeg* availablePeg = [MMCodePeg pegWithColor: color];
         [availablePeg addTarget: self
                          action: @selector(clickPeg:)
                forControlEvents: UIControlEventTouchUpInside];
@@ -38,7 +38,7 @@
 - (void)displayAvailablePegs
 {
     for (int i=0; i<[self.availablePegs count]; i++) {
-        MMAvailablePeg* availablePeg = [self.availablePegs objectAtIndex: i];
+        MMCodePeg* availablePeg = [self.availablePegs objectAtIndex: i];
         availablePeg.frame = CGRectMake(0, i*90.0, 90, 90);
         [self.view addSubview: availablePeg];
     }

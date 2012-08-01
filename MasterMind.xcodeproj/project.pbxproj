@@ -36,9 +36,9 @@
 		0722559B15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
 		0722559C15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
 		0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameSpec.m */; };
-		072255A115C8149A008EFF3F /* MMAvailablePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMAvailablePeg.m */; };
-		072255A215C8149A008EFF3F /* MMAvailablePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMAvailablePeg.m */; };
-		072255A415C814CF008EFF3F /* MMAvailablePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */; };
+		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
+		072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
+		072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMCodePegSpec.m */; };
 		074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146B15C74A14003B1953 /* MMSecretCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMSecretCodeViewController.m */; };
 		074A146C15C74A14003B1953 /* MMSecretCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */; };
@@ -128,9 +128,9 @@
 		0722559815C80E6E008EFF3F /* MMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGame.h; sourceTree = "<group>"; };
 		0722559915C80E6E008EFF3F /* MMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGame.m; sourceTree = "<group>"; };
 		0722559D15C80F17008EFF3F /* MMGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameSpec.m; sourceTree = "<group>"; };
-		0722559F15C8149A008EFF3F /* MMAvailablePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePeg.h; sourceTree = "<group>"; };
-		072255A015C8149A008EFF3F /* MMAvailablePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePeg.m; sourceTree = "<group>"; };
-		072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegSpec.m; sourceTree = "<group>"; };
+		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MMCodePeg.h; sourceTree = "<group>"; };
+		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
+		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
 		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMSecretCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecretCodeViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMSecretCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSecretCodeViewController.xib; sourceTree = "<group>"; };
@@ -292,8 +292,8 @@
 				074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */,
 				074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */,
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
-				0722559F15C8149A008EFF3F /* MMAvailablePeg.h */,
-				072255A015C8149A008EFF3F /* MMAvailablePeg.m */,
+				0722559F15C8149A008EFF3F /* MMCodePeg.h */,
+				072255A015C8149A008EFF3F /* MMCodePeg.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
 				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
 				0722559D15C80F17008EFF3F /* MMGameSpec.m */,
-				072255A315C814CF008EFF3F /* MMAvailablePegSpec.m */,
+				072255A315C814CF008EFF3F /* MMCodePegSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -817,8 +817,8 @@
 				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
 				0722559C15C80E6E008EFF3F /* MMGame.m in Sources */,
 				0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */,
-				072255A215C8149A008EFF3F /* MMAvailablePeg.m in Sources */,
-				072255A415C814CF008EFF3F /* MMAvailablePegSpec.m in Sources */,
+				072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */,
+				072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */,
 				0784EF0315C9651600D0A738 /* ConciseKit.m in Sources */,
 				0784EF0615C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
 				0784EF0915C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */,
@@ -837,7 +837,7 @@
 				074A146915C74A14003B1953 /* MMSecretCodeViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				0722559A15C80E6E008EFF3F /* MMGame.m in Sources */,
-				072255A115C8149A008EFF3F /* MMAvailablePeg.m in Sources */,
+				072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */,
 				0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */,
 				0784EF0415C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
 				0784EF0715C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */,

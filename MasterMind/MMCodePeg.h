@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface MMAvailablePeg : UIButton {
+@interface MMCodePeg : UIButton {
     NSString* color;
     BOOL isActive;
 }

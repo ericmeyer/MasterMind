@@ -1,14 +1,14 @@
 #import "OCDSpec/OCDSpec.h"
-#import "MMAvailablePeg.h"
+#import "MMCodePeg.h"
 
-CONTEXT(MMAvailablePegSpec)
+CONTEXT(MMCodePegSpec)
 {
-    __block MMAvailablePeg* peg;
+    __block MMCodePeg* peg;
     
     describe(@"pegWithColor",
              beforeEach(
                 ^{
-                    peg = [MMAvailablePeg pegWithColor: @"red"];
+                    peg = [MMCodePeg pegWithColor: @"red"];
                 }),
              it(@"sets the color",
                 ^{
@@ -31,7 +31,7 @@ CONTEXT(MMAvailablePegSpec)
     describe(@"activate",
              beforeEach(
                 ^{
-                    peg = [MMAvailablePeg pegWithColor: @"red"];
+                    peg = [MMCodePeg pegWithColor: @"red"];
                 }),
              it(@"sets the peg to be active",
                 ^{
@@ -53,7 +53,7 @@ CONTEXT(MMAvailablePegSpec)
     describe(@"deactivate",
              beforeEach(
                 ^{
-                    peg = [MMAvailablePeg pegWithColor: @"red"];
+                    peg = [MMCodePeg pegWithColor: @"red"];
                     [peg activate];
                 }),
              it(@"sets the peg to be active",

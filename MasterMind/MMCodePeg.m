@@ -1,15 +1,15 @@
-#import "MMAvailablePeg.h"
+#import "MMCodePeg.h"
 
-@interface MMAvailablePeg (private)
+@interface MMCodePeg (private)
 -(void) setImage:(NSString*) imageName;
 @end
 
-@implementation MMAvailablePeg
+@implementation MMCodePeg
 
 @synthesize color, isActive;
 
 +(id) pegWithColor:(NSString*) givenColor {
-    MMAvailablePeg* peg = [[MMAvailablePeg new] autorelease];
+    MMCodePeg* peg = [[MMCodePeg new] autorelease];
     [peg setColor: givenColor];
     [peg deactivate];
     return peg;
