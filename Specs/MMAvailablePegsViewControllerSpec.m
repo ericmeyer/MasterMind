@@ -1,16 +1,23 @@
 #import "OCDSpec/OCDSpec.h"
 #import "MMAvailablePegsViewController.h"
+#import "MMAvailablePeg.h"
 
 CONTEXT(MMAvailablePegsViewControllerSpec)
 {
     __block MMAvailablePegsViewController* controller;
-    __block UIButton* clickedPeg;
+    __block MMAvailablePeg* clickedPeg;
     
     describe(@"on init",
-             it(@"has no activePeg",
+             it(@"has no activePegString",
                 ^{
-                    controller = [MMAvailablePegsViewController new];
+                    controller = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
+                                                                                 bundle: nil];
                     [expect(controller.activePegString) toBe: NULL];
+                }),
+             it(@"has 4 pegs",
+                ^{
+                    [expect([NSNumber numberWithInt: [controller.availablePegs count]])
+                     toBeEqualTo: [NSNumber numberWithInt: 4]];
                 }),
              nil);
     
@@ -19,38 +26,41 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
                 ^{
                     controller = [MMAvailablePegsViewController new];
                     controller.activePegLabel = [UILabel new];
-                    clickedPeg = [[UIButton alloc] init];
+                    clickedPeg = [MMAvailablePeg pegWithColor: @"red"];
                 }),
-             it(@"sets the active peg to the tag of the given peg",
+             it(@"sets the activePeg to the clicked peg",
                 ^{
-                    clickedPeg.tag = 123;
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePegString) toBeEqualTo: @"123"];
+                    [expect(controller.activePeg) toBeEqualTo: clickedPeg];
                 }),
-             it(@"sets the active peg label to the tag of the given peg",
+             it(@"deactivates the previously clicked peg",
                 ^{
-                    clickedPeg.tag = 123;
+                    MMAvailablePeg* secondPeg = [MMAvailablePeg pegWithColor: @"blue"];
+                    [controller clickPeg: clickedPeg];
+                    [controller clickPeg: secondPeg];
+                    
+                    expectFalse(clickedPeg.isActive);
+                }),
+             it(@"activates the peg",
+                ^{
+                    [controller clickPeg: clickedPeg];
+
+                    expectTruth(clickedPeg.isActive);
+                }),
+             it(@"clicking the already active peg deactivates the peg",
+                ^{
+                    [controller clickPeg: clickedPeg];
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePegLabel.text) toBeEqualTo: @"123"];
+                    expectFalse(clickedPeg.isActive);
                 }),
-             it(@"clears the activePeg if the current peg is clicked",
+             it(@"clicking the already active peg clears the activePeg",
                 ^{
-                    clickedPeg.tag = 123;
-                    controller.activePegString = @"123";
+                    [controller clickPeg: clickedPeg];
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePegString) toBe: NULL];
-                }),
-             it(@"set the activePeg if the active peg is different from the clicked peg",
-                ^{
-                    clickedPeg.tag = 123;
-                    [controller clickPeg: clickedPeg];
-                    clickedPeg.tag = 456;
-                    [controller clickPeg: clickedPeg];
-                    
-                    [expect(controller.activePegString) toBeEqualTo: @"456"];
+                    expectTruth(controller.activePeg == NULL);
                 }),
              nil);
 }

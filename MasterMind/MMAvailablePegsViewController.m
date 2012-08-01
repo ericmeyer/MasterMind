@@ -1,5 +1,6 @@
 #import "MMAvailablePegsViewController.h"
 #import "MMAvailablePeg.h"
+#import "ConciseKit.h"
 
 @interface MMAvailablePegsViewController ()
 
@@ -7,41 +8,30 @@
 
 @implementation MMAvailablePegsViewController
 
-@synthesize activePegString, activePegLabel, availablePegs;
+@synthesize activePegString, activePegLabel, availablePegs, activePeg;
 
 -(IBAction) clickPeg:(id) sender {
-    UIButton* clickedButton = ((UIButton*)sender);
-    NSString* clickedPeg = [NSString stringWithFormat: @"%d", clickedButton.tag];
-    if ([activePegString isEqualToString: clickedPeg]) {
-        self.activePegString = NULL;
-        self.activePegLabel.text = NULL;
-        clickedButton.backgroundColor = [UIColor blueColor];
+    MMAvailablePeg* clickedButton = ((MMAvailablePeg*)sender);
+    [self.activePeg deactivate];
+    if (self.activePeg == clickedButton) {
+        [self setActivePeg: NULL];
     } else {
-        self.activePegString = clickedPeg;
-        self.activePegLabel.text = clickedPeg;
-        clickedButton.backgroundColor = [UIColor whiteColor];
+        [self setActivePeg: clickedButton];
+        [self.activePeg activate];
     }
-}
-
--(IBAction) setPegActive:(id) sender {
-    NSLog(@"sender: %@", sender);
-//    [self.activePeg deactivate];
-//    [clickedPeg activate];
-//    self.activePeg = clickedPeg;
+    self.activePegLabel.text = self.activePeg.color;
 }
 
 - (void)initAvailablePegs
 {
-    self.availablePegs = [NSArray arrayWithObjects:
-                          [MMAvailablePeg pegWithColor: @"red"],
-                          [MMAvailablePeg pegWithColor: @"blue"],
-                          [MMAvailablePeg pegWithColor: @"orange"],
-                          [MMAvailablePeg pegWithColor: @"yellow"],
-                          nil];
-    for (MMAvailablePeg* availablePeg in self.availablePegs) {
+    NSArray* colors = $arr(@"red", @"blue", @"orange", @"yellow");
+    self.availablePegs = [NSMutableArray array];
+    for (NSString* color in colors) {
+        MMAvailablePeg* availablePeg = [MMAvailablePeg pegWithColor: color];
         [availablePeg addTarget: self
-                         action: @selector(setPegActive:)
+                         action: @selector(clickPeg:)
                forControlEvents: UIControlEventTouchUpInside];
+        [self.availablePegs addObject: availablePeg];
     }
 }
 
@@ -69,16 +59,9 @@
     [self displayAvailablePegs];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+	return NO;
 }
 
 @end
