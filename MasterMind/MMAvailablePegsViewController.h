@@ -1,11 +1,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MMAvailablePegsViewController : UIViewController {
-    NSString* activePeg;
+    NSString* activePegString;
     IBOutlet UILabel* activePegLabel;
     NSArray* availablePegs;
 }
-@property (nonatomic, retain) NSString* activePeg;
+@property (nonatomic, retain) NSString* activePegString;
 @property (nonatomic, retain) IBOutlet UILabel* activePegLabel;
 @property (nonatomic, retain) NSArray* availablePegs;
 

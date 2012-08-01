@@ -10,7 +10,7 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
              it(@"has no activePeg",
                 ^{
                     controller = [MMAvailablePegsViewController new];
-                    [expect(controller.activePeg) toBe: NULL];
+                    [expect(controller.activePegString) toBe: NULL];
                 }),
              nil);
     
@@ -26,7 +26,7 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
                     clickedPeg.tag = 123;
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePeg) toBeEqualTo: @"123"];
+                    [expect(controller.activePegString) toBeEqualTo: @"123"];
                 }),
              it(@"sets the active peg label to the tag of the given peg",
                 ^{
@@ -38,10 +38,10 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
              it(@"clears the activePeg if the current peg is clicked",
                 ^{
                     clickedPeg.tag = 123;
-                    controller.activePeg = @"123";
+                    controller.activePegString = @"123";
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePeg) toBe: NULL];
+                    [expect(controller.activePegString) toBe: NULL];
                 }),
              it(@"set the activePeg if the active peg is different from the clicked peg",
                 ^{
@@ -50,7 +50,7 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
                     clickedPeg.tag = 456;
                     [controller clickPeg: clickedPeg];
                     
-                    [expect(controller.activePeg) toBeEqualTo: @"456"];
+                    [expect(controller.activePegString) toBeEqualTo: @"456"];
                 }),
              nil);
 }

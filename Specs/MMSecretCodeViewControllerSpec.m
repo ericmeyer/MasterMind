@@ -35,7 +35,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
                 }),
              it(@"sets pegOne to the activePeg from the available pegs",
                 ^{
-                    availablePegs.activePeg = @"Y";
+                    availablePegs.activePegString = @"Y";
                     
                     [controller touchPegOne];
                     
@@ -44,7 +44,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
              it(@"does not clear pegOne if there is no activePeg",
                 ^{
                     controller.pegOne.titleLabel.text = @"B";
-                    availablePegs.activePeg = NULL;
+                    availablePegs.activePegString = NULL;
                     
                     [controller touchPegOne];
                     
@@ -63,7 +63,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
                 }),
              it(@"sets pegTwo to the activePeg from the available pegs",
                 ^{
-                    availablePegs.activePeg = @"Y";
+                    availablePegs.activePegString = @"Y";
                     
                     [controller touchPegTwo];
                     
@@ -72,7 +72,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
              it(@"does not clear pegTwo if there is no activePeg",
                 ^{
                     controller.pegTwo.titleLabel.text = @"B";
-                    availablePegs.activePeg = NULL;
+                    availablePegs.activePegString = NULL;
                     
                     [controller touchPegTwo];
                     

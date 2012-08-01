@@ -7,17 +7,17 @@
 
 @implementation MMAvailablePegsViewController
 
-@synthesize activePeg, activePegLabel, availablePegs;
+@synthesize activePegString, activePegLabel, availablePegs;
 
 -(IBAction) clickPeg:(id) sender {
     UIButton* clickedButton = ((UIButton*)sender);
     NSString* clickedPeg = [NSString stringWithFormat: @"%d", clickedButton.tag];
-    if ([activePeg isEqualToString: clickedPeg]) {
-        self.activePeg = NULL;
+    if ([activePegString isEqualToString: clickedPeg]) {
+        self.activePegString = NULL;
         self.activePegLabel.text = NULL;
         clickedButton.backgroundColor = [UIColor blueColor];
     } else {
-        self.activePeg = clickedPeg;
+        self.activePegString = clickedPeg;
         self.activePegLabel.text = clickedPeg;
         clickedButton.backgroundColor = [UIColor whiteColor];
     }

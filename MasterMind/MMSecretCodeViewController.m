@@ -9,14 +9,14 @@
 @synthesize pegOne, pegTwo, availablePegsController;
 
 -(IBAction) touchPegOne {
-    if (self.availablePegsController.activePeg != NULL) {
-        self.pegOne.titleLabel.text = self.availablePegsController.activePeg;
+    if (self.availablePegsController.activePegString != NULL) {
+        self.pegOne.titleLabel.text = self.availablePegsController.activePegString;
     }
 }
 
 -(IBAction) touchPegTwo {
-    if (self.availablePegsController.activePeg != NULL) {
-        self.pegTwo.titleLabel.text = self.availablePegsController.activePeg;
+    if (self.availablePegsController.activePegString != NULL) {
+        self.pegTwo.titleLabel.text = self.availablePegsController.activePegString;
     }
 }
 
