@@ -1,6 +1,10 @@
 #import "OCDSpec/OCDSpec.h"
 #import "MMCodePeg.h"
 
+UIImage* imageFor(MMCodePeg* givenPeg);
+UIImage* imageFor(MMCodePeg* givenPeg) {
+    return [givenPeg imageForState: UIControlStateNormal];
+}
 CONTEXT(MMCodePegSpec)
 {
     __block MMCodePeg* peg;
@@ -17,10 +21,9 @@ CONTEXT(MMCodePegSpec)
              it(@"uses the color to set the background image",
                 ^{
                     UIImage* expectedImage = [UIImage imageNamed: @"red_peg.png"];
-                    UIImage* actualImage = [peg imageForState: UIControlStateNormal];
 
-                    expectFalse(actualImage == NULL);
-                    [expect(actualImage) toBeEqualTo: expectedImage];
+                    expectFalse(imageFor(peg) == NULL);
+                    [expect(imageFor(peg)) toBeEqualTo: expectedImage];
                 }),
              it(@"starts inactive",
                 ^{
@@ -43,10 +46,9 @@ CONTEXT(MMCodePegSpec)
                 ^{
                     [peg activate];
                     UIImage* expectedImage = [UIImage imageNamed: @"red_peg_active.png"];
-                    UIImage* actualImage = [peg imageForState: UIControlStateNormal];
                     
-                    expectFalse(actualImage == NULL);
-                    [expect(actualImage) toBeEqualTo: expectedImage];
+                    expectFalse(imageFor(peg) == NULL);
+                    [expect(imageFor(peg)) toBeEqualTo: expectedImage];
                 }),
              nil);
 
@@ -66,10 +68,30 @@ CONTEXT(MMCodePegSpec)
                 ^{
                     [peg deactivate];
                     UIImage* expectedImage = [UIImage imageNamed: @"red_peg.png"];
-                    UIImage* actualImage = [peg imageForState: UIControlStateNormal];
                     
-                    expectFalse(actualImage == NULL);
-                    [expect(actualImage) toBeEqualTo: expectedImage];
+                    expectFalse(imageFor(peg) == NULL);
+                    [expect(imageFor(peg)) toBeEqualTo: expectedImage];
+                }),
+             nil);
+    
+    describe(@"changeColor",
+             beforeEach(
+                ^{
+                    peg = [MMCodePeg pegWithColor: @"red"];
+                }),
+             it(@"changes the color to blue",
+                ^{
+                    [peg changeColor: @"blue"];
+                    
+                    [expect(peg.color) toBeEqualTo: @"blue"];
+                }),
+             it(@"changes the image",
+                ^{
+                    UIImage* originalImage = [peg imageForState: UIControlStateNormal];
+                    [peg changeColor: @"blue"];
+                  
+                    expectFalse(imageFor(peg) == NULL);
+                    expectFalse(imageFor(peg) == originalImage);
                 }),
              nil);
 }

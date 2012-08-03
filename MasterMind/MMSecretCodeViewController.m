@@ -1,49 +1,56 @@
 #import "MMSecretCodeViewController.h"
+#import "MMCodePeg.h"
+#import "ConciseKit.h"
 
-@interface MMSecretCodeViewController ()
-
+@interface MMSecretCodeViewController (private)
+-(void) initEmptyPegs;
+-(MMCodePeg*) emptyPeg;
 @end
 
 @implementation MMSecretCodeViewController
 
-@synthesize pegOne, pegTwo, availablePegsController;
+@synthesize availablePegsController;
+@synthesize pegs;
 
--(IBAction) touchPegOne {
-    if (self.availablePegsController.activePegString != NULL) {
-        self.pegOne.titleLabel.text = self.availablePegsController.activePegString;
-    }
-}
-
--(IBAction) touchPegTwo {
-    if (self.availablePegsController.activePegString != NULL) {
-        self.pegTwo.titleLabel.text = self.availablePegsController.activePegString;
-    }
+-(IBAction) touchPeg:(id) sender {
+    MMCodePeg* touchedPeg = (MMCodePeg*) sender;
+    [touchedPeg changeColor: self.availablePegsController.activePeg.color];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self initEmptyPegs];
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+-(void) viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.pegs $eachWithIndex:^(id obj, NSUInteger i) {
+        MMCodePeg* emptyPeg = (MMCodePeg*)obj;
+        emptyPeg.frame = CGRectMake(i*100, 0, 90, 90);
+        [self.view addSubview: emptyPeg];
+    }];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+-(void) initEmptyPegs {
+    self.pegs = [NSMutableArray array];
+    for (int i=0; i<4; i++) {
+        [self.pegs addObject: [self emptyPeg]];
+    }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+-(MMCodePeg*) emptyPeg {
+    MMCodePeg* emptyPeg = [MMCodePeg pegWithColor: @"red"];
+    [emptyPeg addTarget: self
+                 action: @selector(touchPeg:)
+       forControlEvents:UIControlEventTouchUpInside];
+    return emptyPeg;
+}
+
+-(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
 }
 

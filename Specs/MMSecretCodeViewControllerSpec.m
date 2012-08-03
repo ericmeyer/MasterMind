@@ -1,6 +1,7 @@
 #import "OCDSpec/OCDSpec.h" 
 #import "MMSecretCodeViewController.h"
 #import "MMAvailablePegsViewController.h"
+#import "ConciseKit.h"
 
 CONTEXT(MMSecretCodeViewControllerSpec)
 {
@@ -11,72 +12,55 @@ CONTEXT(MMSecretCodeViewControllerSpec)
              beforeEach(
                 ^{
                     controller = [MMSecretCodeViewController new];
-                    controller.pegOne = [UIButton new];
-                    controller.pegTwo = [UIButton new];
                 }),
-             it(@"starts with no pegOne",
-                ^{                    
-                    expectTruth(controller.pegOne.titleLabel.text == NULL);
-                }),
-             it(@"starts with no pegTwo",
+             it(@"starts with 4 pegs",
                 ^{
-                    expectTruth(controller.pegTwo.titleLabel.text == NULL);
+                    [expect([NSNumber numberWithInt: [controller.pegs count]])
+                     toBeEqualTo: [NSNumber numberWithInt: 4]];
+                }),
+             it(@"adds the touchPeg target to each",
+                ^{
+                    [controller.pegs $each:^(id obj){
+                        MMCodePeg* peg = (MMCodePeg*)obj;
+                        NSArray* actualActions = [peg actionsForTarget: controller
+                                                       forControlEvent: UIControlEventTouchUpInside];
+                        NSArray* expectedActions = $arr(@"touchPeg:");
+                        
+                        [expect(expectedActions) toBeEqualTo: actualActions];
+                    }];
                 }),
              nil);
     
-    describe(@"clicking pegOne",
+    describe(@"viewDidLoad",
              beforeEach(
                 ^{
-                    controller = [MMSecretCodeViewController new];
-                    controller.pegOne = [UIButton new];
-                    controller.pegTwo = [UIButton new];
-                    availablePegs = [MMAvailablePegsViewController new];
-                    controller.availablePegsController = availablePegs;
+                    controller = [[MMSecretCodeViewController alloc]  initWithNibName: nil
+                                                                               bundle: nil];
+                    [controller viewDidLoad];
                 }),
-             it(@"sets pegOne to the activePeg from the available pegs",
+             it(@"adds the pegs as subviews",
                 ^{
-                    availablePegs.activePegString = @"Y";
-                    
-                    [controller touchPegOne];
-                    
-                    [expect(controller.pegOne.titleLabel.text) toBeEqualTo: @"Y"];
-                }),
-             it(@"does not clear pegOne if there is no activePeg",
-                ^{
-                    controller.pegOne.titleLabel.text = @"B";
-                    availablePegs.activePegString = NULL;
-                    
-                    [controller touchPegOne];
-                    
-                    [expect(controller.pegOne.titleLabel.text) toBeEqualTo: @"B"];
+                    int count = [controller.view.subviews count];
+                    NSNumber* numberOfSubviews = [NSNumber numberWithInt: count];
+
+                    [expect(numberOfSubviews) toBeEqualTo: [NSNumber numberWithInt: 4]];
                 }),
              nil);
     
-    describe(@"clicking pegTwo",
+    describe(@"touchPeg",
              beforeEach(
                 ^{
                     controller = [MMSecretCodeViewController new];
-                    controller.pegOne = [UIButton new];
-                    controller.pegTwo = [UIButton new];
                     availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
-             it(@"sets pegTwo to the activePeg from the available pegs",
+             it(@"changes the touched peg's color to the activePeg's color",
                 ^{
-                    availablePegs.activePegString = @"Y";
+                    MMCodePeg* touchedPeg = [controller.pegs objectAtIndex: 2];
+                    availablePegs.activePeg = [MMCodePeg pegWithColor: @"blue"];
+                    [controller touchPeg: touchedPeg];
                     
-                    [controller touchPegTwo];
-                    
-                    [expect(controller.pegTwo.titleLabel.text) toBeEqualTo: @"Y"];
-                }),
-             it(@"does not clear pegTwo if there is no activePeg",
-                ^{
-                    controller.pegTwo.titleLabel.text = @"B";
-                    availablePegs.activePegString = NULL;
-                    
-                    [controller touchPegTwo];
-                    
-                    [expect(controller.pegTwo.titleLabel.text) toBeEqualTo: @"B"];
+                    [expect(touchedPeg.color) toBeEqualTo: @"blue"];
                 }),
              nil);
     

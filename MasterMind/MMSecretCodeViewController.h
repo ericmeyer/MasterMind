@@ -2,16 +2,12 @@
 #import "MMAvailablePegsViewController.h"
 
 @interface MMSecretCodeViewController : UIViewController {
-    IBOutlet UIButton* pegOne;
-    IBOutlet UIButton* pegTwo;
     MMAvailablePegsViewController* availablePegsController;
+    NSMutableArray* pegs;
 }
-@property (nonatomic, retain) UIButton* pegOne;
-@property (nonatomic, retain) UIButton* pegTwo;
 @property (nonatomic, retain) MMAvailablePegsViewController* availablePegsController;
+@property (nonatomic, retain) NSMutableArray* pegs;
 
--(IBAction) touchPegOne;
--(IBAction) touchPegTwo;
-
+-(IBAction) touchPeg:(id) sender;
 
 @end

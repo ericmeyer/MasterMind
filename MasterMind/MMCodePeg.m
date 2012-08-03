@@ -10,9 +10,13 @@
 
 +(id) pegWithColor:(NSString*) givenColor {
     MMCodePeg* peg = [[MMCodePeg new] autorelease];
-    [peg setColor: givenColor];
-    [peg deactivate];
+    [peg changeColor: givenColor];
     return peg;
+}
+
+-(void) changeColor:(NSString*) newColor {
+    self.color = newColor;
+    [self setImage: [NSString stringWithFormat: @"%@_peg.png", self.color]];
 }
 
 -(void) activate {

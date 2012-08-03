@@ -9,6 +9,8 @@
 
 +(id) pegWithColor:(NSString*) givenColor;
 
+-(void) changeColor:(NSString*) newColor;
+
 -(void) activate;
 -(void) deactivate;
 
