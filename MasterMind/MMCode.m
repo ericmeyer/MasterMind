@@ -1,29 +1,29 @@
 #import "MMCode.h"
+#import "ConciseKit.h"
 
 @interface MMCode(private)
--(NSDictionary*) pegFrequency:(NSString*) pegs;
--(NSMutableArray*) stringToArray: (NSString*) string;
+-(NSDictionary*) pegFrequency:(NSArray*) pegs;
 @end
 
 @implementation MMCode
 
--(NSNumber*) numberCorrectForCode: (NSString*) code andGuess: (NSString*) guess {
+-(NSNumber*) numberCorrectForCode: (NSArray*) code andGuess: (NSArray*) guess {
     int numberCorrect = 0;
-    for (int i=0; i < [code length]; i++) {
-        if ([code characterAtIndex: i] == [guess characterAtIndex: i]) {
+    for (int i=0; i < [code count]; i++) {
+        if ([[code objectAtIndex: i] isEqualToString: [guess objectAtIndex: i] ]) {
             numberCorrect++;
         }
     }
     return [NSNumber numberWithInt: numberCorrect];
 }
 
--(NSNumber*) numberInWrongSpotForCode: (NSString*) code andGuess: (NSString*) guess {
+-(NSNumber*) numberInWrongSpotForCode: (NSArray*) code andGuess: (NSArray*) guess {
     int numberCorrectUnordered = 0;
     int numberCorrectOrdered = [[self numberCorrectForCode: code andGuess: guess] intValue];
-
+    
     NSDictionary* codePegFrequency = [self pegFrequency: code];
     NSDictionary* guessPegFrequency = [self pegFrequency: guess];
-
+    
     for(NSString* peg in guessPegFrequency) {
         int guessCount = [[guessPegFrequency objectForKey: peg] intValue];
         int codeCount = [[codePegFrequency objectForKey: peg] intValue];
@@ -33,14 +33,13 @@
             numberCorrectUnordered += codeCount;
         }
     }
-
+    
     return [NSNumber numberWithInt: (numberCorrectUnordered - numberCorrectOrdered)];
 }
 
--(NSDictionary*) pegFrequency:(NSString*) pegs {
+-(NSDictionary*) pegFrequency:(NSArray*) pegs {
     NSMutableDictionary* frequencys = [NSMutableDictionary dictionary];
-    NSMutableArray* pegsAsArray = [self stringToArray: pegs];
-    for (NSString* peg in pegsAsArray) {
+    for (NSString* peg in pegs) {
         NSNumber* pegCount = [frequencys objectForKey: peg];
         if (pegCount) {
             [frequencys setValue: [NSNumber numberWithInt: [pegCount intValue] + 1] forKeyPath:peg];
@@ -49,15 +48,6 @@
         }
     }
     return frequencys;
-}
-
--(NSMutableArray*) stringToArray: (NSString*) string {
-    NSMutableArray *array = [[[NSMutableArray alloc] init] autorelease];
-    for (int i=0; i < [string length]; i++) {
-        NSString *spot  = [NSString stringWithFormat:@"%c", [string characterAtIndex:i]];
-        [array addObject: spot];
-    }
-    return array;
 }
 
 @end

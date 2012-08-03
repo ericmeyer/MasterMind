@@ -1,5 +1,6 @@
 #import "ViewController.h"
 #import "MMCode.h"
+#import "ConciseKit.h"
 
 @implementation ViewController
 
@@ -33,8 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.secretCodeViewController = [[MMCodeViewController alloc] initWithNibName: @"MMSecretCodeViewController"
-                                                                                 bundle: nil];
+    self.secretCodeViewController = [[MMCodeViewController alloc] initWithNibName: @"MMCodeViewController"
+                                                                           bundle: nil];
     self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
                                                                                        bundle: nil];
     float availablePegsWidth = CGRectGetWidth(self.availablePegsViewController.view.frame);
@@ -50,10 +51,10 @@
 -(IBAction) takeGuess
 {
     MMCode* mmCode = [[MMCode alloc] init];
-    self.numberCorrect.text = [[mmCode numberCorrectForCode: self.secretCode.text
-                                                   andGuess: self.guess.text] stringValue];
-    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: self.secretCode.text
-                                                           andGuess: self.guess.text] stringValue];
+    self.numberCorrect.text = [[mmCode numberCorrectForCode: [self.secretCode.text $chars]
+                                                   andGuess: [self.guess.text $chars]] stringValue];
+    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: [self.secretCode.text $chars]
+                                                           andGuess: [self.guess.text $chars]] stringValue];
     [mmCode release];
 }
 

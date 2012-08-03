@@ -1,5 +1,6 @@
 #import "GuessChecker.h"
 #import "MMCode.h"
+#import "ConciseKit.h"
 
 @implementation GuessChecker
 
@@ -10,11 +11,13 @@
 }
 
 -(int) numberCorrect {
-    return [[mmCode numberCorrectForCode: self.code andGuess: self.guess] intValue];
+    return [[mmCode numberCorrectForCode: [self.code $chars]
+                                andGuess: [self.guess $chars]] intValue];
 }
 
 -(int) numberInWrongSpot {
-    return [[mmCode numberInWrongSpotForCode: self.code andGuess: self.guess] intValue];
+    return [[mmCode numberInWrongSpotForCode: [self.code $chars]
+                                    andGuess: [self.guess $chars]] intValue];
 }
 
 @end

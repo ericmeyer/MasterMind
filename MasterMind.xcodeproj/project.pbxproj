@@ -133,7 +133,7 @@
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
-		074A146615C74A14003B1953 /* MMCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MMCodeViewController.h; sourceTree = "<group>"; };
+		074A146615C74A14003B1953 /* MMCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodeViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMCodeViewController.xib; sourceTree = "<group>"; };
 		074A147615C77D7C003B1953 /* MMCodeViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeViewControllerSpec.m; sourceTree = "<group>"; };
@@ -290,6 +290,8 @@
 		075BA91915C6BD8A002E0086 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F83ABA461528A964006FB6EC /* ViewController.h */,
+				F83ABA471528A964006FB6EC /* ViewController.m */,
 				074A146615C74A14003B1953 /* MMCodeViewController.h */,
 				074A146715C74A14003B1953 /* MMCodeViewController.m */,
 				074A146815C74A14003B1953 /* MMCodeViewController.xib */,
@@ -578,8 +580,6 @@
 				075BA91915C6BD8A002E0086 /* View */,
 				F83ABA431528A964006FB6EC /* AppDelegate.h */,
 				F83ABA441528A964006FB6EC /* AppDelegate.m */,
-				F83ABA461528A964006FB6EC /* ViewController.h */,
-				F83ABA471528A964006FB6EC /* ViewController.m */,
 				075BA90B15C60DD5002E0086 /* MMCode.h */,
 				075BA90C15C60DD5002E0086 /* MMCode.m */,
 				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,

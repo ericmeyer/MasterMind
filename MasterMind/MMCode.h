@@ -2,7 +2,7 @@
 
 @interface MMCode : NSObject
 
--(NSNumber*) numberCorrectForCode: (NSString*) code andGuess: (NSString*) guess;
--(NSNumber*) numberInWrongSpotForCode: (NSString*) code andGuess: (NSString*) guess;
+-(NSNumber*) numberCorrectForCode: (NSArray*) code andGuess: (NSArray*) guess;
+-(NSNumber*) numberInWrongSpotForCode: (NSArray*) code andGuess: (NSArray*) guess;
 
 @end
