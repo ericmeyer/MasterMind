@@ -1,13 +1,13 @@
-#import "MMSecretCodeViewController.h"
+#import "MMCodeViewController.h"
 #import "MMCodePeg.h"
 #import "ConciseKit.h"
 
-@interface MMSecretCodeViewController (private)
+@interface MMCodeViewController (private)
 -(void) initEmptyPegs;
 -(MMCodePeg*) emptyPeg;
 @end
 
-@implementation MMSecretCodeViewController
+@implementation MMCodeViewController
 
 @synthesize availablePegsController;
 @synthesize pegs;

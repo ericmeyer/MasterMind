@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "MMSecretCodeViewController.h"
+#import "MMCodeViewController.h"
 #import "MMAvailablePegsViewController.h"
 
 @interface ViewController : UIViewController {
@@ -7,7 +7,7 @@
     IBOutlet UILabel* numberInWrongSpot;
     IBOutlet UITextField* secretCode;
     IBOutlet UITextField* guess;
-    IBOutlet MMSecretCodeViewController* secretCodeViewController;
+    IBOutlet MMCodeViewController* secretCodeViewController;
     IBOutlet UIView* secretCodeView;
     MMAvailablePegsViewController* availablePegsViewController;
 }
@@ -15,7 +15,7 @@
 @property (nonatomic, retain) UILabel* numberInWrongSpot;
 @property (nonatomic, retain) UITextField* secretCode;
 @property (nonatomic, retain) UITextField* guess;
-@property (nonatomic, retain) MMSecretCodeViewController* secretCodeViewController;
+@property (nonatomic, retain) MMCodeViewController* secretCodeViewController;
 @property (nonatomic, retain) UIView* secretCodeView;
 @property (nonatomic, retain) MMAvailablePegsViewController* availablePegsViewController;
 

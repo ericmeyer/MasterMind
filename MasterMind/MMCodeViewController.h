@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "MMAvailablePegsViewController.h"
 
-@interface MMSecretCodeViewController : UIViewController {
+@interface MMCodeViewController : UIViewController {
     MMAvailablePegsViewController* availablePegsController;
     NSMutableArray* pegs;
 }

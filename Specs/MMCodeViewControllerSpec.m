@@ -1,17 +1,17 @@
 #import "OCDSpec/OCDSpec.h" 
-#import "MMSecretCodeViewController.h"
+#import "MMCodeViewController.h"
 #import "MMAvailablePegsViewController.h"
 #import "ConciseKit.h"
 
-CONTEXT(MMSecretCodeViewControllerSpec)
+CONTEXT(MMCodeViewControllerSpec)
 {
-    __block MMSecretCodeViewController* controller;
+    __block MMCodeViewController* controller;
     __block MMAvailablePegsViewController* availablePegs;
     
     describe(@"on init",
              beforeEach(
                 ^{
-                    controller = [MMSecretCodeViewController new];
+                    controller = [MMCodeViewController new];
                 }),
              it(@"starts with 4 pegs",
                 ^{
@@ -34,7 +34,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
     describe(@"viewDidLoad",
              beforeEach(
                 ^{
-                    controller = [[MMSecretCodeViewController alloc]  initWithNibName: nil
+                    controller = [[MMCodeViewController alloc]  initWithNibName: nil
                                                                                bundle: nil];
                     [controller viewDidLoad];
                 }),
@@ -50,7 +50,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
     describe(@"touchPeg",
              beforeEach(
                 ^{
-                    controller = [MMSecretCodeViewController new];
+                    controller = [MMCodeViewController new];
                     availablePegs = [MMAvailablePegsViewController new];
                     controller.availablePegsController = availablePegs;
                 }),
@@ -67,7 +67,7 @@ CONTEXT(MMSecretCodeViewControllerSpec)
     describe(@"code",
              beforeEach(
                 ^{
-                    controller = [MMSecretCodeViewController new];
+                    controller = [MMCodeViewController new];
                 }),
              it(@"has a code with all colors set",
                 ^{
