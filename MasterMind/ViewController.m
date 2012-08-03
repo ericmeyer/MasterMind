@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.secretCodeViewController = [[MMCodeViewController alloc] initWithNibName: @"MMCodeViewController"
+    self.secretCodeViewController = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
                                                                            bundle: nil];
     self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
                                                                                        bundle: nil];

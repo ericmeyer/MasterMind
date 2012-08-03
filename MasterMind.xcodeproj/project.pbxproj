@@ -39,12 +39,12 @@
 		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMCodePegSpec.m */; };
-		074A146915C74A14003B1953 /* MMCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMCodeViewController.m */; };
-		074A146B15C74A14003B1953 /* MMCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMCodeViewController.m */; };
-		074A146C15C74A14003B1953 /* MMCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMCodeViewController.xib */; };
-		074A146D15C74A14003B1953 /* MMCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMCodeViewController.xib */; };
-		074A146E15C74A14003B1953 /* MMCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMCodeViewController.xib */; };
-		074A147715C77D7C003B1953 /* MMCodeViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147615C77D7C003B1953 /* MMCodeViewControllerSpec.m */; };
+		074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
+		074A146B15C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
+		074A146C15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
+		074A146D15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
+		074A146E15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
+		074A147715C77D7C003B1953 /* MMPegListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */; };
 		074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
@@ -133,10 +133,10 @@
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
-		074A146615C74A14003B1953 /* MMCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodeViewController.h; sourceTree = "<group>"; };
-		074A146715C74A14003B1953 /* MMCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeViewController.m; sourceTree = "<group>"; };
-		074A146815C74A14003B1953 /* MMCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMCodeViewController.xib; sourceTree = "<group>"; };
-		074A147615C77D7C003B1953 /* MMCodeViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeViewControllerSpec.m; sourceTree = "<group>"; };
+		074A146615C74A14003B1953 /* MMPegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MMPegListViewController.h; sourceTree = "<group>"; };
+		074A146715C74A14003B1953 /* MMPegListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewController.m; sourceTree = "<group>"; };
+		074A146815C74A14003B1953 /* MMPegListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMPegListViewController.xib; sourceTree = "<group>"; };
+		074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewControllerSpec.m; sourceTree = "<group>"; };
 		074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePegsViewController.h; sourceTree = "<group>"; };
 		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
 		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
@@ -292,9 +292,9 @@
 			children = (
 				F83ABA461528A964006FB6EC /* ViewController.h */,
 				F83ABA471528A964006FB6EC /* ViewController.m */,
-				074A146615C74A14003B1953 /* MMCodeViewController.h */,
-				074A146715C74A14003B1953 /* MMCodeViewController.m */,
-				074A146815C74A14003B1953 /* MMCodeViewController.xib */,
+				074A146615C74A14003B1953 /* MMPegListViewController.h */,
+				074A146715C74A14003B1953 /* MMPegListViewController.m */,
+				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
 				074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */,
 				074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */,
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
@@ -308,7 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
-				074A147615C77D7C003B1953 /* MMCodeViewControllerSpec.m */,
+				074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */,
 				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
 				072255A315C814CF008EFF3F /* MMCodePegSpec.m */,
 			);
@@ -693,7 +693,7 @@
 			files = (
 				F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */,
 				F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */,
-				074A146D15C74A14003B1953 /* MMCodeViewController.xib in Resources */,
+				074A146D15C74A14003B1953 /* MMPegListViewController.xib in Resources */,
 				074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 				0722557D15C80AB3008EFF3F /* blue_peg.png in Resources */,
 				0722558015C80AB3008EFF3F /* blue_peg_active.png in Resources */,
@@ -712,7 +712,7 @@
 			files = (
 				F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */,
 				F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */,
-				074A146E15C74A14003B1953 /* MMCodeViewController.xib in Resources */,
+				074A146E15C74A14003B1953 /* MMPegListViewController.xib in Resources */,
 				074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 				0722557E15C80AB3008EFF3F /* blue_peg.png in Resources */,
 				0722558115C80AB3008EFF3F /* blue_peg_active.png in Resources */,
@@ -733,7 +733,7 @@
 				F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */,
 				F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */,
 				F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */,
-				074A146C15C74A14003B1953 /* MMCodeViewController.xib in Resources */,
+				074A146C15C74A14003B1953 /* MMPegListViewController.xib in Resources */,
 				074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 				0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */,
 				0722557F15C80AB3008EFF3F /* blue_peg_active.png in Resources */,
@@ -825,8 +825,8 @@
 				075BA90F15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */,
 				075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */,
-				074A146B15C74A14003B1953 /* MMCodeViewController.m in Sources */,
-				074A147715C77D7C003B1953 /* MMCodeViewControllerSpec.m in Sources */,
+				074A146B15C74A14003B1953 /* MMPegListViewController.m in Sources */,
+				074A147715C77D7C003B1953 /* MMPegListViewControllerSpec.m in Sources */,
 				074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
 				0722559C15C80E6E008EFF3F /* MMGame.m in Sources */,
@@ -848,7 +848,7 @@
 				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
 				F83ABA481528A964006FB6EC /* ViewController.m in Sources */,
 				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
-				074A146915C74A14003B1953 /* MMCodeViewController.m in Sources */,
+				074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				0722559A15C80E6E008EFF3F /* MMGame.m in Sources */,
 				072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */,
