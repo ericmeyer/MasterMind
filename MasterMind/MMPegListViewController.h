@@ -8,6 +8,8 @@
 @property (nonatomic, retain) MMAvailablePegsViewController* availablePegsController;
 @property (nonatomic, retain) NSMutableArray* pegs;
 
++(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController;
+
 -(IBAction) touchPeg:(id) sender;
 
 -(NSArray*) pegList;

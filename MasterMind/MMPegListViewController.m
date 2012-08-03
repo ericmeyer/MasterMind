@@ -12,6 +12,14 @@
 @synthesize availablePegsController;
 @synthesize pegs;
 
++(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController {
+    MMPegListViewController* controller;
+    controller = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
+                                                                              bundle: nil];
+    controller.availablePegsController = givenAvailablePegsController;
+    return controller;
+}
+
 -(IBAction) touchPeg:(id) sender {
     MMCodePeg* touchedPeg = (MMCodePeg*) sender;
     if (self.availablePegsController.activePeg.color) {

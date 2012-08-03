@@ -34,18 +34,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.secretCodeViewController = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
-                                                                              bundle: nil];
-    self.guessViewController = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
-                                                                         bundle: nil];
+    
 
     self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
-                                                                                       bundle: nil];
-    self.secretCodeViewController.availablePegsController = self.availablePegsViewController;
-    
-    
-    self.guessViewController.availablePegsController = self.availablePegsViewController;
-    
+                                                                                       bundle: nil];    
+    self.guessViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availablePegsViewController];
+    self.secretCodeViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availablePegsViewController];
     
     float availablePegsWidth = CGRectGetWidth(self.availablePegsViewController.view.frame);
     [self.secretCodeViewController.view setFrame: CGRectMake(availablePegsWidth, 0.0, 400.0, 96.0)];
