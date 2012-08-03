@@ -14,6 +14,12 @@
     return peg;
 }
 
++(id) emptyPeg {
+    MMCodePeg* peg = [[MMCodePeg new] autorelease];
+    [peg setImage: @"empty_peg"];
+    return peg;
+}
+
 -(void) changeColor:(NSString*) newColor {
     self.color = newColor;
     [self setImage: [NSString stringWithFormat: @"%@_peg.png", self.color]];

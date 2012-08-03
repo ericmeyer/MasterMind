@@ -17,7 +17,28 @@
     [touchedPeg changeColor: self.availablePegsController.activePeg.color];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(NSArray*) pegColors {
+    return [self.pegs $map:^(id peg){
+        return ((MMCodePeg*)peg).color;
+    }];
+}
+
+-(BOOL) allPegsSet {
+    MMCodePeg* unsetPeg = [self.pegs $detect:^BOOL(id peg){
+        return ((MMCodePeg*)peg).color == NULL;  
+    }];
+    return (unsetPeg == NULL);
+}
+
+-(NSArray*) code {
+    if ([self allPegsSet]) {
+        return [self pegColors];
+    } else {
+        return NULL;
+    }
+}
+
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -43,7 +64,7 @@
 }
 
 -(MMCodePeg*) emptyPeg {
-    MMCodePeg* emptyPeg = [MMCodePeg pegWithColor: @"red"];
+    MMCodePeg* emptyPeg = [MMCodePeg emptyPeg];
     [emptyPeg addTarget: self
                  action: @selector(touchPeg:)
        forControlEvents:UIControlEventTouchUpInside];

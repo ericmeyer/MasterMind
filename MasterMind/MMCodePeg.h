@@ -8,6 +8,7 @@
 @property (readwrite, assign) BOOL isActive;;
 
 +(id) pegWithColor:(NSString*) givenColor;
++(id) emptyPeg;
 
 -(void) changeColor:(NSString*) newColor;
 

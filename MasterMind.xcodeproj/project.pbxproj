@@ -57,6 +57,8 @@
 		075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91015C60DE5002E0086 /* MMCodeSpec.m */; };
 		075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91115C60DE5002E0086 /* ViewControllerSpec.m */; };
 		075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91515C60DF9002E0086 /* GuessChecker.m */; };
+		077655A115CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
+		077655A215CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
 		0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
 		0784EF0215C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
 		0784EF0315C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
@@ -128,7 +130,7 @@
 		0722559815C80E6E008EFF3F /* MMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGame.h; sourceTree = "<group>"; };
 		0722559915C80E6E008EFF3F /* MMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGame.m; sourceTree = "<group>"; };
 		0722559D15C80F17008EFF3F /* MMGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameSpec.m; sourceTree = "<group>"; };
-		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MMCodePeg.h; sourceTree = "<group>"; };
+		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
 		074A146615C74A14003B1953 /* MMSecretCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecretCodeViewController.h; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		075BA91115C60DE5002E0086 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
 		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
+		077655A015CB5A0C00666F3F /* empty_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_peg.png; sourceTree = "<group>"; };
 		0784EEF615C9651600D0A738 /* CKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKAdditions.h; path = ConciseKit/src/CKAdditions.h; sourceTree = "<group>"; };
 		0784EEF715C9651600D0A738 /* CKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKMacros.h; path = ConciseKit/src/CKMacros.h; sourceTree = "<group>"; };
 		0784EEF815C9651600D0A738 /* CKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKSingleton.h; path = ConciseKit/src/CKSingleton.h; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 		0722557315C80AB3008EFF3F /* pegs */ = {
 			isa = PBXGroup;
 			children = (
+				077655A015CB5A0C00666F3F /* empty_peg.png */,
 				0722557415C80AB3008EFF3F /* blue_peg.png */,
 				0722557515C80AB3008EFF3F /* blue_peg_active.png */,
 				0722557615C80AB3008EFF3F /* orange_peg.png */,
@@ -294,6 +298,17 @@
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
 				0722559F15C8149A008EFF3F /* MMCodePeg.h */,
 				072255A015C8149A008EFF3F /* MMCodePeg.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0776559E15CB575E00666F3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
+				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
+				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
+				072255A315C814CF008EFF3F /* MMCodePegSpec.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -460,12 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				F812EFD1152BC795005E5D13 /* OCDSpec */,
+				0776559E15CB575E00666F3F /* View */,
 				075BA91015C60DE5002E0086 /* MMCodeSpec.m */,
-				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
-				074A147615C77D7C003B1953 /* MMSecretCodeViewControllerSpec.m */,
-				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
 				0722559D15C80F17008EFF3F /* MMGameSpec.m */,
-				072255A315C814CF008EFF3F /* MMCodePegSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -710,6 +722,7 @@
 				0722558D15C80AB3008EFF3F /* red_peg_active.png in Resources */,
 				0722559015C80AB3008EFF3F /* yellow_peg.png in Resources */,
 				0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
+				077655A215CB5A0C00666F3F /* empty_peg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +743,7 @@
 				0722558B15C80AB3008EFF3F /* red_peg_active.png in Resources */,
 				0722558E15C80AB3008EFF3F /* yellow_peg.png in Resources */,
 				0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
+				077655A115CB5A0C00666F3F /* empty_peg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

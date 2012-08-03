@@ -5,9 +5,29 @@ UIImage* imageFor(MMCodePeg* givenPeg);
 UIImage* imageFor(MMCodePeg* givenPeg) {
     return [givenPeg imageForState: UIControlStateNormal];
 }
+
 CONTEXT(MMCodePegSpec)
 {
     __block MMCodePeg* peg;
+    
+    describe(@"pegWithColor",
+             beforeEach(
+                ^{
+                    peg = [MMCodePeg emptyPeg];
+                }),
+             it(@"has no color",
+                ^{
+                    [expect(peg.color) toBe: NULL];
+                }),
+             it(@"has an image",
+                ^{
+                    expectFalse(imageFor(peg) == NULL);
+                }),
+             it(@"is inactive",
+                ^{
+                    expectFalse(peg.isActive);
+                }),
+             nil);
     
     describe(@"pegWithColor",
              beforeEach(
