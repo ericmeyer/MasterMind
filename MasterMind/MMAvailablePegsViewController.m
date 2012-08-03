@@ -8,7 +8,7 @@
 
 @implementation MMAvailablePegsViewController
 
-@synthesize activePegString, activePegLabel, availablePegs, activePeg;
+@synthesize availablePegs, activePeg;
 
 -(IBAction) clickPeg:(id) sender {
     MMCodePeg* clickedButton = ((MMCodePeg*)sender);
@@ -19,7 +19,6 @@
         [self setActivePeg: clickedButton];
         [self.activePeg activate];
     }
-    self.activePegLabel.text = self.activePeg.color;
 }
 
 - (void)initAvailablePegs

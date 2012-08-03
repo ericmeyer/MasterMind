@@ -8,14 +8,10 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
     __block MMCodePeg* clickedPeg;
     
     describe(@"on init",
-             it(@"has no activePegString",
-                ^{
-                    controller = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
-                                                                                 bundle: nil];
-                    [expect(controller.activePegString) toBe: NULL];
-                }),
              it(@"has 4 pegs",
                 ^{
+                    controller = [MMAvailablePegsViewController new];
+
                     [expect([NSNumber numberWithInt: [controller.availablePegs count]])
                      toBeEqualTo: [NSNumber numberWithInt: 4]];
                 }),
@@ -25,7 +21,6 @@ CONTEXT(MMAvailablePegsViewControllerSpec)
              beforeEach(
                 ^{
                     controller = [MMAvailablePegsViewController new];
-                    controller.activePegLabel = [UILabel new];
                     clickedPeg = [MMCodePeg pegWithColor: @"red"];
                 }),
              it(@"sets the activePeg to the clicked peg",
