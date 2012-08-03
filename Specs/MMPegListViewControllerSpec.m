@@ -86,7 +86,7 @@ CONTEXT(MMPegListViewControllerSpec)
                     [[controller.pegs objectAtIndex: 2] changeColor: @"blue"];
                     [[controller.pegs objectAtIndex: 3] changeColor: @"yellow"];
                     
-                    [expect([controller code]) toBeEqualTo: $arr(@"red", @"orange", @"blue", @"yellow")];
+                    [expect([controller pegList]) toBeEqualTo: $arr(@"red", @"orange", @"blue", @"yellow")];
                 }),
              it(@"has no code with some unset colors",
                 ^{
@@ -94,7 +94,7 @@ CONTEXT(MMPegListViewControllerSpec)
                     [[controller.pegs objectAtIndex: 1] changeColor: @"orange"];
                     [[controller.pegs objectAtIndex: 3] changeColor: @"yellow"];
                     
-                    expectTruth([controller code] == NULL);
+                    expectTruth([controller pegList] == NULL);
                 }),
              nil);
     

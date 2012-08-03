@@ -43,6 +43,12 @@ CONTEXT(ViewControllerSpec)
 
                     expectFalse(controller.secretCodeViewController == NULL);
                 }),
+             it(@"has a guess view controller",
+                ^{
+                    [controller viewDidLoad];
+                    
+                    expectFalse(controller.guessViewController == NULL);
+                }),
              it(@"has an available pegs view controller",
                 ^{
                     [controller viewDidLoad];
@@ -54,6 +60,13 @@ CONTEXT(ViewControllerSpec)
                     [controller viewDidLoad];
                     
                     [expect(controller.secretCodeViewController.availablePegsController)
+                     toBeEqualTo: controller.availablePegsViewController];
+                }),
+             it(@"sets the guess' availablePegs",
+                ^{
+                    [controller viewDidLoad];
+                    
+                    [expect(controller.guessViewController.availablePegsController)
                      toBeEqualTo: controller.availablePegsViewController];
                 }),
              nil);

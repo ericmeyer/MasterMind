@@ -5,7 +5,7 @@
 @implementation ViewController
 
 @synthesize numberCorrect, numberInWrongSpot, secretCode, guess;
-@synthesize secretCodeViewController, secretCodeView, availablePegsViewController;
+@synthesize secretCodeViewController, guessViewController, secretCodeView, availablePegsViewController;
 
 - (void)didReceiveMemoryWarning
 {
@@ -35,26 +35,51 @@
 {
     [super viewDidLoad];
     self.secretCodeViewController = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
-                                                                           bundle: nil];
+                                                                              bundle: nil];
+    self.guessViewController = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
+                                                                         bundle: nil];
+
     self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
                                                                                        bundle: nil];
+    self.secretCodeViewController.availablePegsController = self.availablePegsViewController;
+    
+    
+    self.guessViewController.availablePegsController = self.availablePegsViewController;
+    
+    
     float availablePegsWidth = CGRectGetWidth(self.availablePegsViewController.view.frame);
     [self.secretCodeViewController.view setFrame: CGRectMake(availablePegsWidth, 0.0, 400.0, 96.0)];
-    self.secretCodeViewController.availablePegsController = self.availablePegsViewController;
+
+    [self.guessViewController.view setFrame: CGRectMake(availablePegsWidth, 100, 400.0, 96.0)];
+    
+    
+    
+    
     [self.view addSubview: self.availablePegsViewController.view];
     [self.view addSubview: self.secretCodeViewController.view];
+    [self.view addSubview: self.guessViewController.view];
+
+    
     [self setInitialGuessResults];
     [self setInitialSecretCode];
     [self setInitialGuess];
 }
 
+-(NSArray*) codeArray {
+    return [self.secretCode.text $chars];
+}
+
+-(NSArray*) guessArray {
+    return [self.guess.text $chars];
+}
+
 -(IBAction) takeGuess
 {
     MMCode* mmCode = [[MMCode alloc] init];
-    self.numberCorrect.text = [[mmCode numberCorrectForCode: [self.secretCode.text $chars]
-                                                   andGuess: [self.guess.text $chars]] stringValue];
-    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: [self.secretCode.text $chars]
-                                                           andGuess: [self.guess.text $chars]] stringValue];
+    self.numberCorrect.text = [[mmCode numberCorrectForCode: [self codeArray]
+                                                   andGuess: [self guessArray]] stringValue];
+    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: [self codeArray]
+                                                           andGuess: [self guessArray]] stringValue];
     [mmCode release];
 }
 

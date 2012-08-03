@@ -8,6 +8,7 @@
     IBOutlet UITextField* secretCode;
     IBOutlet UITextField* guess;
     IBOutlet MMPegListViewController* secretCodeViewController;
+    IBOutlet MMPegListViewController* guessViewController;
     IBOutlet UIView* secretCodeView;
     MMAvailablePegsViewController* availablePegsViewController;
 }
@@ -16,6 +17,7 @@
 @property (nonatomic, retain) UITextField* secretCode;
 @property (nonatomic, retain) UITextField* guess;
 @property (nonatomic, retain) MMPegListViewController* secretCodeViewController;
+@property (nonatomic, retain) MMPegListViewController* guessViewController;
 @property (nonatomic, retain) UIView* secretCodeView;
 @property (nonatomic, retain) MMAvailablePegsViewController* availablePegsViewController;
 

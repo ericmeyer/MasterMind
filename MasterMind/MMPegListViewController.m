@@ -4,7 +4,7 @@
 
 @interface MMPegListViewController (private)
 -(void) initEmptyPegs;
--(MMCodePeg*) emptyPeg;
+-(MMCodePeg*) emptyPegWithTarget;
 @end
 
 @implementation MMPegListViewController
@@ -32,7 +32,7 @@
     return (unsetPeg == NULL);
 }
 
--(NSArray*) code {
+-(NSArray*) pegList {
     if ([self allPegsSet]) {
         return [self pegColors];
     } else {
@@ -61,11 +61,11 @@
 -(void) initEmptyPegs {
     self.pegs = [NSMutableArray array];
     for (int i=0; i<4; i++) {
-        [self.pegs addObject: [self emptyPeg]];
+        [self.pegs addObject: [self emptyPegWithTarget]];
     }
 }
 
--(MMCodePeg*) emptyPeg {
+-(MMCodePeg*) emptyPegWithTarget {
     MMCodePeg* emptyPeg = [MMCodePeg emptyPeg];
     [emptyPeg addTarget: self
                  action: @selector(touchPeg:)

@@ -10,6 +10,6 @@
 
 -(IBAction) touchPeg:(id) sender;
 
--(NSArray*) code;
+-(NSArray*) pegList;
 
 @end
