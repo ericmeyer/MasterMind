@@ -14,7 +14,9 @@
 
 -(IBAction) touchPeg:(id) sender {
     MMCodePeg* touchedPeg = (MMCodePeg*) sender;
-    [touchedPeg changeColor: self.availablePegsController.activePeg.color];
+    if (self.availablePegsController.activePeg.color) {
+        [touchedPeg changeColor: self.availablePegsController.activePeg.color];
+    }
 }
 
 -(NSArray*) pegColors {

@@ -62,6 +62,16 @@ CONTEXT(MMCodeViewControllerSpec)
                     
                     [expect(touchedPeg.color) toBeEqualTo: @"blue"];
                 }),
+             it(@"does nothing if there is no active peg",
+                ^{
+                    MMCodePeg* touchedPeg = [controller.pegs objectAtIndex: 2];
+                    availablePegs.activePeg = [MMCodePeg pegWithColor: @"blue"];
+                    [controller touchPeg: touchedPeg];
+                    availablePegs.activePeg = [MMCodePeg emptyPeg];
+                    [controller touchPeg: touchedPeg];
+
+                    [expect(touchedPeg.color) toBeEqualTo: @"blue"];
+                }),
              nil);
     
     describe(@"code",
