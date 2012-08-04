@@ -84,11 +84,13 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
         if ([returnType isEqualToString: @"@"]) {
             if([NSStringFromClass([result class]) isEqualToString: @"NSCFString"]) {
                 return NSStringToCString(result);
+            } else if ([NSStringFromClass([result class]) isEqualToString: @"__NSCFConstantString"]) {
+                return NSStringToCString(result);
             } else {
                 return NSStringToCString([result stringValue]);
             }
         } else if ([returnType isEqualToString: @"i"]) {
-            return NSStringToCString([NSString stringWithFormat: @"%d", result]);
+            return NSStringToCString([NSString stringWithFormat: @"%i", (int)result]);
         } else {
             return "OK";
         }

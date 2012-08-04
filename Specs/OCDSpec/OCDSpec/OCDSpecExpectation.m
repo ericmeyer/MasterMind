@@ -37,13 +37,13 @@
 -(void) toBeTrue
 {
     if (![actualObject boolValue])
-        [OCDSpecFail fail:[NSString stringWithFormat:@"%b was expected to be true, but was false", actualObject] atLine:line inFile:file];
+        [OCDSpecFail fail:[NSString stringWithFormat:@"%i was expected to be true, but was false", (BOOL)actualObject] atLine:line inFile:file];
 }
 
 -(void) toBeFalse
 {
     if ([actualObject boolValue]) {
-        [OCDSpecFail fail:[NSString stringWithFormat:@"%b was expected to be false, but was true", actualObject] atLine:line inFile:file];
+        [OCDSpecFail fail:[NSString stringWithFormat:@"%i was expected to be false, but was true", (BOOL)actualObject] atLine:line inFile:file];
     }
 }
 
