@@ -9,7 +9,7 @@
 }
 
 -(NSNumber*) remainingGuesses {
-    return game.numberOfRemainingGuesses;
+    return [game numberOfRemainingGuesses];
 }
 
 -(BOOL) gameIsOver {
