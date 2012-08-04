@@ -1,7 +1,7 @@
 Initial Game State
 
-!|script|GameRunner             |
-|start new game                 |
-|check  |remaining guesses|20   |
-|check  |game over        |false|
-|check  |did win          |false|
+!|script|GameRunner          |
+|start new game              |
+|check  |remaining guesses|20|
+|reject |game is over        |
+|reject |player did win      |

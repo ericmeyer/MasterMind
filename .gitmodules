@@ -1,3 +1,6 @@
 [submodule "ConciseKit"]
 	path = ConciseKit
 	url = https://github.com/ericmeyer/ConciseKit.git
+[submodule "cslim"]
+	path = cslim
+	url = https://github.com/dougbradbury/cslim.git

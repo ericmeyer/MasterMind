@@ -39,6 +39,15 @@
 		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMCodePegSpec.m */; };
+		0749FD6315CCB40F00E8CB0A /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6115CCB40F00E8CB0A /* SocketServer.c */; };
+		0749FD6415CCB40F00E8CB0A /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6215CCB40F00E8CB0A /* TcpComLink.c */; };
+		0749FD6D15CCB43100E8CB0A /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6615CCB43100E8CB0A /* ListExecutor.c */; };
+		0749FD6E15CCB43100E8CB0A /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6715CCB43100E8CB0A /* Slim.c */; };
+		0749FD6F15CCB43100E8CB0A /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6815CCB43100E8CB0A /* SlimConnectionHandler.c */; };
+		0749FD7015CCB43100E8CB0A /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6915CCB43100E8CB0A /* SlimList.c */; };
+		0749FD7115CCB43100E8CB0A /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6A15CCB43100E8CB0A /* SlimListDeserializer.c */; };
+		0749FD7215CCB43100E8CB0A /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6B15CCB43100E8CB0A /* SlimListSerializer.c */; };
+		0749FD7315CCB43100E8CB0A /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6C15CCB43100E8CB0A /* SlimUtil.c */; };
 		074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
 		074A146B15C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
 		074A146C15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
@@ -71,23 +80,15 @@
 		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
 		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
 		0784EF0C15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
+		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; };
+		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
+		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
 		F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
-		F812EF89152BC6E1005E5D13 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF88152BC6E1005E5D13 /* SocketServer.c */; };
-		F812EF8B152BC6E1005E5D13 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8A152BC6E1005E5D13 /* TcpComLink.c */; };
-		F812EF8E152BC6E1005E5D13 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8D152BC6E1005E5D13 /* ListExecutor.c */; };
-		F812EF90152BC6E1005E5D13 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF8F152BC6E1005E5D13 /* Slim.c */; };
-		F812EF92152BC6E1005E5D13 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */; };
-		F812EF94152BC6E1005E5D13 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF93152BC6E1005E5D13 /* SlimList.c */; };
-		F812EF96152BC6E1005E5D13 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */; };
-		F812EF98152BC6E1005E5D13 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */; };
-		F812EF9A152BC6E1005E5D13 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EF99152BC6E1005E5D13 /* SlimUtil.c */; };
-		F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */; };
 		F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFB0152BC6E1005E5D13 /* Fixtures.m */; };
 		F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */; };
 		F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */; };
-		F812EFB7152BC6E1005E5D13 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F812EFB6152BC6E1005E5D13 /* Main.c */; };
 		F812EFCD152BC795005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F812EFCE152BC795005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F812EFCF152BC795005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -133,7 +134,16 @@
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
-		074A146615C74A14003B1953 /* MMPegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MMPegListViewController.h; sourceTree = "<group>"; };
+		0749FD6115CCB40F00E8CB0A /* SocketServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = SOURCE_ROOT; };
+		0749FD6215CCB40F00E8CB0A /* TcpComLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = SOURCE_ROOT; };
+		0749FD6615CCB43100E8CB0A /* ListExecutor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = SOURCE_ROOT; };
+		0749FD6715CCB43100E8CB0A /* Slim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Slim.c; path = cslim/src/CSlim/Slim.c; sourceTree = SOURCE_ROOT; };
+		0749FD6815CCB43100E8CB0A /* SlimConnectionHandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SlimConnectionHandler.c; path = cslim/src/CSlim/SlimConnectionHandler.c; sourceTree = SOURCE_ROOT; };
+		0749FD6915CCB43100E8CB0A /* SlimList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SlimList.c; path = cslim/src/CSlim/SlimList.c; sourceTree = SOURCE_ROOT; };
+		0749FD6A15CCB43100E8CB0A /* SlimListDeserializer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SlimListDeserializer.c; path = cslim/src/CSlim/SlimListDeserializer.c; sourceTree = SOURCE_ROOT; };
+		0749FD6B15CCB43100E8CB0A /* SlimListSerializer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SlimListSerializer.c; path = cslim/src/CSlim/SlimListSerializer.c; sourceTree = SOURCE_ROOT; };
+		0749FD6C15CCB43100E8CB0A /* SlimUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SlimUtil.c; path = cslim/src/CSlim/SlimUtil.c; sourceTree = SOURCE_ROOT; };
+		074A146615C74A14003B1953 /* MMPegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPegListViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMPegListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMPegListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMPegListViewController.xib; sourceTree = "<group>"; };
 		074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewControllerSpec.m; sourceTree = "<group>"; };
@@ -159,34 +169,27 @@
 		0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ConciseKit.m"; path = "ConciseKit/src/NSDictionary+ConciseKit.m"; sourceTree = "<group>"; };
 		0784EEFF15C9651600D0A738 /* NSString+ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ConciseKit.h"; path = "ConciseKit/src/NSString+ConciseKit.h"; sourceTree = "<group>"; };
 		0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ConciseKit.m"; path = "ConciseKit/src/NSString+ConciseKit.m"; sourceTree = "<group>"; };
+		07A1BF9915CCB45C006079BC /* StatementExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = cslim/src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = SOURCE_ROOT; };
+		07A1BF9C15CCB46F006079BC /* SocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = cslim/include/Com/SocketServer.h; sourceTree = SOURCE_ROOT; };
+		07A1BF9D15CCB46F006079BC /* TcpComLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = cslim/include/Com/TcpComLink.h; sourceTree = SOURCE_ROOT; };
+		07A1BF9E15CCB487006079BC /* Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = cslim/include/CSlim/Fixtures.h; sourceTree = SOURCE_ROOT; };
+		07A1BF9F15CCB487006079BC /* ListExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA015CCB487006079BC /* Slim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA115CCB487006079BC /* SlimConnectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = cslim/include/CSlim/SlimConnectionHandler.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA215CCB487006079BC /* SlimList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlimList.h; path = cslim/include/CSlim/SlimList.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA315CCB487006079BC /* SlimListDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlimListDeserializer.h; path = cslim/include/CSlim/SlimListDeserializer.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA415CCB487006079BC /* SlimListSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlimListSerializer.h; path = cslim/include/CSlim/SlimListSerializer.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA515CCB487006079BC /* SlimUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlimUtil.h; path = cslim/include/CSlim/SlimUtil.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA615CCB487006079BC /* StatementExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatementExecutor.h; path = cslim/include/CSlim/StatementExecutor.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA715CCB4C1006079BC /* OCSReturnValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = SOURCE_ROOT; };
+		07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = SOURCE_ROOT; };
+		07A1BFAA15CCB4DD006079BC /* SymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = SOURCE_ROOT; };
+		07A1BFAB15CCB4F0006079BC /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = SOURCE_ROOT; };
 		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F812EF88152BC6E1005E5D13 /* SocketServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = "<group>"; };
-		F812EF8A152BC6E1005E5D13 /* TcpComLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = "<group>"; };
-		F812EF8D152BC6E1005E5D13 /* ListExecutor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = "<group>"; };
-		F812EF8F152BC6E1005E5D13 /* Slim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Slim.c; path = cslim/src/CSlim/Slim.c; sourceTree = "<group>"; };
-		F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimConnectionHandler.c; path = cslim/src/CSlim/SlimConnectionHandler.c; sourceTree = "<group>"; };
-		F812EF93152BC6E1005E5D13 /* SlimList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimList.c; path = cslim/src/CSlim/SlimList.c; sourceTree = "<group>"; };
-		F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimListDeserializer.c; path = cslim/src/CSlim/SlimListDeserializer.c; sourceTree = "<group>"; };
-		F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimListSerializer.c; path = cslim/src/CSlim/SlimListSerializer.c; sourceTree = "<group>"; };
-		F812EF99152BC6E1005E5D13 /* SlimUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SlimUtil.c; path = cslim/src/CSlim/SlimUtil.c; sourceTree = "<group>"; };
-		F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = cslim/src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = "<group>"; };
-		F812EFA0152BC6E1005E5D13 /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = cslim/include/Com/SocketServer.h; sourceTree = "<group>"; };
-		F812EFA1152BC6E1005E5D13 /* TcpComLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = cslim/include/Com/TcpComLink.h; sourceTree = "<group>"; };
-		F812EFA3152BC6E1005E5D13 /* Fixtures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = cslim/include/CSlim/Fixtures.h; sourceTree = "<group>"; };
-		F812EFA4152BC6E1005E5D13 /* ListExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
-		F812EFA5152BC6E1005E5D13 /* Slim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = "<group>"; };
-		F812EFA6152BC6E1005E5D13 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = cslim/include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
-		F812EFA7152BC6E1005E5D13 /* SlimList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimList.h; path = cslim/include/CSlim/SlimList.h; sourceTree = "<group>"; };
-		F812EFA8152BC6E1005E5D13 /* SlimListDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimListDeserializer.h; path = cslim/include/CSlim/SlimListDeserializer.h; sourceTree = "<group>"; };
-		F812EFA9152BC6E1005E5D13 /* SlimListSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimListSerializer.h; path = cslim/include/CSlim/SlimListSerializer.h; sourceTree = "<group>"; };
-		F812EFAA152BC6E1005E5D13 /* SlimUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimUtil.h; path = cslim/include/CSlim/SlimUtil.h; sourceTree = "<group>"; };
-		F812EFAB152BC6E1005E5D13 /* StatementExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatementExecutor.h; path = cslim/include/CSlim/StatementExecutor.h; sourceTree = "<group>"; };
-		F812EFAD152BC6E1005E5D13 /* SymbolTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = "<group>"; };
 		F812EFAF152BC6E1005E5D13 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = fitnesse.jar; path = ../fitnesse.jar; sourceTree = "<group>"; };
 		F812EFB0152BC6E1005E5D13 /* Fixtures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = SupportingFiles/Fixtures.m; sourceTree = "<group>"; };
 		F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = SupportingFiles/InfoPlist.strings; sourceTree = "<group>"; };
 		F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "SupportingFiles/iPhone-Prefix.pch"; sourceTree = "<group>"; };
-		F812EFB6152BC6E1005E5D13 /* Main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = "<group>"; };
 		F812EFBA152BC6E1005E5D13 /* OneTimeSetup */ = {isa = PBXFileReference; lastKnownFileType = text; name = OneTimeSetup; path = ../bin/iPhoneRunner/OneTimeSetup; sourceTree = "<group>"; };
 		F812EFBB152BC6E1005E5D13 /* StartFitnesse */ = {isa = PBXFileReference; lastKnownFileType = text; name = StartFitnesse; path = ../bin/StartFitnesse; sourceTree = "<group>"; };
 		F812EFBC152BC6E1005E5D13 /* RunSlimTests */ = {isa = PBXFileReference; lastKnownFileType = text; name = RunSlimTests; path = ../bin/iPhoneRunner/RunSlimTests; sourceTree = "<group>"; };
@@ -369,8 +372,8 @@
 		F812EF87152BC6E1005E5D13 /* Com */ = {
 			isa = PBXGroup;
 			children = (
-				F812EF88152BC6E1005E5D13 /* SocketServer.c */,
-				F812EF8A152BC6E1005E5D13 /* TcpComLink.c */,
+				0749FD6115CCB40F00E8CB0A /* SocketServer.c */,
+				0749FD6215CCB40F00E8CB0A /* TcpComLink.c */,
 			);
 			name = Com;
 			sourceTree = "<group>";
@@ -378,13 +381,13 @@
 		F812EF8C152BC6E1005E5D13 /* CSlim */ = {
 			isa = PBXGroup;
 			children = (
-				F812EF8D152BC6E1005E5D13 /* ListExecutor.c */,
-				F812EF8F152BC6E1005E5D13 /* Slim.c */,
-				F812EF91152BC6E1005E5D13 /* SlimConnectionHandler.c */,
-				F812EF93152BC6E1005E5D13 /* SlimList.c */,
-				F812EF95152BC6E1005E5D13 /* SlimListDeserializer.c */,
-				F812EF97152BC6E1005E5D13 /* SlimListSerializer.c */,
-				F812EF99152BC6E1005E5D13 /* SlimUtil.c */,
+				0749FD6615CCB43100E8CB0A /* ListExecutor.c */,
+				0749FD6715CCB43100E8CB0A /* Slim.c */,
+				0749FD6815CCB43100E8CB0A /* SlimConnectionHandler.c */,
+				0749FD6915CCB43100E8CB0A /* SlimList.c */,
+				0749FD6A15CCB43100E8CB0A /* SlimListDeserializer.c */,
+				0749FD6B15CCB43100E8CB0A /* SlimListSerializer.c */,
+				0749FD6C15CCB43100E8CB0A /* SlimUtil.c */,
 			);
 			name = CSlim;
 			sourceTree = "<group>";
@@ -392,7 +395,9 @@
 		F812EF9B152BC6E1005E5D13 /* ExecutorObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				F812EF9C152BC6E1005E5D13 /* StatementExecutor.m */,
+				07A1BFA715CCB4C1006079BC /* OCSReturnValue.h */,
+				07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */,
+				07A1BF9915CCB45C006079BC /* StatementExecutor.m */,
 			);
 			name = ExecutorObjectiveC;
 			sourceTree = "<group>";
@@ -410,8 +415,8 @@
 		F812EF9F152BC6E1005E5D13 /* Com */ = {
 			isa = PBXGroup;
 			children = (
-				F812EFA0152BC6E1005E5D13 /* SocketServer.h */,
-				F812EFA1152BC6E1005E5D13 /* TcpComLink.h */,
+				07A1BF9C15CCB46F006079BC /* SocketServer.h */,
+				07A1BF9D15CCB46F006079BC /* TcpComLink.h */,
 			);
 			name = Com;
 			sourceTree = "<group>";
@@ -419,15 +424,15 @@
 		F812EFA2152BC6E1005E5D13 /* CSlim */ = {
 			isa = PBXGroup;
 			children = (
-				F812EFA3152BC6E1005E5D13 /* Fixtures.h */,
-				F812EFA4152BC6E1005E5D13 /* ListExecutor.h */,
-				F812EFA5152BC6E1005E5D13 /* Slim.h */,
-				F812EFA6152BC6E1005E5D13 /* SlimConnectionHandler.h */,
-				F812EFA7152BC6E1005E5D13 /* SlimList.h */,
-				F812EFA8152BC6E1005E5D13 /* SlimListDeserializer.h */,
-				F812EFA9152BC6E1005E5D13 /* SlimListSerializer.h */,
-				F812EFAA152BC6E1005E5D13 /* SlimUtil.h */,
-				F812EFAB152BC6E1005E5D13 /* StatementExecutor.h */,
+				07A1BF9E15CCB487006079BC /* Fixtures.h */,
+				07A1BF9F15CCB487006079BC /* ListExecutor.h */,
+				07A1BFA015CCB487006079BC /* Slim.h */,
+				07A1BFA115CCB487006079BC /* SlimConnectionHandler.h */,
+				07A1BFA215CCB487006079BC /* SlimList.h */,
+				07A1BFA315CCB487006079BC /* SlimListDeserializer.h */,
+				07A1BFA415CCB487006079BC /* SlimListSerializer.h */,
+				07A1BFA515CCB487006079BC /* SlimUtil.h */,
+				07A1BFA615CCB487006079BC /* StatementExecutor.h */,
 			);
 			name = CSlim;
 			sourceTree = "<group>";
@@ -435,7 +440,7 @@
 		F812EFAC152BC6E1005E5D13 /* ExecutorC */ = {
 			isa = PBXGroup;
 			children = (
-				F812EFAD152BC6E1005E5D13 /* SymbolTable.h */,
+				07A1BFAA15CCB4DD006079BC /* SymbolTable.h */,
 			);
 			name = ExecutorC;
 			sourceTree = "<group>";
@@ -447,7 +452,7 @@
 				F812EFB0152BC6E1005E5D13 /* Fixtures.m */,
 				F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */,
 				F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */,
-				F812EFB6152BC6E1005E5D13 /* Main.c */,
+				07A1BFAB15CCB4F0006079BC /* Main.c */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -783,18 +788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F812EF89152BC6E1005E5D13 /* SocketServer.c in Sources */,
-				F812EF8B152BC6E1005E5D13 /* TcpComLink.c in Sources */,
-				F812EF8E152BC6E1005E5D13 /* ListExecutor.c in Sources */,
-				F812EF90152BC6E1005E5D13 /* Slim.c in Sources */,
-				F812EF92152BC6E1005E5D13 /* SlimConnectionHandler.c in Sources */,
-				F812EF94152BC6E1005E5D13 /* SlimList.c in Sources */,
-				F812EF96152BC6E1005E5D13 /* SlimListDeserializer.c in Sources */,
-				F812EF98152BC6E1005E5D13 /* SlimListSerializer.c in Sources */,
-				F812EF9A152BC6E1005E5D13 /* SlimUtil.c in Sources */,
-				F812EF9D152BC6E1005E5D13 /* StatementExecutor.m in Sources */,
 				F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */,
-				F812EFB7152BC6E1005E5D13 /* Main.c in Sources */,
 				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
 				0722559715C80D58008EFF3F /* GameRunner.m in Sources */,
@@ -803,6 +797,18 @@
 				0784EF0515C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
 				0784EF0815C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */,
 				0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */,
+				0749FD6315CCB40F00E8CB0A /* SocketServer.c in Sources */,
+				0749FD6415CCB40F00E8CB0A /* TcpComLink.c in Sources */,
+				0749FD6D15CCB43100E8CB0A /* ListExecutor.c in Sources */,
+				0749FD6E15CCB43100E8CB0A /* Slim.c in Sources */,
+				0749FD6F15CCB43100E8CB0A /* SlimConnectionHandler.c in Sources */,
+				0749FD7015CCB43100E8CB0A /* SlimList.c in Sources */,
+				0749FD7115CCB43100E8CB0A /* SlimListDeserializer.c in Sources */,
+				0749FD7215CCB43100E8CB0A /* SlimListSerializer.c in Sources */,
+				0749FD7315CCB43100E8CB0A /* SlimUtil.c in Sources */,
+				07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */,
+				07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */,
+				07A1BFAC15CCB4F0006079BC /* Main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

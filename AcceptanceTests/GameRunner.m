@@ -12,20 +12,12 @@
     return game.numberOfRemainingGuesses;
 }
 
--(NSString*) gameOver {
-    if ([game isOver]) {
-        return @"true";
-    } else {
-        return @"false";
-    }
+-(BOOL) gameIsOver {
+    return [game isOver];
 }
 
--(NSString*) didWin {
-    if ([game didWin]) {
-        return @"true";
-    } else {
-        return @"false";
-    }
+-(BOOL) playerDidWin {
+    return [game didWin];
 }
 
 @end
