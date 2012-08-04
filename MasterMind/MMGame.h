@@ -10,6 +10,6 @@
 -(BOOL) isOver;
 -(BOOL) didWin;
 
--(void) takeGuess: (NSString*) guess;
+-(void) takeGuess: (NSArray*) guess;
 
 @end

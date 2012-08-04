@@ -60,10 +60,12 @@
 }
 
 -(NSArray*) codeArray {
+//    return self.secretCodeViewController.pegList;
     return [self.secretCode.text $chars];
 }
 
 -(NSArray*) guessArray {
+//    return self.guessViewController.pegList;
     return [self.guess.text $chars];
 }
 

@@ -5,3 +5,13 @@ Initial Game State
 |check  |remaining guesses|20|
 |reject |game is over        |
 |reject |player did win      |
+
+
+Taking a Guess
+!|script           |GameRunner          |
+|start new game                         |
+|set secret code to|1234                |
+|take guess        |1111                |
+|check             |remaining guesses|19|
+|reject            |game is over        |
+|reject            |player did win      |

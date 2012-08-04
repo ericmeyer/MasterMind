@@ -19,7 +19,7 @@
     return NO;
 }
 
--(void) takeGuess:(NSString*) guess {
+-(void) takeGuess:(NSArray*) guess {
     self.numberOfRemainingGuesses = [NSNumber numberWithInt: self.numberOfRemainingGuesses.intValue - 1];
 }
 
