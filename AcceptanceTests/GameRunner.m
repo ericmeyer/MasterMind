@@ -6,7 +6,7 @@
 @synthesize game, secretCode;
 
 -(void) startNewGame {
-    self.game = [MMGame new];
+    self.game = [MMGameImplementation new];
 }
 
 -(void) setSecretCodeTo:(NSString*) secretCodeAsString {

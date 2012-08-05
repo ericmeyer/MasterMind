@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		078E04E315CED4A10086919A /* AllTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 078E04E415CED4A10086919A /* Build configuration list for PBXAggregateTarget "AllTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				078E04EA15CED4AE0086919A /* PBXTargetDependency */,
+				078E04E815CED4AE0086919A /* PBXTargetDependency */,
+			);
+			name = AllTests;
+			productName = AllTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
 		0722557D15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
@@ -32,10 +47,10 @@
 		0722559215C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559715C80D58008EFF3F /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559615C80D58008EFF3F /* GameRunner.m */; };
-		0722559A15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
-		0722559B15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
-		0722559C15C80E6E008EFF3F /* MMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGame.m */; };
-		0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameSpec.m */; };
+		0722559A15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
+		0722559B15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
+		0722559C15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
+		0722559E15C80F17008EFF3F /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */; };
 		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMCodePegSpec.m */; };
@@ -117,6 +132,23 @@
 		F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		078E04E715CED4AE0086919A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F83ABA271528A964006FB6EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F812EF7E152BC6E1005E5D13;
+			remoteInfo = AcceptanceTests;
+		};
+		078E04E915CED4AE0086919A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F83ABA271528A964006FB6EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F812EFCA152BC795005E5D13;
+			remoteInfo = Specs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0722557415C80AB3008EFF3F /* blue_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg.png; sourceTree = "<group>"; };
 		0722557515C80AB3008EFF3F /* blue_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg_active.png; sourceTree = "<group>"; };
@@ -128,9 +160,9 @@
 		0722557B15C80AB3008EFF3F /* yellow_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_peg_active.png; sourceTree = "<group>"; };
 		0722559515C80D58008EFF3F /* GameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRunner.h; sourceTree = "<group>"; };
 		0722559615C80D58008EFF3F /* GameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunner.m; sourceTree = "<group>"; };
-		0722559815C80E6E008EFF3F /* MMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGame.h; sourceTree = "<group>"; };
-		0722559915C80E6E008EFF3F /* MMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGame.m; sourceTree = "<group>"; };
-		0722559D15C80F17008EFF3F /* MMGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameSpec.m; sourceTree = "<group>"; };
+		0722559815C80E6E008EFF3F /* MMGameImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGameImplementation.h; sourceTree = "<group>"; };
+		0722559915C80E6E008EFF3F /* MMGameImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameImplementation.m; sourceTree = "<group>"; };
+		0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameImplementationSpec.m; sourceTree = "<group>"; };
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
@@ -336,14 +368,33 @@
 			name = ConciseKit;
 			sourceTree = "<group>";
 		};
-		F812EF84152BC6E1005E5D13 /* AcceptanceTests */ = {
+		078E04E115CED2B60086919A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F812EF85152BC6E1005E5D13 /* cslim */,
+				075BA90B15C60DD5002E0086 /* MMCode.h */,
+				075BA90C15C60DD5002E0086 /* MMCode.m */,
+				0722559815C80E6E008EFF3F /* MMGameImplementation.h */,
+				0722559915C80E6E008EFF3F /* MMGameImplementation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		078E04E215CED31B0086919A /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
 				075BA91415C60DF9002E0086 /* GuessChecker.h */,
 				075BA91515C60DF9002E0086 /* GuessChecker.m */,
 				0722559515C80D58008EFF3F /* GameRunner.h */,
 				0722559615C80D58008EFF3F /* GameRunner.m */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		F812EF84152BC6E1005E5D13 /* AcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				078E04E215CED31B0086919A /* Fixtures */,
+				F812EF85152BC6E1005E5D13 /* cslim */,
 			);
 			path = AcceptanceTests;
 			sourceTree = "<group>";
@@ -484,7 +535,7 @@
 				F812EFD1152BC795005E5D13 /* OCDSpec */,
 				0776559E15CB575E00666F3F /* View */,
 				075BA91015C60DE5002E0086 /* MMCodeSpec.m */,
-				0722559D15C80F17008EFF3F /* MMGameSpec.m */,
+				0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -582,16 +633,13 @@
 		F83ABA3A1528A964006FB6EC /* MasterMind */ = {
 			isa = PBXGroup;
 			children = (
+				078E04E115CED2B60086919A /* Models */,
 				075BA91915C6BD8A002E0086 /* View */,
 				F83ABA431528A964006FB6EC /* AppDelegate.h */,
 				F83ABA441528A964006FB6EC /* AppDelegate.m */,
-				075BA90B15C60DD5002E0086 /* MMCode.h */,
-				075BA90C15C60DD5002E0086 /* MMCode.m */,
 				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,
 				F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */,
 				F83ABA3B1528A964006FB6EC /* Supporting Files */,
-				0722559815C80E6E008EFF3F /* MMGame.h */,
-				0722559915C80E6E008EFF3F /* MMGame.m */,
 			);
 			path = MasterMind;
 			sourceTree = "<group>";
@@ -687,6 +735,7 @@
 				F83ABA2F1528A964006FB6EC /* MasterMind */,
 				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
 				F812EFCA152BC795005E5D13 /* Specs */,
+				078E04E315CED4A10086919A /* AllTests */,
 			);
 		};
 /* End PBXProject section */
@@ -792,7 +841,7 @@
 				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
 				0722559715C80D58008EFF3F /* GameRunner.m in Sources */,
-				0722559B15C80E6E008EFF3F /* MMGame.m in Sources */,
+				0722559B15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
 				0784EF0215C9651600D0A738 /* ConciseKit.m in Sources */,
 				0784EF0515C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
 				0784EF0815C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */,
@@ -835,8 +884,8 @@
 				074A147715C77D7C003B1953 /* MMPegListViewControllerSpec.m in Sources */,
 				074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
-				0722559C15C80E6E008EFF3F /* MMGame.m in Sources */,
-				0722559E15C80F17008EFF3F /* MMGameSpec.m in Sources */,
+				0722559C15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
+				0722559E15C80F17008EFF3F /* MMGameImplementationSpec.m in Sources */,
 				072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */,
 				072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */,
 				0784EF0315C9651600D0A738 /* ConciseKit.m in Sources */,
@@ -856,7 +905,7 @@
 				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
 				074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
-				0722559A15C80E6E008EFF3F /* MMGame.m in Sources */,
+				0722559A15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
 				072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */,
 				0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */,
 				0784EF0415C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
@@ -866,6 +915,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		078E04E815CED4AE0086919A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F812EF7E152BC6E1005E5D13 /* AcceptanceTests */;
+			targetProxy = 078E04E715CED4AE0086919A /* PBXContainerItemProxy */;
+		};
+		078E04EA15CED4AE0086919A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F812EFCA152BC795005E5D13 /* Specs */;
+			targetProxy = 078E04E915CED4AE0086919A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F83ABA3D1528A964006FB6EC /* InfoPlist.strings */ = {
@@ -895,6 +957,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		078E04E515CED4A10086919A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		078E04E615CED4A10086919A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F812EFC2152BC6E1005E5D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1045,6 +1121,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		078E04E415CED4A10086919A /* Build configuration list for PBXAggregateTarget "AllTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078E04E515CED4A10086919A /* Debug */,
+				078E04E615CED4A10086919A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F812EFC4152BC6E1005E5D13 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,6 +1,6 @@
-#import "MMGame.h"
+#import "MMGameImplementation.h"
 
-@implementation MMGame
+@implementation MMGameImplementation
 
 @synthesize numberOfRemainingGuesses, secretCode;
 

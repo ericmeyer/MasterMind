@@ -1,11 +1,11 @@
 #import <Foundation/Foundation.h>
-#import "MMGame.h"
+#import "MMGameImplementation.h"
 
 @interface GameRunner : NSObject {
-    MMGame* game;
+    MMGameImplementation* game;
     NSArray* secretCode;
 }
-@property (nonatomic, retain) MMGame* game;
+@property (nonatomic, retain) MMGameImplementation* game;
 @property (nonatomic, retain) NSArray* secretCode;
 
 @end

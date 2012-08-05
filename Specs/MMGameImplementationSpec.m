@@ -1,14 +1,15 @@
 #import "OCDSpec/OCDSpec.h"
-#import "MMGame.h"
+#import "MMGameImplementation.h"
+#import "ConciseKit.h"
 
-CONTEXT(MMGameSpec)
+CONTEXT(MMGameImplementation)
 {
-    __block MMGame* game;
+    __block MMGameImplementation* game;
     
     describe(@"initial game state",
              beforeEach(
                 ^{
-                    game = [MMGame new];
+                    game = [MMGameImplementation new];
                 }),
              it(@"is not over",
                 ^{
@@ -27,12 +28,12 @@ CONTEXT(MMGameSpec)
     describe(@"taking a guess",
              beforeEach(
                 ^{
-                    game = [MMGame new];
+                    game = [MMGameImplementation new];
                 }),
              it(@"uses a remaining guess",
                 ^{
-                    game.secretCode = @"1234";
-                    [game takeGuess: @"5678"];
+                    game.secretCode = [@"1234" $chars];
+                    [game takeGuess: [@"5678" $chars]];
                     
                     [expect(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
                 }),
