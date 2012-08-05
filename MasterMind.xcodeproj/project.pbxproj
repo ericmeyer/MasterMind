@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				078E04EA15CED4AE0086919A /* PBXTargetDependency */,
+				07F5071B15CF074F008619EF /* PBXTargetDependency */,
 				078E04E815CED4AE0086919A /* PBXTargetDependency */,
 			);
 			name = AllTests;
@@ -24,36 +24,24 @@
 /* Begin PBXBuildFile section */
 		0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
 		0722557D15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
-		0722557E15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
 		0722557F15C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
 		0722558015C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
-		0722558115C80AB3008EFF3F /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
 		0722558215C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
 		0722558315C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
-		0722558415C80AB3008EFF3F /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
 		0722558515C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
 		0722558615C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
-		0722558715C80AB3008EFF3F /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
 		0722558815C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
 		0722558915C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
-		0722558A15C80AB3008EFF3F /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
 		0722558B15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
 		0722558C15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
-		0722558D15C80AB3008EFF3F /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
 		0722558E15C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
 		0722558F15C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
-		0722559015C80AB3008EFF3F /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
 		0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559215C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
-		0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		0722559715C80D58008EFF3F /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559615C80D58008EFF3F /* GameRunner.m */; };
 		0722559A15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
 		0722559B15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
-		0722559C15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
-		0722559E15C80F17008EFF3F /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */; };
 		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
-		072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
-		072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A315C814CF008EFF3F /* MMCodePegSpec.m */; };
 		0749FD6315CCB40F00E8CB0A /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6115CCB40F00E8CB0A /* SocketServer.c */; };
 		0749FD6415CCB40F00E8CB0A /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6215CCB40F00E8CB0A /* TcpComLink.c */; };
 		0749FD6D15CCB43100E8CB0A /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6615CCB43100E8CB0A /* ListExecutor.c */; };
@@ -64,17 +52,11 @@
 		0749FD7215CCB43100E8CB0A /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6B15CCB43100E8CB0A /* SlimListSerializer.c */; };
 		0749FD7315CCB43100E8CB0A /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6C15CCB43100E8CB0A /* SlimUtil.c */; };
 		074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
-		074A146B15C74A14003B1953 /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
 		074A146C15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
 		074A146D15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
-		074A146E15C74A14003B1953 /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
-		074A147715C77D7C003B1953 /* MMPegListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */; };
 		074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
-		074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
 		074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
-		074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
-		074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */; };
 		0756C48B15CEDC1000613DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		0756C48C15CEDC1000613DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		0756C48D15CEDC1000613DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -89,24 +71,16 @@
 		0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		075BA90D15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA90E15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
-		075BA90F15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
-		075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91015C60DE5002E0086 /* MMCodeSpec.m */; };
-		075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91115C60DE5002E0086 /* ViewControllerSpec.m */; };
 		075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91515C60DF9002E0086 /* GuessChecker.m */; };
 		077655A115CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
-		077655A215CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
 		0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
 		0784EF0215C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
-		0784EF0315C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
 		0784EF0415C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; };
 		0784EF0515C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; };
-		0784EF0615C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; };
 		0784EF0715C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
 		0784EF0815C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
-		0784EF0915C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
 		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
 		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
-		0784EF0C15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
 		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; };
 		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
@@ -137,22 +111,6 @@
 		F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFB0152BC6E1005E5D13 /* Fixtures.m */; };
 		F812EFB3152BC6E1005E5D13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB2152BC6E1005E5D13 /* InfoPlist.strings */; };
 		F812EFB5152BC6E1005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFB4152BC6E1005E5D13 /* iPhone-Prefix.pch */; };
-		F812EFCD152BC795005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
-		F812EFCE152BC795005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
-		F812EFCF152BC795005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
-		F812EFD7152BC795005E5D13 /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFD6152BC795005E5D13 /* OCDSpecDescription.m */; };
-		F812EFDA152BC795005E5D13 /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFD9152BC795005E5D13 /* OCDSpecDescriptionRunner.m */; };
-		F812EFDD152BC795005E5D13 /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFDC152BC795005E5D13 /* OCDSpecExample.m */; };
-		F812EFE0152BC795005E5D13 /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFDF152BC795005E5D13 /* OCDSpecExpectation.m */; };
-		F812EFE3152BC795005E5D13 /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFE2152BC795005E5D13 /* OCDSpecFail.m */; };
-		F812EFE6152BC795005E5D13 /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFE5152BC795005E5D13 /* OCDSpecOutputter.m */; };
-		F812EFE9152BC795005E5D13 /* OCDSpecSharedResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFE8152BC795005E5D13 /* OCDSpecSharedResults.m */; };
-		F812EFEE152BC795005E5D13 /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFED152BC795005E5D13 /* OCDSpecPreCondition.m */; };
-		F812EFF1152BC795005E5D13 /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFF0152BC795005E5D13 /* OCDSpecPostCondition.m */; };
-		F812EFF3152BC795005E5D13 /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFF2152BC795005E5D13 /* OCDSpecCondition.m */; };
-		F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F812EFF7152BC795005E5D13 /* unitTestMain.m */; };
-		F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */; };
-		F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */; };
 		F83ABA351528A964006FB6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F83ABA371528A964006FB6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F83ABA391528A964006FB6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -162,7 +120,6 @@
 		F83ABA481528A964006FB6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 		F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */; };
 		F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */; };
-		F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,12 +158,12 @@
 			remoteGlobalIDString = F812EF7E152BC6E1005E5D13;
 			remoteInfo = AcceptanceTests;
 		};
-		078E04E915CED4AE0086919A /* PBXContainerItemProxy */ = {
+		07F5071A15CF074F008619EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F83ABA271528A964006FB6EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F812EFCA152BC795005E5D13;
-			remoteInfo = Specs;
+			remoteGlobalIDString = 0756C48815CEDC1000613DE1;
+			remoteInfo = SpecKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -223,10 +180,8 @@
 		0722559615C80D58008EFF3F /* GameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunner.m; sourceTree = "<group>"; };
 		0722559815C80E6E008EFF3F /* MMGameImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGameImplementation.h; sourceTree = "<group>"; };
 		0722559915C80E6E008EFF3F /* MMGameImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameImplementation.m; sourceTree = "<group>"; };
-		0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGameImplementationSpec.m; sourceTree = "<group>"; };
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
-		072255A315C814CF008EFF3F /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePegSpec.m; sourceTree = "<group>"; };
 		0749FD6115CCB40F00E8CB0A /* SocketServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = SOURCE_ROOT; };
 		0749FD6215CCB40F00E8CB0A /* TcpComLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = SOURCE_ROOT; };
 		0749FD6615CCB43100E8CB0A /* ListExecutor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = SOURCE_ROOT; };
@@ -239,11 +194,9 @@
 		074A146615C74A14003B1953 /* MMPegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPegListViewController.h; sourceTree = "<group>"; };
 		074A146715C74A14003B1953 /* MMPegListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewController.m; sourceTree = "<group>"; };
 		074A146815C74A14003B1953 /* MMPegListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMPegListViewController.xib; sourceTree = "<group>"; };
-		074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPegListViewControllerSpec.m; sourceTree = "<group>"; };
 		074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePegsViewController.h; sourceTree = "<group>"; };
 		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
 		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
-		074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewControllerSpec.m; sourceTree = "<group>"; };
 		0756C48915CEDC1000613DE1 /* SpecKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKit-Info.plist"; sourceTree = "<group>"; };
 		0756C49215CEDC1000613DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -252,8 +205,6 @@
 		0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		075BA90B15C60DD5002E0086 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCode.h; sourceTree = "<group>"; };
 		075BA90C15C60DD5002E0086 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCode.m; sourceTree = "<group>"; };
-		075BA91015C60DE5002E0086 /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeSpec.m; sourceTree = "<group>"; };
-		075BA91115C60DE5002E0086 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
 		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
 		077655A015CB5A0C00666F3F /* empty_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_peg.png; sourceTree = "<group>"; };
@@ -301,34 +252,6 @@
 		F812EFBD152BC6E1005E5D13 /* RunSlimTestsHeadless */ = {isa = PBXFileReference; lastKnownFileType = text; name = RunSlimTestsHeadless; path = ../bin/iPhoneRunner/RunSlimTestsHeadless; sourceTree = "<group>"; };
 		F812EFBE152BC6E1005E5D13 /* RunSlimTestsOnSimulator */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsOnSimulator; path = ../bin/iPhoneRunner/RunSlimTestsOnSimulator; sourceTree = "<group>"; };
 		F812EFBF152BC6E1005E5D13 /* RunSlimTestsTargetWithSlimPort */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunSlimTestsTargetWithSlimPort; path = ../bin/iPhoneRunner/RunSlimTestsTargetWithSlimPort; sourceTree = "<group>"; };
-		F812EFCB152BC795005E5D13 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F812EFD3152BC795005E5D13 /* DescriptionRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DescriptionRunner.h; path = OCDSpec/OCDSpec/Protocols/DescriptionRunner.h; sourceTree = "<group>"; };
-		F812EFD4152BC795005E5D13 /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Example.h; path = OCDSpec/OCDSpec/Protocols/Example.h; sourceTree = "<group>"; };
-		F812EFD5152BC795005E5D13 /* OCDSpecDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecDescription.h; path = OCDSpec/OCDSpec/OCDSpecDescription.h; sourceTree = "<group>"; };
-		F812EFD6152BC795005E5D13 /* OCDSpecDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecDescription.m; path = OCDSpec/OCDSpec/OCDSpecDescription.m; sourceTree = "<group>"; };
-		F812EFD8152BC795005E5D13 /* OCDSpecDescriptionRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecDescriptionRunner.h; path = OCDSpec/OCDSpec/OCDSpecDescriptionRunner.h; sourceTree = "<group>"; };
-		F812EFD9152BC795005E5D13 /* OCDSpecDescriptionRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecDescriptionRunner.m; path = OCDSpec/OCDSpec/OCDSpecDescriptionRunner.m; sourceTree = "<group>"; };
-		F812EFDB152BC795005E5D13 /* OCDSpecExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecExample.h; path = OCDSpec/OCDSpec/OCDSpecExample.h; sourceTree = "<group>"; };
-		F812EFDC152BC795005E5D13 /* OCDSpecExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecExample.m; path = OCDSpec/OCDSpec/OCDSpecExample.m; sourceTree = "<group>"; };
-		F812EFDE152BC795005E5D13 /* OCDSpecExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecExpectation.h; path = OCDSpec/OCDSpec/OCDSpecExpectation.h; sourceTree = "<group>"; };
-		F812EFDF152BC795005E5D13 /* OCDSpecExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecExpectation.m; path = OCDSpec/OCDSpec/OCDSpecExpectation.m; sourceTree = "<group>"; };
-		F812EFE1152BC795005E5D13 /* OCDSpecFail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecFail.h; path = OCDSpec/OCDSpec/OCDSpecFail.h; sourceTree = "<group>"; };
-		F812EFE2152BC795005E5D13 /* OCDSpecFail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecFail.m; path = OCDSpec/OCDSpec/OCDSpecFail.m; sourceTree = "<group>"; };
-		F812EFE4152BC795005E5D13 /* OCDSpecOutputter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecOutputter.h; path = OCDSpec/OCDSpec/OCDSpecOutputter.h; sourceTree = "<group>"; };
-		F812EFE5152BC795005E5D13 /* OCDSpecOutputter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecOutputter.m; path = OCDSpec/OCDSpec/OCDSpecOutputter.m; sourceTree = "<group>"; };
-		F812EFE7152BC795005E5D13 /* OCDSpecSharedResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecSharedResults.h; path = OCDSpec/OCDSpec/OCDSpecSharedResults.h; sourceTree = "<group>"; };
-		F812EFE8152BC795005E5D13 /* OCDSpecSharedResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecSharedResults.m; path = OCDSpec/OCDSpec/OCDSpecSharedResults.m; sourceTree = "<group>"; };
-		F812EFEA152BC795005E5D13 /* VoidBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VoidBlock.h; path = OCDSpec/OCDSpec/VoidBlock.h; sourceTree = "<group>"; };
-		F812EFEC152BC795005E5D13 /* OCDSpecPreCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecPreCondition.h; path = OCDSpec/OCDSpec/Contract/OCDSpecPreCondition.h; sourceTree = "<group>"; };
-		F812EFED152BC795005E5D13 /* OCDSpecPreCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecPreCondition.m; path = OCDSpec/OCDSpec/Contract/OCDSpecPreCondition.m; sourceTree = "<group>"; };
-		F812EFEF152BC795005E5D13 /* OCDSpecPostCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecPostCondition.h; path = OCDSpec/OCDSpec/Contract/OCDSpecPostCondition.h; sourceTree = "<group>"; };
-		F812EFF0152BC795005E5D13 /* OCDSpecPostCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecPostCondition.m; path = OCDSpec/OCDSpec/Contract/OCDSpecPostCondition.m; sourceTree = "<group>"; };
-		F812EFF2152BC795005E5D13 /* OCDSpecCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCDSpecCondition.m; path = OCDSpec/OCDSpec/Contract/OCDSpecCondition.m; sourceTree = "<group>"; };
-		F812EFF4152BC795005E5D13 /* OCDSpecCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpecCondition.h; path = OCDSpec/OCDSpec/Contract/OCDSpecCondition.h; sourceTree = "<group>"; };
-		F812EFF5152BC795005E5D13 /* OCDSpec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCDSpec.h; path = OCDSpec/OCDSpec/OCDSpec.h; sourceTree = "<group>"; };
-		F812EFF7152BC795005E5D13 /* unitTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = "<group>"; };
-		F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunIPhoneUnitTest.sh; path = OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
-		F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		F83ABA301528A964006FB6EC /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83ABA341528A964006FB6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F83ABA361528A964006FB6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -364,16 +287,6 @@
 				F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */,
 				F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */,
 				F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F812EFC7152BC795005E5D13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F812EFCD152BC795005E5D13 /* UIKit.framework in Frameworks */,
-				F812EFCE152BC795005E5D13 /* Foundation.framework in Frameworks */,
-				F812EFCF152BC795005E5D13 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,17 +365,6 @@
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
 				0722559F15C8149A008EFF3F /* MMCodePeg.h */,
 				072255A015C8149A008EFF3F /* MMCodePeg.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		0776559E15CB575E00666F3F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				075BA91115C60DE5002E0086 /* ViewControllerSpec.m */,
-				074A147615C77D7C003B1953 /* MMPegListViewControllerSpec.m */,
-				074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */,
-				072255A315C814CF008EFF3F /* MMCodePegSpec.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -657,75 +559,6 @@
 			name = iPhoneRunner;
 			sourceTree = "<group>";
 		};
-		F812EFD0152BC795005E5D13 /* Specs */ = {
-			isa = PBXGroup;
-			children = (
-				F812EFD1152BC795005E5D13 /* OCDSpec */,
-				0776559E15CB575E00666F3F /* View */,
-				075BA91015C60DE5002E0086 /* MMCodeSpec.m */,
-				0722559D15C80F17008EFF3F /* MMGameImplementationSpec.m */,
-			);
-			path = Specs;
-			sourceTree = "<group>";
-		};
-		F812EFD1152BC795005E5D13 /* OCDSpec */ = {
-			isa = PBXGroup;
-			children = (
-				F812EFD5152BC795005E5D13 /* OCDSpecDescription.h */,
-				F812EFD6152BC795005E5D13 /* OCDSpecDescription.m */,
-				F812EFD8152BC795005E5D13 /* OCDSpecDescriptionRunner.h */,
-				F812EFD9152BC795005E5D13 /* OCDSpecDescriptionRunner.m */,
-				F812EFDB152BC795005E5D13 /* OCDSpecExample.h */,
-				F812EFDC152BC795005E5D13 /* OCDSpecExample.m */,
-				F812EFDE152BC795005E5D13 /* OCDSpecExpectation.h */,
-				F812EFDF152BC795005E5D13 /* OCDSpecExpectation.m */,
-				F812EFE1152BC795005E5D13 /* OCDSpecFail.h */,
-				F812EFE2152BC795005E5D13 /* OCDSpecFail.m */,
-				F812EFE4152BC795005E5D13 /* OCDSpecOutputter.h */,
-				F812EFE5152BC795005E5D13 /* OCDSpecOutputter.m */,
-				F812EFE7152BC795005E5D13 /* OCDSpecSharedResults.h */,
-				F812EFE8152BC795005E5D13 /* OCDSpecSharedResults.m */,
-				F812EFEA152BC795005E5D13 /* VoidBlock.h */,
-				F812EFF5152BC795005E5D13 /* OCDSpec.h */,
-				F812EFFB152BC795005E5D13 /* iPhone-Prefix.pch */,
-				F812EFD2152BC795005E5D13 /* Protocols */,
-				F812EFEB152BC795005E5D13 /* Contract */,
-				F812EFF6152BC795005E5D13 /* Programs */,
-			);
-			name = OCDSpec;
-			sourceTree = "<group>";
-		};
-		F812EFD2152BC795005E5D13 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				F812EFD3152BC795005E5D13 /* DescriptionRunner.h */,
-				F812EFD4152BC795005E5D13 /* Example.h */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		F812EFEB152BC795005E5D13 /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				F812EFEC152BC795005E5D13 /* OCDSpecPreCondition.h */,
-				F812EFED152BC795005E5D13 /* OCDSpecPreCondition.m */,
-				F812EFEF152BC795005E5D13 /* OCDSpecPostCondition.h */,
-				F812EFF0152BC795005E5D13 /* OCDSpecPostCondition.m */,
-				F812EFF2152BC795005E5D13 /* OCDSpecCondition.m */,
-				F812EFF4152BC795005E5D13 /* OCDSpecCondition.h */,
-			);
-			name = Contract;
-			sourceTree = "<group>";
-		};
-		F812EFF6152BC795005E5D13 /* Programs */ = {
-			isa = PBXGroup;
-			children = (
-				F812EFF7152BC795005E5D13 /* unitTestMain.m */,
-				F812EFF9152BC795005E5D13 /* RunIPhoneUnitTest.sh */,
-			);
-			name = Programs;
-			sourceTree = "<group>";
-		};
 		F83ABA251528A964006FB6EC = {
 			isa = PBXGroup;
 			children = (
@@ -733,7 +566,6 @@
 				0784EEF415C9650500D0A738 /* ConciseKit */,
 				F83ABA3A1528A964006FB6EC /* MasterMind */,
 				F812EF84152BC6E1005E5D13 /* AcceptanceTests */,
-				F812EFD0152BC795005E5D13 /* Specs */,
 				0756C48E15CEDC1000613DE1 /* SpecKit */,
 				F83ABA331528A964006FB6EC /* Frameworks */,
 				F83ABA311528A964006FB6EC /* Products */,
@@ -745,7 +577,6 @@
 			children = (
 				F83ABA301528A964006FB6EC /* MasterMind.app */,
 				F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */,
-				F812EFCB152BC795005E5D13 /* Specs.app */,
 				0756C48915CEDC1000613DE1 /* SpecKit.app */,
 			);
 			name = Products;
@@ -826,24 +657,6 @@
 			productReference = F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F812EFCA152BC795005E5D13 /* Specs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F812EFFD152BC795005E5D13 /* Build configuration list for PBXNativeTarget "Specs" */;
-			buildPhases = (
-				F812EFC6152BC795005E5D13 /* Sources */,
-				F812EFC7152BC795005E5D13 /* Frameworks */,
-				F812EFC8152BC795005E5D13 /* Resources */,
-				F812EFC9152BC795005E5D13 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Specs;
-			productName = Specs;
-			productReference = F812EFCB152BC795005E5D13 /* Specs.app */;
-			productType = "com.apple.product-type.application";
-		};
 		F83ABA2F1528A964006FB6EC /* MasterMind */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F83ABA511528A964006FB6EC /* Build configuration list for PBXNativeTarget "MasterMind" */;
@@ -889,7 +702,6 @@
 			targets = (
 				F83ABA2F1528A964006FB6EC /* MasterMind */,
 				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
-				F812EFCA152BC795005E5D13 /* Specs */,
 				078E04E315CED4A10086919A /* AllTests */,
 				0756C48815CEDC1000613DE1 /* SpecKit */,
 			);
@@ -966,26 +778,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F812EFC8152BC795005E5D13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F812EFFA152BC795005E5D13 /* RunIPhoneUnitTest.sh in Resources */,
-				F812EFFC152BC795005E5D13 /* iPhone-Prefix.pch in Resources */,
-				074A146E15C74A14003B1953 /* MMPegListViewController.xib in Resources */,
-				074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
-				0722557E15C80AB3008EFF3F /* blue_peg.png in Resources */,
-				0722558115C80AB3008EFF3F /* blue_peg_active.png in Resources */,
-				0722558415C80AB3008EFF3F /* orange_peg.png in Resources */,
-				0722558715C80AB3008EFF3F /* orange_peg_active.png in Resources */,
-				0722558A15C80AB3008EFF3F /* red_peg.png in Resources */,
-				0722558D15C80AB3008EFF3F /* red_peg_active.png in Resources */,
-				0722559015C80AB3008EFF3F /* yellow_peg.png in Resources */,
-				0722559315C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
-				077655A215CB5A0C00666F3F /* empty_peg.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F83ABA2E1528A964006FB6EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1035,19 +827,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = ./bin/iPhoneRunner/RunSlimTests;
-		};
-		F812EFC9152BC795005E5D13 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "chmod +x ${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh\n              ${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1104,40 +883,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F812EFC6152BC795005E5D13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F812EFD7152BC795005E5D13 /* OCDSpecDescription.m in Sources */,
-				F812EFDA152BC795005E5D13 /* OCDSpecDescriptionRunner.m in Sources */,
-				F812EFDD152BC795005E5D13 /* OCDSpecExample.m in Sources */,
-				F812EFE0152BC795005E5D13 /* OCDSpecExpectation.m in Sources */,
-				F812EFE3152BC795005E5D13 /* OCDSpecFail.m in Sources */,
-				F812EFE6152BC795005E5D13 /* OCDSpecOutputter.m in Sources */,
-				F812EFE9152BC795005E5D13 /* OCDSpecSharedResults.m in Sources */,
-				F812EFEE152BC795005E5D13 /* OCDSpecPreCondition.m in Sources */,
-				F812EFF1152BC795005E5D13 /* OCDSpecPostCondition.m in Sources */,
-				F812EFF3152BC795005E5D13 /* OCDSpecCondition.m in Sources */,
-				F812EFF8152BC795005E5D13 /* unitTestMain.m in Sources */,
-				F8C3EDFA152BD372005F7183 /* ViewController.m in Sources */,
-				075BA90F15C60DD5002E0086 /* MMCode.m in Sources */,
-				075BA91215C60DE5002E0086 /* MMCodeSpec.m in Sources */,
-				075BA91315C60DE5002E0086 /* ViewControllerSpec.m in Sources */,
-				074A146B15C74A14003B1953 /* MMPegListViewController.m in Sources */,
-				074A147715C77D7C003B1953 /* MMPegListViewControllerSpec.m in Sources */,
-				074A147D15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
-				074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */,
-				0722559C15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
-				0722559E15C80F17008EFF3F /* MMGameImplementationSpec.m in Sources */,
-				072255A215C8149A008EFF3F /* MMCodePeg.m in Sources */,
-				072255A415C814CF008EFF3F /* MMCodePegSpec.m in Sources */,
-				0784EF0315C9651600D0A738 /* ConciseKit.m in Sources */,
-				0784EF0615C9651600D0A738 /* NSArray+ConciseKit.m in Sources */,
-				0784EF0915C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */,
-				0784EF0C15C9651600D0A738 /* NSString+ConciseKit.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F83ABA2C1528A964006FB6EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1165,10 +910,10 @@
 			target = F812EF7E152BC6E1005E5D13 /* AcceptanceTests */;
 			targetProxy = 078E04E715CED4AE0086919A /* PBXContainerItemProxy */;
 		};
-		078E04EA15CED4AE0086919A /* PBXTargetDependency */ = {
+		07F5071B15CF074F008619EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F812EFCA152BC795005E5D13 /* Specs */;
-			targetProxy = 078E04E915CED4AE0086919A /* PBXContainerItemProxy */;
+			target = 0756C48815CEDC1000613DE1 /* SpecKit */;
+			targetProxy = 07F5071A15CF074F008619EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1293,51 +1038,6 @@
 			};
 			name = Release;
 		};
-		F812EFFE152BC795005E5D13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${TARGET_NAME}/OCDSpec/OCDSpec/iPhone-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
-				INFOPLIST_FILE = "";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F812EFFF152BC795005E5D13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${TARGET_NAME}/OCDSpec/OCDSpec/iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
-				INFOPLIST_FILE = "";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		F83ABA4F1528A964006FB6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1431,15 +1131,6 @@
 			buildConfigurations = (
 				F812EFC2152BC6E1005E5D13 /* Debug */,
 				F812EFC3152BC6E1005E5D13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F812EFFD152BC795005E5D13 /* Build configuration list for PBXNativeTarget "Specs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F812EFFE152BC795005E5D13 /* Debug */,
-				F812EFFF152BC795005E5D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
