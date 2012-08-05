@@ -75,6 +75,18 @@
 		074A147F15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
 		074A148015C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
 		074A148215C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */; };
+		0756C48B15CEDC1000613DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
+		0756C48C15CEDC1000613DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
+		0756C48D15CEDC1000613DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
+		0756C49315CEDC1000613DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0756C49115CEDC1000613DE1 /* InfoPlist.strings */; };
+		0756C49515CEDC1000613DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C49415CEDC1000613DE1 /* main.m */; };
+		0756C4AD15CEDC4F00613DE1 /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0756C4A615CEDC2400613DE1 /* libSpecKit.a */; };
+		0756C4B015CEDDB800613DE1 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
+		0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
+		0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0756C4B415CEDDCD00613DE1 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		075BA90D15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA90E15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA90F15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
@@ -98,6 +110,27 @@
 		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; };
 		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
+		07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FC15CEFA27008619EF /* MMCodeSpec.m */; };
+		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
+		07F5070215CEFCD2008619EF /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* ViewControllerSpec.m */; };
+		07F5070315CEFD57008619EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F5070415CEFD57008619EF /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
+		07F5070515CEFD57008619EF /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
+		07F5070615CEFD57008619EF /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F5070715CEFE79008619EF /* MMAvailablePegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */; };
+		07F5070815CEFE7C008619EF /* MMPegListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074A146815C74A14003B1953 /* MMPegListViewController.xib */; };
+		07F5070C15CF00B4008619EF /* MMPegListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */; };
+		07F5070E15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */; };
+		07F5071015CF0475008619EF /* MMCodePegSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070F15CF0475008619EF /* MMCodePegSpec.m */; };
+		07F5071115CF0612008619EF /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
+		07F5071215CF0612008619EF /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
+		07F5071315CF0612008619EF /* blue_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557515C80AB3008EFF3F /* blue_peg_active.png */; };
+		07F5071415CF0612008619EF /* orange_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557615C80AB3008EFF3F /* orange_peg.png */; };
+		07F5071515CF0612008619EF /* orange_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557715C80AB3008EFF3F /* orange_peg_active.png */; };
+		07F5071615CF0612008619EF /* red_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557815C80AB3008EFF3F /* red_peg.png */; };
+		07F5071715CF0612008619EF /* red_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557915C80AB3008EFF3F /* red_peg_active.png */; };
+		07F5071815CF0612008619EF /* yellow_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557A15C80AB3008EFF3F /* yellow_peg.png */; };
+		07F5071915CF0612008619EF /* yellow_peg_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557B15C80AB3008EFF3F /* yellow_peg_active.png */; };
 		F812EF81152BC6E1005E5D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		F812EF82152BC6E1005E5D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		F812EF83152BC6E1005E5D13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
@@ -133,6 +166,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0756C4A515CEDC2400613DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94A6BA5A15BB2DE7003F22B6;
+			remoteInfo = SpecKit;
+		};
+		0756C4A715CEDC2400613DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942AAEEC15BBB3760006C241;
+			remoteInfo = SpecKitMac;
+		};
+		0756C4A915CEDC2400613DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 947F6C2515BC39A200C7CF3B;
+			remoteInfo = SpecKitTests;
+		};
+		0756C4AB15CEDC2400613DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 944FBF4E15C168C100BF85FC;
+			remoteInfo = SpecKitAcceptanceTest;
+		};
 		078E04E715CED4AE0086919A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F83ABA271528A964006FB6EC /* Project object */;
@@ -183,6 +244,12 @@
 		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
 		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
 		074A148115C799DA003B1953 /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewControllerSpec.m; sourceTree = "<group>"; };
+		0756C48915CEDC1000613DE1 /* SpecKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKit-Info.plist"; sourceTree = "<group>"; };
+		0756C49215CEDC1000613DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0756C49415CEDC1000613DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0756C49615CEDC1000613DE1 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
+		0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		075BA90B15C60DD5002E0086 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCode.h; sourceTree = "<group>"; };
 		075BA90C15C60DD5002E0086 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCode.m; sourceTree = "<group>"; };
 		075BA91015C60DE5002E0086 /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodeSpec.m; sourceTree = "<group>"; };
@@ -217,6 +284,12 @@
 		07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = SOURCE_ROOT; };
 		07A1BFAA15CCB4DD006079BC /* SymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = SOURCE_ROOT; };
 		07A1BFAB15CCB4F0006079BC /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = SOURCE_ROOT; };
+		07F506FC15CEFA27008619EF /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = SpecKitSpecs/MMCodeSpec.m; sourceTree = SOURCE_ROOT; };
+		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = SpecKitSpecs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070115CEFCD2008619EF /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = ../SpecKitSpecs/ViewControllerSpec.m; sourceTree = "<group>"; };
+		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = SpecKitSpecs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailablePegsViewControllerSpec.m; path = ../SpecKitSpecs/MMAvailablePegsViewControllerSpec.m; sourceTree = "<group>"; };
+		07F5070F15CF0475008619EF /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodePegSpec.m; path = ../SpecKitSpecs/MMCodePegSpec.m; sourceTree = "<group>"; };
 		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F812EFAF152BC6E1005E5D13 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = fitnesse.jar; path = ../fitnesse.jar; sourceTree = "<group>"; };
 		F812EFB0152BC6E1005E5D13 /* Fixtures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = SupportingFiles/Fixtures.m; sourceTree = "<group>"; };
@@ -273,6 +346,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0756C48515CEDC1000613DE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0756C48B15CEDC1000613DE1 /* UIKit.framework in Frameworks */,
+				0756C48C15CEDC1000613DE1 /* Foundation.framework in Frameworks */,
+				0756C48D15CEDC1000613DE1 /* CoreGraphics.framework in Frameworks */,
+				0756C4AD15CEDC4F00613DE1 /* libSpecKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F812EF7B152BC6E1005E5D13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +404,39 @@
 				0722557B15C80AB3008EFF3F /* yellow_peg_active.png */,
 			);
 			path = pegs;
+			sourceTree = "<group>";
+		};
+		0756C48E15CEDC1000613DE1 /* SpecKit */ = {
+			isa = PBXGroup;
+			children = (
+				07F5070015CEFCB1008619EF /* View */,
+				07F506FC15CEFA27008619EF /* MMCodeSpec.m */,
+				07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */,
+				0756C48F15CEDC1000613DE1 /* Supporting Files */,
+			);
+			path = SpecKit;
+			sourceTree = "<group>";
+		};
+		0756C48F15CEDC1000613DE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */,
+				0756C49115CEDC1000613DE1 /* InfoPlist.strings */,
+				0756C49415CEDC1000613DE1 /* main.m */,
+				0756C49615CEDC1000613DE1 /* SpecKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0756C49C15CEDC2400613DE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0756C4A615CEDC2400613DE1 /* libSpecKit.a */,
+				0756C4A815CEDC2400613DE1 /* libSpecKitMac.a */,
+				0756C4AA15CEDC2400613DE1 /* SpecKitTests.octest */,
+				0756C4AC15CEDC2400613DE1 /* SpecKitAcceptanceTest.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		075BA91915C6BD8A002E0086 /* View */ = {
@@ -388,6 +505,17 @@
 				0722559615C80D58008EFF3F /* GameRunner.m */,
 			);
 			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		07F5070015CEFCB1008619EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F5070115CEFCD2008619EF /* ViewControllerSpec.m */,
+				07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */,
+				07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */,
+				07F5070F15CF0475008619EF /* MMCodePegSpec.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		F812EF84152BC6E1005E5D13 /* AcceptanceTests */ = {
@@ -601,10 +729,12 @@
 		F83ABA251528A964006FB6EC = {
 			isa = PBXGroup;
 			children = (
+				0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */,
 				0784EEF415C9650500D0A738 /* ConciseKit */,
 				F83ABA3A1528A964006FB6EC /* MasterMind */,
 				F812EF84152BC6E1005E5D13 /* AcceptanceTests */,
 				F812EFD0152BC795005E5D13 /* Specs */,
+				0756C48E15CEDC1000613DE1 /* SpecKit */,
 				F83ABA331528A964006FB6EC /* Frameworks */,
 				F83ABA311528A964006FB6EC /* Products */,
 			);
@@ -616,6 +746,7 @@
 				F83ABA301528A964006FB6EC /* MasterMind.app */,
 				F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */,
 				F812EFCB152BC795005E5D13 /* Specs.app */,
+				0756C48915CEDC1000613DE1 /* SpecKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -659,6 +790,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0756C48815CEDC1000613DE1 /* SpecKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0756C49915CEDC1000613DE1 /* Build configuration list for PBXNativeTarget "SpecKit" */;
+			buildPhases = (
+				0756C48415CEDC1000613DE1 /* Sources */,
+				0756C48515CEDC1000613DE1 /* Frameworks */,
+				0756C48615CEDC1000613DE1 /* Resources */,
+				0756C48715CEDC1000613DE1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpecKit;
+			productName = SpecKit;
+			productReference = 0756C48915CEDC1000613DE1 /* SpecKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F812EF7E152BC6E1005E5D13 /* AcceptanceTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F812EFC4152BC6E1005E5D13 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
@@ -730,17 +879,74 @@
 			mainGroup = F83ABA251528A964006FB6EC;
 			productRefGroup = F83ABA311528A964006FB6EC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0756C49C15CEDC2400613DE1 /* Products */;
+					ProjectRef = 0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F83ABA2F1528A964006FB6EC /* MasterMind */,
 				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
 				F812EFCA152BC795005E5D13 /* Specs */,
 				078E04E315CED4A10086919A /* AllTests */,
+				0756C48815CEDC1000613DE1 /* SpecKit */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0756C4A615CEDC2400613DE1 /* libSpecKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecKit.a;
+			remoteRef = 0756C4A515CEDC2400613DE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0756C4A815CEDC2400613DE1 /* libSpecKitMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecKitMac.a;
+			remoteRef = 0756C4A715CEDC2400613DE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0756C4AA15CEDC2400613DE1 /* SpecKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpecKitTests.octest;
+			remoteRef = 0756C4A915CEDC2400613DE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0756C4AC15CEDC2400613DE1 /* SpecKitAcceptanceTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpecKitAcceptanceTest.octest;
+			remoteRef = 0756C4AB15CEDC2400613DE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		0756C48615CEDC1000613DE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0756C49315CEDC1000613DE1 /* InfoPlist.strings in Resources */,
+				07F5070715CEFE79008619EF /* MMAvailablePegsViewController.xib in Resources */,
+				07F5070815CEFE7C008619EF /* MMPegListViewController.xib in Resources */,
+				07F5071115CF0612008619EF /* empty_peg.png in Resources */,
+				07F5071215CF0612008619EF /* blue_peg.png in Resources */,
+				07F5071315CF0612008619EF /* blue_peg_active.png in Resources */,
+				07F5071415CF0612008619EF /* orange_peg.png in Resources */,
+				07F5071515CF0612008619EF /* orange_peg_active.png in Resources */,
+				07F5071615CF0612008619EF /* red_peg.png in Resources */,
+				07F5071715CF0612008619EF /* red_peg_active.png in Resources */,
+				07F5071815CF0612008619EF /* yellow_peg.png in Resources */,
+				07F5071915CF0612008619EF /* yellow_peg_active.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F812EF7C152BC6E1005E5D13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -804,6 +1010,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0756C48715CEDC1000613DE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
+		};
 		F812EF7D152BC6E1005E5D13 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -833,6 +1052,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0756C48415CEDC1000613DE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0756C49515CEDC1000613DE1 /* main.m in Sources */,
+				0756C4B015CEDDB800613DE1 /* MMCode.m in Sources */,
+				0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */,
+				0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */,
+				0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */,
+				0756C4B415CEDDCD00613DE1 /* NSDictionary+ConciseKit.m in Sources */,
+				0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */,
+				07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */,
+				07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */,
+				07F5070215CEFCD2008619EF /* ViewControllerSpec.m in Sources */,
+				07F5070315CEFD57008619EF /* ViewController.m in Sources */,
+				07F5070415CEFD57008619EF /* MMPegListViewController.m in Sources */,
+				07F5070515CEFD57008619EF /* MMAvailablePegsViewController.m in Sources */,
+				07F5070615CEFD57008619EF /* MMCodePeg.m in Sources */,
+				07F5070C15CF00B4008619EF /* MMPegListViewControllerSpec.m in Sources */,
+				07F5070E15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m in Sources */,
+				07F5071015CF0475008619EF /* MMCodePegSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F812EF7A152BC6E1005E5D13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -930,6 +1173,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0756C49115CEDC1000613DE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0756C49215CEDC1000613DE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F83ABA3D1528A964006FB6EC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -957,6 +1208,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0756C49715CEDC1000613DE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0756C49815CEDC1000613DE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		078E04E515CED4A10086919A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1121,6 +1408,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0756C49915CEDC1000613DE1 /* Build configuration list for PBXNativeTarget "SpecKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0756C49715CEDC1000613DE1 /* Debug */,
+				0756C49815CEDC1000613DE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		078E04E415CED4A10086919A /* Build configuration list for PBXAggregateTarget "AllTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1128,6 +1424,7 @@
 				078E04E615CED4A10086919A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F812EFC4152BC6E1005E5D13 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
 			isa = XCConfigurationList;
