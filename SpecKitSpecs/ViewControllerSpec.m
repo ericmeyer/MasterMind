@@ -2,6 +2,7 @@
 #import "ViewController.h"
 
 SpecKitContext(ViewControllerSpec) {
+    
     __block ViewController* controller;
     
     BeforeEach(^{
@@ -41,19 +42,19 @@ SpecKitContext(ViewControllerSpec) {
         It(@"has a secrect code view controller", ^{
             [controller viewDidLoad];
             
-            [ExpectBool(controller.secretCodeViewController == NULL) toBeFalse];
+            [ExpectObj(controller.secretCodeViewController) toExist];
         });
         
         It(@"has a guess view controller", ^{
             [controller viewDidLoad];
             
-            [ExpectBool(controller.guessViewController == NULL) toBeFalse];
+            [ExpectObj(controller.guessViewController) toExist];
         });
         
         It(@"has an available pegs view controller", ^{
             [controller viewDidLoad];
             
-            [ExpectBool(controller.availablePegsViewController == NULL) toBeFalse];
+            [ExpectObj(controller.availablePegsViewController) toExist];
         });
         
         It(@"sets the secret code's availablePegs", ^{

@@ -20,7 +20,7 @@ SpecKitContext(MMCodePegSpec) {
         });
         
         It(@"has an image", ^{
-            [ExpectBool(imageFor(peg) == NULL) toBeFalse];
+            [ExpectObj(imageFor(peg)) toExist];
         });
         
         It(@"is inactive", ^{
@@ -42,7 +42,7 @@ SpecKitContext(MMCodePegSpec) {
         It(@"uses the color to set the background image", ^{
             UIImage* expectedImage = [UIImage imageNamed: @"red_peg.png"];
             
-            [ExpectBool(imageFor(peg) == NULL) toBeFalse];
+            [ExpectObj(imageFor(peg)) toExist];
             [ExpectObj(imageFor(peg)) toBeEqualTo: expectedImage];
         });
         
@@ -68,7 +68,7 @@ SpecKitContext(MMCodePegSpec) {
             [peg activate];
             UIImage* expectedImage = [UIImage imageNamed: @"red_peg_active.png"];
             
-            [ExpectBool(imageFor(peg) == NULL) toBeFalse];
+            [ExpectObj(imageFor(peg)) toExist];
             [ExpectObj(imageFor(peg)) toBeEqualTo: expectedImage];
         });
         
@@ -91,7 +91,7 @@ SpecKitContext(MMCodePegSpec) {
             [peg deactivate];
             UIImage* expectedImage = [UIImage imageNamed: @"red_peg.png"];
             
-            [ExpectBool(imageFor(peg) == NULL) toBeFalse];
+            [ExpectObj(imageFor(peg)) toExist];
             [ExpectObj(imageFor(peg)) toBeEqualTo: expectedImage];
         });
         
@@ -113,7 +113,7 @@ SpecKitContext(MMCodePegSpec) {
             UIImage* originalImage = [peg imageForState: UIControlStateNormal];
             [peg changeColor: @"blue"];
             
-            [ExpectBool(imageFor(peg) == NULL) toBeFalse];
+            [ExpectObj(imageFor(peg)) toExist];
             [ExpectBool(imageFor(peg) == originalImage) toBeFalse];
         });
         
