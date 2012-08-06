@@ -198,7 +198,7 @@
 		074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailablePegsViewController.h; sourceTree = "<group>"; };
 		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
 		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
-		0756C48915CEDC1000613DE1 /* SpecKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0756C48915CEDC1000613DE1 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKit-Info.plist"; sourceTree = "<group>"; };
 		0756C49215CEDC1000613DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0756C49415CEDC1000613DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -236,12 +236,12 @@
 		07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = SOURCE_ROOT; };
 		07A1BFAA15CCB4DD006079BC /* SymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = SOURCE_ROOT; };
 		07A1BFAB15CCB4F0006079BC /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = SOURCE_ROOT; };
-		07F506FC15CEFA27008619EF /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = SpecKitSpecs/MMCodeSpec.m; sourceTree = SOURCE_ROOT; };
-		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = SpecKitSpecs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
-		07F5070115CEFCD2008619EF /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = ../SpecKitSpecs/ViewControllerSpec.m; sourceTree = "<group>"; };
-		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = SpecKitSpecs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
-		07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailablePegsViewControllerSpec.m; path = ../SpecKitSpecs/MMAvailablePegsViewControllerSpec.m; sourceTree = "<group>"; };
-		07F5070F15CF0475008619EF /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodePegSpec.m; path = ../SpecKitSpecs/MMCodePegSpec.m; sourceTree = "<group>"; };
+		07F506FC15CEFA27008619EF /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = Specs/MMCodeSpec.m; sourceTree = SOURCE_ROOT; };
+		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = Specs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070115CEFCD2008619EF /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = Specs/ViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = Specs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailablePegsViewControllerSpec.m; path = Specs/MMAvailablePegsViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070F15CF0475008619EF /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodePegSpec.m; path = Specs/MMCodePegSpec.m; sourceTree = SOURCE_ROOT; };
 		F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F812EFAF152BC6E1005E5D13 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = fitnesse.jar; path = ../fitnesse.jar; sourceTree = "<group>"; };
 		F812EFB0152BC6E1005E5D13 /* Fixtures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Fixtures.m; path = SupportingFiles/Fixtures.m; sourceTree = "<group>"; };
@@ -580,7 +580,7 @@
 			children = (
 				F83ABA301528A964006FB6EC /* MasterMind.app */,
 				F812EF7F152BC6E1005E5D13 /* AcceptanceTests.app */,
-				0756C48915CEDC1000613DE1 /* SpecKit.app */,
+				0756C48915CEDC1000613DE1 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -639,7 +639,7 @@
 			);
 			name = Specs;
 			productName = SpecKit;
-			productReference = 0756C48915CEDC1000613DE1 /* SpecKit.app */;
+			productReference = 0756C48915CEDC1000613DE1 /* Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F812EF7E152BC6E1005E5D13 /* AcceptanceTests */ = {
