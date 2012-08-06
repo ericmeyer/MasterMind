@@ -17,13 +17,12 @@ fi
 
 echo "Running Acceptance Tests..."
 $DIR/iPhoneRunner/RunSlimTestsHeadless
-FAILING_TESTS=$?
-echo "Done Running Acceptance Tests"
+OCSLIM_STATUS=$?
+echo "Done Running Acceptance Tests $OCSLIM_STATUS"
 
-if [[ $FAILING_TESTS == 0 ]] ; then
-  echo 'All Tests Passed'
-  exit 0
+if [[ $OCSLIM_STATUS != 0 ]]; then
+  echo "Acceptance Tests Failed!"
+  exit $OCSLIM_STATUS
 else
-  echo "$FAILING_TESTS Failing Tests!"
-  exit $FAILING_TESTS
+  echo 'All Tests Passed'
 fi

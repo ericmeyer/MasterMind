@@ -703,8 +703,8 @@
 			projectRoot = "";
 			targets = (
 				F83ABA2F1528A964006FB6EC /* MasterMind */,
-				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
 				078E04E315CED4A10086919A /* AllTests */,
+				F812EF7E152BC6E1005E5D13 /* AcceptanceTests */,
 				0756C48815CEDC1000613DE1 /* Specs */,
 			);
 		};
