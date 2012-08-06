@@ -320,7 +320,7 @@
 			path = pegs;
 			sourceTree = "<group>";
 		};
-		0756C48E15CEDC1000613DE1 /* SpecKit */ = {
+		0756C48E15CEDC1000613DE1 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
 				07F5070015CEFCB1008619EF /* View */,
@@ -328,6 +328,7 @@
 				07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */,
 				0756C48F15CEDC1000613DE1 /* Supporting Files */,
 			);
+			name = Specs;
 			path = SpecKit;
 			sourceTree = "<group>";
 		};
@@ -567,7 +568,7 @@
 				0784EEF415C9650500D0A738 /* ConciseKit */,
 				F83ABA3A1528A964006FB6EC /* MasterMind */,
 				F812EF84152BC6E1005E5D13 /* AcceptanceTests */,
-				0756C48E15CEDC1000613DE1 /* SpecKit */,
+				0756C48E15CEDC1000613DE1 /* Specs */,
 				F83ABA331528A964006FB6EC /* Frameworks */,
 				F83ABA311528A964006FB6EC /* Products */,
 				07409D0D15CFE1BA006EEC84 /* libSpecKit.a */,
