@@ -1,5 +1,9 @@
 #import <SpecKit/SpecKit.h>
 #import "ViewController.h"
+#import "MockMMGame.h"
+#import "MockMMPegListViewController.h"
+#import "MockMMGuessResultsViewController.h"
+#import "ConciseKit.h"
 
 SpecKitContext(ViewControllerSpec) {
     
@@ -64,6 +68,23 @@ SpecKitContext(ViewControllerSpec) {
              toBeEqualTo: controller.availablePegsViewController];
         });
         
+        It(@"has a guess results view controller", ^{
+//            MockMMGuessResultsViewController* guessResultsController;
+//            guessResultsController = [MockMMGuessResultsViewController new];
+//            
+//            controller.guessResultsViewController = guessResultsController;
+//            Pending();
+            [controller viewDidLoad];
+            
+            [ExpectObj(controller.guessResultsViewController) toExist];
+        });
+        
+        It(@"has a game", ^{
+            [controller viewDidLoad];
+            
+            [ExpectObj(controller.game) toExist];
+        });
+        
         It(@"sets the guess' availablePegs", ^{
             [controller viewDidLoad];
             
@@ -75,23 +96,26 @@ SpecKitContext(ViewControllerSpec) {
     
     Describe(@"taking a guess", ^{
         
-        It(@"sets the number correct", ^{
-            controller.secretCode.text = @"YYRR";
-            controller.guess.text = @"YYYY";
-            
+        It(@"calls takeGuess on the game with the given guess", ^{
+            MockMMGame* mockGame = [MockMMGame new];
+            controller.game = mockGame;
+            MockMMPegListViewController* mockGuessViewController = [MockMMPegListViewController mockListWithPegs: @"1234"];
+            controller.guessViewController = mockGuessViewController;
             [controller takeGuess];
             
-            [ExpectObj(controller.numberCorrect.text) toBeEqualTo: @"2"];
+            [ExpectObj([mockGame.lastGuess $join]) toBeEqualTo: @"1234"];
         });
         
-        It(@"sets the number in the wrong spot", ^{
-            controller.secretCode.text = @"YRGG";
-            controller.guess.text = @"RGYG";
-            
+        It(@"updates the guessResultsView", ^{
+            MockMMGame* mockGame = [MockMMGame new];
+            controller.game = mockGame;
+            MockMMGuessResultsViewController* mockGuessResultsViewController = [MockMMGuessResultsViewController new];
+            controller.guessResultsViewController = mockGuessResultsViewController;
+
             [controller takeGuess];
-            
-            [ExpectObj(controller.numberInWrongSpot.text) toBeEqualTo: @"3"];
+
+            [ExpectObj(mockGuessResultsViewController.updateViewCalledWith) toBeEqualTo: mockGame];
         });
-        
+                
     });
 }

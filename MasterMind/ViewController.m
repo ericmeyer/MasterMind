@@ -1,11 +1,14 @@
 #import "ViewController.h"
 #import "MMCode.h"
 #import "ConciseKit.h"
+#import "MMGameImplementation.h"
+#import "MMGuessResultsViewController.h"
 
 @implementation ViewController
 
 @synthesize numberCorrect, numberInWrongSpot, secretCode, guess;
 @synthesize secretCodeViewController, guessViewController, secretCodeView, availablePegsViewController;
+@synthesize game, guessResultsViewController;
 
 - (void)didReceiveMemoryWarning
 {
@@ -35,7 +38,7 @@
 {
     [super viewDidLoad];
     
-
+    self.game = [MMGameImplementation new];
     self.availablePegsViewController = [[MMAvailablePegsViewController alloc] initWithNibName: @"MMAvailablePegsViewController"
                                                                                        bundle: nil];    
     self.guessViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availablePegsViewController];
@@ -46,69 +49,31 @@
 
     [self.guessViewController.view setFrame: CGRectMake(availablePegsWidth, 100, 400.0, 96.0)];
     
+    self.guessResultsViewController = [[MMGuessResultsViewController alloc] initWithNibName: @"MMGuessResultsViewController"
+                                                                                     bundle: nil];
     
+    [self.guessResultsViewController.view setFrame: CGRectMake(200, 200, 425, 142)];
     
-    
+    [self.view addSubview: self.guessResultsViewController.view];
     [self.view addSubview: self.availablePegsViewController.view];
     [self.view addSubview: self.secretCodeViewController.view];
     [self.view addSubview: self.guessViewController.view];
 
-    
     [self setInitialGuessResults];
     [self setInitialSecretCode];
     [self setInitialGuess];
 }
 
--(NSArray*) codeArray {
-//    return self.secretCodeViewController.pegList;
-    return [self.secretCode.text $chars];
+-(IBAction) setCode {
+    self.game.secretCode = self.secretCodeViewController.pegList;
 }
 
--(NSArray*) guessArray {
-//    return self.guessViewController.pegList;
-    return [self.guess.text $chars];
+-(IBAction) takeGuess {
+    [self.game takeGuess: self.guessViewController.pegList];
+    [self.guessResultsViewController updateView: game];
 }
 
--(IBAction) takeGuess
-{
-    MMCode* mmCode = [[MMCode alloc] init];
-    self.numberCorrect.text = [[mmCode numberCorrectForCode: [self codeArray]
-                                                   andGuess: [self guessArray]] stringValue];
-    self.numberInWrongSpot.text = [[mmCode numberInWrongSpotForCode: [self codeArray]
-                                                           andGuess: [self guessArray]] stringValue];
-    [mmCode release];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
+-(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) interfaceOrientation {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return (interfaceOrientation != UIInterfaceOrientationLandscapeLeft && interfaceOrientation != UIInterfaceOrientationLandscapeRight);
     } else {

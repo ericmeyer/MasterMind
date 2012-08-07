@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
+#import "MMGame.h"
 
-@interface MMGameImplementation : NSObject {
+@interface MMGameImplementation : NSObject<MMGame> {
     NSNumber* numberOfRemainingGuesses;
     NSArray* secretCode;
+    NSMutableArray* guessResults;
 }
-@property (nonatomic, retain) NSNumber* numberOfRemainingGuesses;
-@property (nonatomic, retain) NSArray* secretCode;
+@property (nonatomic, strong) NSNumber* numberOfRemainingGuesses;
+@property (nonatomic, strong) NSMutableArray* guessResults;
 
 -(BOOL) isOver;
 -(BOOL) didWin;
-
--(void) takeGuess: (NSArray*) guess;
 
 @end

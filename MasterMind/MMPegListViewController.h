@@ -1,7 +1,8 @@
 #import <UIKit/UIKit.h>
+#import "MMPegList.h"
 #import "MMAvailablePegsViewController.h"
 
-@interface MMPegListViewController : UIViewController {
+@interface MMPegListViewController : UIViewController<MMPegList> {
     MMAvailablePegsViewController* availablePegsController;
     NSMutableArray* pegs;
 }
@@ -11,7 +12,5 @@
 +(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController;
 
 -(IBAction) touchPeg:(id) sender;
-
--(NSArray*) pegList;
 
 @end

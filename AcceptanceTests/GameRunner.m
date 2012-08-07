@@ -17,6 +17,14 @@
     [self.game takeGuess: [guessAsString $chars]];
 }
 
+-(NSNumber*) lastGuessNumberCorrect {
+    return [[game lastGuessResult] numberCorrect];
+}
+
+-(NSNumber*) lastGuessNumberInWrongSpot {
+    return [[game lastGuessResult] numberInWrongSpot];
+}
+
 -(NSNumber*) remainingGuesses {
     return [game numberOfRemainingGuesses];
 }

@@ -34,6 +34,14 @@ SpecKitContext(MMGameImplementationSpec) {
 
             [ExpectObj(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
         });
+        
+        It(@"sets the last guess result", ^{
+            game.secretCode = [@"1234" $chars];
+            [game takeGuess: [@"1342" $chars]];
+
+            [ExpectInt([[[game lastGuessResult] numberCorrect] intValue]) toBe: 1];
+            [ExpectInt([[[game lastGuessResult] numberInWrongSpot] intValue]) toBe: 3];
+        });
 
     });
 }
