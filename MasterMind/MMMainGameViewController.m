@@ -34,8 +34,8 @@
     [self.view addSubview: self.guessViewController.view];
 }
 
--(IBAction) setCode {
-    self.game.secretCode = self.secretCodeViewController.pegList;
+-(IBAction) startNewGame {
+    self.game = [MMGameImplementation gameWithCode: self.secretCodeViewController.pegList];
 }
 
 -(IBAction) takeGuess {

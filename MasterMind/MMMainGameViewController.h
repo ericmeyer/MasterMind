@@ -21,6 +21,6 @@
 @property (nonatomic, retain) UIViewController<MMViewWithGame>* guessResultsViewController;
 
 -(IBAction) takeGuess;
--(IBAction) setCode;
+-(IBAction) startNewGame;
 
 @end

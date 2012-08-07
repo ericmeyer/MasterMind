@@ -9,6 +9,8 @@
 @property (nonatomic, strong) NSNumber* numberOfRemainingGuesses;
 @property (nonatomic, strong) NSMutableArray* guessResults;
 
++(id) gameWithCode:(NSArray*) givenSecretCode;
+
 -(BOOL) isOver;
 -(BOOL) didWin;
 

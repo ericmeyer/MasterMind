@@ -5,6 +5,12 @@
 
 @synthesize numberOfRemainingGuesses, secretCode, guessResults;
 
++(id) gameWithCode:(NSArray*) givenSecretCode {
+    MMGameImplementation* game = [MMGameImplementation new];
+    game.secretCode = givenSecretCode;
+    return game;
+}
+
 -(id) init {
     if ((self = [super init])) {
         self.numberOfRemainingGuesses = [NSNumber numberWithInt: 20];

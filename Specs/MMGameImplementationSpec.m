@@ -10,6 +10,15 @@ SpecKitContext(MMGameImplementationSpec) {
         game = [MMGameImplementation new];
     });
 
+    Describe(@"gameWithCode", ^{
+        
+        It(@"sets the code on the game", ^{
+            game = [MMGameImplementation gameWithCode: [@"1234" $chars]];
+            [ExpectObj([game.secretCode $join]) toBeEqualTo: @"1234"];
+        });
+        
+    });
+    
     Describe(@"initial game state", ^{
         
         It(@"is not over", ^{
