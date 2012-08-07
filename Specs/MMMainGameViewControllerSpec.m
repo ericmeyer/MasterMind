@@ -1,19 +1,19 @@
 #import <SpecKit/SpecKit.h>
-#import "ViewController.h"
+#import "MMMainGameViewController.h"
 #import "MockMMGame.h"
 #import "MockMMPegListViewController.h"
 #import "MockMMGuessResultsViewController.h"
 #import "ConciseKit.h"
 
-SpecKitContext(ViewControllerSpec) {
+SpecKitContext(MMMainGameViewControllerSpec) {
     
-    __block ViewController* controller;
+    __block MMMainGameViewController* controller;
     
     BeforeEach(^{
-        controller = [[ViewController alloc] init];
+        controller = [[MMMainGameViewController alloc] init];
     });
     
-    Describe(@"ViewController", ^{
+    Describe(@"MMMainGameViewController", ^{
         
         It(@"has a secrect code view controller", ^{
             [controller viewDidLoad];

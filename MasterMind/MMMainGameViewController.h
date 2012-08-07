@@ -5,7 +5,7 @@
 #import "MMPegList.h"
 #import "MMViewWithGame.h"
 
-@interface ViewController : UIViewController {
+@interface MMMainGameViewController : UIViewController {
     IBOutlet MMPegListViewController* secretCodeViewController;
     UIViewController<MMPegList>* guessViewController;
     MMAvailablePegsViewController* availablePegsViewController;

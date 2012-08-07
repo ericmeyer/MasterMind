@@ -97,8 +97,8 @@
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
 		07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FC15CEFA27008619EF /* MMCodeSpec.m */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
-		07F5070215CEFCD2008619EF /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* ViewControllerSpec.m */; };
-		07F5070315CEFD57008619EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */; };
+		07F5070315CEFD57008619EF /* MMMainGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* MMMainGameViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F5070415CEFD57008619EF /* MMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A146715C74A14003B1953 /* MMPegListViewController.m */; };
 		07F5070515CEFD57008619EF /* MMAvailablePegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */; };
 		07F5070615CEFD57008619EF /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -128,9 +128,9 @@
 		F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA3D1528A964006FB6EC /* InfoPlist.strings */; };
 		F83ABA411528A964006FB6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA401528A964006FB6EC /* main.m */; };
 		F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA441528A964006FB6EC /* AppDelegate.m */; };
-		F83ABA481528A964006FB6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* ViewController.m */; };
-		F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */; };
-		F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */; };
+		F83ABA481528A964006FB6EC /* MMMainGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* MMMainGameViewController.m */; };
+		F83ABA4B1528A964006FB6EC /* MMMainGameViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA491528A964006FB6EC /* MMMainGameViewController_iPhone.xib */; };
+		F83ABA4E1528A964006FB6EC /* MMMainGameViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83ABA4C1528A964006FB6EC /* MMMainGameViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +265,7 @@
 		07A1BFAB15CCB4F0006079BC /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = SOURCE_ROOT; };
 		07F506FC15CEFA27008619EF /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = Specs/MMCodeSpec.m; sourceTree = SOURCE_ROOT; };
 		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = Specs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
-		07F5070115CEFCD2008619EF /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSpec.m; path = Specs/ViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
+		07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMMainGameViewControllerSpec.m; path = Specs/MMMainGameViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = Specs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailablePegsViewControllerSpec.m; path = Specs/MMAvailablePegsViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070F15CF0475008619EF /* MMCodePegSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodePegSpec.m; path = Specs/MMCodePegSpec.m; sourceTree = SOURCE_ROOT; };
@@ -290,10 +290,10 @@
 		F83ABA421528A964006FB6EC /* MasterMind-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasterMind-Prefix.pch"; sourceTree = "<group>"; };
 		F83ABA431528A964006FB6EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F83ABA441528A964006FB6EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F83ABA461528A964006FB6EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F83ABA471528A964006FB6EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F83ABA4A1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		F83ABA4D1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		F83ABA461528A964006FB6EC /* MMMainGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMainGameViewController.h; sourceTree = "<group>"; };
+		F83ABA471528A964006FB6EC /* MMMainGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMainGameViewController.m; sourceTree = "<group>"; };
+		F83ABA4A1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMMainGameViewController_iPhone.xib; sourceTree = "<group>"; };
+		F83ABA4D1528A964006FB6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMMainGameViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,8 +425,8 @@
 			isa = PBXGroup;
 			children = (
 				07007C9015D08A1C00EB3BE3 /* Protocols */,
-				F83ABA461528A964006FB6EC /* ViewController.h */,
-				F83ABA471528A964006FB6EC /* ViewController.m */,
+				F83ABA461528A964006FB6EC /* MMMainGameViewController.h */,
+				F83ABA471528A964006FB6EC /* MMMainGameViewController.m */,
 				074A146615C74A14003B1953 /* MMPegListViewController.h */,
 				074A146715C74A14003B1953 /* MMPegListViewController.m */,
 				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
@@ -488,7 +488,7 @@
 		07F5070015CEFCB1008619EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				07F5070115CEFCD2008619EF /* ViewControllerSpec.m */,
+				07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */,
 				07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */,
 				07F5070D15CF0308008619EF /* MMAvailablePegsViewControllerSpec.m */,
 				07F5070F15CF0475008619EF /* MMCodePegSpec.m */,
@@ -677,8 +677,8 @@
 				075BA91915C6BD8A002E0086 /* View */,
 				F83ABA431528A964006FB6EC /* AppDelegate.h */,
 				F83ABA441528A964006FB6EC /* AppDelegate.m */,
-				F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */,
-				F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */,
+				F83ABA491528A964006FB6EC /* MMMainGameViewController_iPhone.xib */,
+				F83ABA4C1528A964006FB6EC /* MMMainGameViewController_iPad.xib */,
 				F83ABA3B1528A964006FB6EC /* Supporting Files */,
 			);
 			path = MasterMind;
@@ -861,8 +861,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83ABA3F1528A964006FB6EC /* InfoPlist.strings in Resources */,
-				F83ABA4B1528A964006FB6EC /* ViewController_iPhone.xib in Resources */,
-				F83ABA4E1528A964006FB6EC /* ViewController_iPad.xib in Resources */,
+				F83ABA4B1528A964006FB6EC /* MMMainGameViewController_iPhone.xib in Resources */,
+				F83ABA4E1528A964006FB6EC /* MMMainGameViewController_iPad.xib in Resources */,
 				074A146C15C74A14003B1953 /* MMPegListViewController.xib in Resources */,
 				074A147E15C7817F003B1953 /* MMAvailablePegsViewController.xib in Resources */,
 				0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */,
@@ -923,8 +923,8 @@
 				0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */,
 				07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */,
 				07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */,
-				07F5070215CEFCD2008619EF /* ViewControllerSpec.m in Sources */,
-				07F5070315CEFD57008619EF /* ViewController.m in Sources */,
+				07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */,
+				07F5070315CEFD57008619EF /* MMMainGameViewController.m in Sources */,
 				07F5070415CEFD57008619EF /* MMPegListViewController.m in Sources */,
 				07F5070515CEFD57008619EF /* MMAvailablePegsViewController.m in Sources */,
 				07F5070615CEFD57008619EF /* MMCodePeg.m in Sources */,
@@ -976,7 +976,7 @@
 			files = (
 				F83ABA411528A964006FB6EC /* main.m in Sources */,
 				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
-				F83ABA481528A964006FB6EC /* ViewController.m in Sources */,
+				F83ABA481528A964006FB6EC /* MMMainGameViewController.m in Sources */,
 				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
 				074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
@@ -1023,20 +1023,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F83ABA491528A964006FB6EC /* ViewController_iPhone.xib */ = {
+		F83ABA491528A964006FB6EC /* MMMainGameViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F83ABA4A1528A964006FB6EC /* en */,
 			);
-			name = ViewController_iPhone.xib;
+			name = MMMainGameViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		F83ABA4C1528A964006FB6EC /* ViewController_iPad.xib */ = {
+		F83ABA4C1528A964006FB6EC /* MMMainGameViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F83ABA4D1528A964006FB6EC /* en */,
 			);
-			name = ViewController_iPad.xib;
+			name = MMMainGameViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

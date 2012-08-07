@@ -1,8 +1,8 @@
-#import "ViewController.h"
+#import "MMMainGameViewController.h"
 #import "MMGameImplementation.h"
 #import "MMGuessResultsViewController.h"
 
-@implementation ViewController
+@implementation MMMainGameViewController
 
 @synthesize secretCodeViewController, guessViewController, availablePegsViewController;
 @synthesize game, guessResultsViewController;
