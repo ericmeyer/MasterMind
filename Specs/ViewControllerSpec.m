@@ -11,37 +11,9 @@ SpecKitContext(ViewControllerSpec) {
     
     BeforeEach(^{
         controller = [[ViewController alloc] init];
-        controller.numberCorrect = [[UILabel alloc] init];
-        controller.numberInWrongSpot = [[UILabel alloc] init];
-        controller.secretCode = [[UITextField alloc] init];
-        controller.guess = [[UITextField alloc] init];
     });
     
     Describe(@"ViewController", ^{
-        
-        It(@"sets the number correct to empty on viewDidLoad", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.numberCorrect.text) toBeEqualTo: @""];
-        });
-        
-        It(@"sets the number in wrong spot on viewDidLoad", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.numberInWrongSpot.text) toBeEqualTo: @""];
-        });
-        
-        It(@"has a secret code", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.secretCode.text) toBeEqualTo: @"YGRB"];
-        });
-        
-        It(@"has a guess", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.guess.text) toBeEqualTo: @"GGGG"];
-        });
         
         It(@"has a secrect code view controller", ^{
             [controller viewDidLoad];
