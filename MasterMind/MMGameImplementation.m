@@ -29,8 +29,7 @@
 
 -(void) takeGuess:(NSArray*) guess {
     self.numberOfRemainingGuesses = [NSNumber numberWithInt: self.numberOfRemainingGuesses.intValue - 1];
-    MMGuessResult* guessResult = [MMGuessResult resultFromCode: self.secretCode andGuess: guess];
-    [self.guessResults addObject: guessResult];
+    [self.guessResults addObject: [MMGuessResult resultFromCode: self.secretCode andGuess: guess]];
 }
 
 -(MMGuessResult*) lastGuessResult {
