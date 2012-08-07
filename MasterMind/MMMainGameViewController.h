@@ -6,21 +6,21 @@
 #import "MMViewWithGame.h"
 
 @interface MMMainGameViewController : UIViewController {
-    IBOutlet MMPegListViewController* secretCodeViewController;
-    UIViewController<MMPegList>* guessViewController;
     MMAvailablePegsViewController* availablePegsViewController;
+    MMPegListViewController* secretCodeViewController;
+    UIViewController<MMPegList>* guessViewController;
+    UIViewController<MMViewWithGame>* guessResultsViewController;
     
     NSObject<MMGame>* game;
-    UIViewController<MMViewWithGame>* guessResultsViewController;
 }
+@property (nonatomic, retain) MMAvailablePegsViewController* availablePegsViewController;
 @property (nonatomic, retain) MMPegListViewController* secretCodeViewController;
 @property (nonatomic, retain) UIViewController<MMPegList>* guessViewController;
-@property (nonatomic, retain) MMAvailablePegsViewController* availablePegsViewController;
-
-@property (nonatomic, retain) NSObject<MMGame>* game;
 @property (nonatomic, retain) UIViewController<MMViewWithGame>* guessResultsViewController;
 
--(IBAction) takeGuess;
+@property (nonatomic, retain) NSObject<MMGame>* game;
+
 -(IBAction) startNewGame;
+-(IBAction) takeGuess;
 
 @end

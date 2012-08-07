@@ -47,12 +47,6 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             [ExpectObj(controller.guessResultsViewController) toExist];
         });
 
-        It(@"has a game", ^{
-            [controller viewDidLoad];
-
-            [ExpectObj(controller.game) toExist];
-        });
-
         It(@"sets the guess' availablePegs", ^{
             [controller viewDidLoad];
 
