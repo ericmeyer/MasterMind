@@ -29,11 +29,18 @@
     [self.view addSubview: self.guessViewController.view];
 }
 
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self initializeControllers];
+        [self resizeControllerViews];
+        [self addControllerSubviews];
+    }
+    return self;
+}
+
 -(void) viewDidLoad {
     [super viewDidLoad];
-    [self initializeControllers];
-    [self resizeControllerViews];
-    [self addControllerSubviews];
 }
 
 -(IBAction) startNewGame {

@@ -74,14 +74,11 @@
 		0756C48D15CEDC1000613DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
 		0756C49315CEDC1000613DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0756C49115CEDC1000613DE1 /* InfoPlist.strings */; };
 		0756C49515CEDC1000613DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C49415CEDC1000613DE1 /* main.m */; };
-		0756C4B015CEDDB800613DE1 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
 		0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0756C4B415CEDDCD00613DE1 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		075BA90D15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
-		075BA90E15C60DD5002E0086 /* MMCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA90C15C60DD5002E0086 /* MMCode.m */; };
 		075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BA91515C60DF9002E0086 /* GuessChecker.m */; };
 		077655A115CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
 		0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
@@ -95,7 +92,6 @@
 		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; };
 		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
-		07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FC15CEFA27008619EF /* MMCodeSpec.m */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
 		07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */; };
 		07F5070315CEFD57008619EF /* MMMainGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* MMMainGameViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -231,8 +227,6 @@
 		0756C49415CEDC1000613DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0756C49615CEDC1000613DE1 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
-		075BA90B15C60DD5002E0086 /* MMCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCode.h; sourceTree = "<group>"; };
-		075BA90C15C60DD5002E0086 /* MMCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCode.m; sourceTree = "<group>"; };
 		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
 		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
 		077655A015CB5A0C00666F3F /* empty_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_peg.png; sourceTree = "<group>"; };
@@ -263,7 +257,6 @@
 		07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = SOURCE_ROOT; };
 		07A1BFAA15CCB4DD006079BC /* SymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SymbolTable.h; path = cslim/include/ExecutorC/SymbolTable.h; sourceTree = SOURCE_ROOT; };
 		07A1BFAB15CCB4F0006079BC /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = cslim/fixtures/Main.c; sourceTree = SOURCE_ROOT; };
-		07F506FC15CEFA27008619EF /* MMCodeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMCodeSpec.m; path = Specs/MMCodeSpec.m; sourceTree = SOURCE_ROOT; };
 		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = Specs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMMainGameViewControllerSpec.m; path = Specs/MMMainGameViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = Specs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
@@ -342,7 +335,6 @@
 		07007C8915D0899200EB3BE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				07F506FC15CEFA27008619EF /* MMCodeSpec.m */,
 				07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */,
 				07007CA015D0AB2900EB3BE3 /* MMGuessResultSpec.m */,
 			);
@@ -464,8 +456,6 @@
 			isa = PBXGroup;
 			children = (
 				07007C8715D0897500EB3BE3 /* Protocols */,
-				075BA90B15C60DD5002E0086 /* MMCode.h */,
-				075BA90C15C60DD5002E0086 /* MMCode.m */,
 				0722559815C80E6E008EFF3F /* MMGameImplementation.h */,
 				0722559915C80E6E008EFF3F /* MMGameImplementation.m */,
 				07007CA615D0AB8900EB3BE3 /* MMGuessResult.h */,
@@ -915,13 +905,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0756C49515CEDC1000613DE1 /* main.m in Sources */,
-				0756C4B015CEDDB800613DE1 /* MMCode.m in Sources */,
 				0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */,
 				0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */,
 				0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */,
 				0756C4B415CEDDCD00613DE1 /* NSDictionary+ConciseKit.m in Sources */,
 				0756C4B515CEDDCD00613DE1 /* NSString+ConciseKit.m in Sources */,
-				07F506FD15CEFA27008619EF /* MMCodeSpec.m in Sources */,
 				07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */,
 				07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */,
 				07F5070315CEFD57008619EF /* MMMainGameViewController.m in Sources */,
@@ -946,7 +934,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F812EFB1152BC6E1005E5D13 /* Fixtures.m in Sources */,
-				075BA90E15C60DD5002E0086 /* MMCode.m in Sources */,
 				075BA91615C60DF9002E0086 /* GuessChecker.m in Sources */,
 				0722559715C80D58008EFF3F /* GameRunner.m in Sources */,
 				0722559B15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
@@ -977,7 +964,6 @@
 				F83ABA411528A964006FB6EC /* main.m in Sources */,
 				F83ABA451528A964006FB6EC /* AppDelegate.m in Sources */,
 				F83ABA481528A964006FB6EC /* MMMainGameViewController.m in Sources */,
-				075BA90D15C60DD5002E0086 /* MMCode.m in Sources */,
 				074A146915C74A14003B1953 /* MMPegListViewController.m in Sources */,
 				074A147B15C7817F003B1953 /* MMAvailablePegsViewController.m in Sources */,
 				0722559A15C80E6E008EFF3F /* MMGameImplementation.m in Sources */,
