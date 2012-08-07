@@ -33,7 +33,7 @@
     }];
 }
 
--(BOOL) allPegsSet {
+-(BOOL) allPegsAreSet {
     MMCodePeg* unsetPeg = [self.pegs $detect:^BOOL(id peg){
         return ((MMCodePeg*)peg).color == NULL;  
     }];
@@ -41,7 +41,7 @@
 }
 
 -(NSArray*) pegList {
-    if ([self allPegsSet]) {
+    if ([self allPegsAreSet]) {
         return [self pegColors];
     } else {
         return NULL;
