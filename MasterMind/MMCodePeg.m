@@ -9,13 +9,13 @@
 @synthesize color, isActive;
 
 +(id) pegWithColor:(NSString*) givenColor {
-    MMCodePeg* peg = [[MMCodePeg new] autorelease];
+    MMCodePeg* peg = [MMCodePeg new];
     [peg changeColor: givenColor];
     return peg;
 }
 
 +(id) emptyPeg {
-    MMCodePeg* peg = [[MMCodePeg new] autorelease];
+    MMCodePeg* peg = [MMCodePeg new];
     [peg setImage: @"empty_peg"];
     return peg;
 }

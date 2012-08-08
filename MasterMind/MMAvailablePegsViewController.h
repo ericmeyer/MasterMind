@@ -5,8 +5,8 @@
     NSMutableArray* availablePegs;
     MMCodePeg* activePeg;
 }
-@property (nonatomic, retain) NSMutableArray* availablePegs;
-@property (nonatomic, retain) MMCodePeg* activePeg;
+@property (nonatomic, strong) NSMutableArray* availablePegs;
+@property (nonatomic, strong) MMCodePeg* activePeg;
 
 -(IBAction) clickPeg:(id) sender;
 

@@ -6,8 +6,8 @@
     MMAvailablePegsViewController* availablePegsController;
     NSMutableArray* pegs;
 }
-@property (nonatomic, retain) MMAvailablePegsViewController* availablePegsController;
-@property (nonatomic, retain) NSMutableArray* pegs;
+@property (nonatomic, strong) MMAvailablePegsViewController* availablePegsController;
+@property (nonatomic, strong) NSMutableArray* pegs;
 
 +(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController;
 

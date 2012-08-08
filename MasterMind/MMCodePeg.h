@@ -4,7 +4,7 @@
     NSString* color;
     BOOL isActive;
 }
-@property (nonatomic, retain) NSString* color;
+@property (nonatomic, strong) NSString* color;
 @property (readwrite, assign) BOOL isActive;;
 
 +(id) pegWithColor:(NSString*) givenColor;

@@ -12,12 +12,12 @@
     
     NSObject<MMGame>* game;
 }
-@property (nonatomic, retain) MMAvailablePegsViewController* availablePegsViewController;
-@property (nonatomic, retain) UIViewController<MMPegList>* secretCodeViewController;
-@property (nonatomic, retain) UIViewController<MMPegList>* guessViewController;
-@property (nonatomic, retain) UIViewController<MMViewWithGame>* guessResultsViewController;
+@property (nonatomic, strong) MMAvailablePegsViewController* availablePegsViewController;
+@property (nonatomic, strong) UIViewController<MMPegList>* secretCodeViewController;
+@property (nonatomic, strong) UIViewController<MMPegList>* guessViewController;
+@property (nonatomic, strong) UIViewController<MMViewWithGame>* guessResultsViewController;
 
-@property (nonatomic, retain) NSObject<MMGame>* game;
+@property (nonatomic, strong) NSObject<MMGame>* game;
 
 -(IBAction) startNewGame;
 -(IBAction) takeGuess;

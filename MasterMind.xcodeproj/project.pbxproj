@@ -83,13 +83,13 @@
 		077655A115CB5A0C00666F3F /* empty_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 077655A015CB5A0C00666F3F /* empty_peg.png */; };
 		0784EF0115C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
 		0784EF0215C9651600D0A738 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; };
-		0784EF0415C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; };
-		0784EF0515C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; };
+		0784EF0415C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0784EF0515C9651600D0A738 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0784EF0715C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
 		0784EF0815C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
-		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
-		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; };
-		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; };
+		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
@@ -1098,6 +1098,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1116,6 +1117,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1177,6 +1179,7 @@
 		F83ABA521528A964006FB6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MasterMind/MasterMind-Prefix.pch";
 				INFOPLIST_FILE = "MasterMind/MasterMind-Info.plist";
@@ -1188,6 +1191,7 @@
 		F83ABA531528A964006FB6EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MasterMind/MasterMind-Prefix.pch";
 				INFOPLIST_FILE = "MasterMind/MasterMind-Info.plist";
