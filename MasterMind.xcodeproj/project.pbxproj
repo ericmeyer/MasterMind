@@ -76,8 +76,6 @@
 		0756C48B15CEDC1000613DE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA341528A964006FB6EC /* UIKit.framework */; };
 		0756C48C15CEDC1000613DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA361528A964006FB6EC /* Foundation.framework */; };
 		0756C48D15CEDC1000613DE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83ABA381528A964006FB6EC /* CoreGraphics.framework */; };
-		0756C49315CEDC1000613DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0756C49115CEDC1000613DE1 /* InfoPlist.strings */; };
-		0756C49515CEDC1000613DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C49415CEDC1000613DE1 /* main.m */; };
 		0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
 		0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFA15C9651600D0A738 /* ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFC15C9651600D0A738 /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -93,6 +91,9 @@
 		0784EF0815C9651600D0A738 /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */; };
 		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0791C5E115D2911A004C7BDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0791C5DC15D2911A004C7BDC /* InfoPlist.strings */; };
+		0791C5E215D2911A004C7BDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0791C5DE15D2911A004C7BDC /* main.m */; };
+		0791C5E315D2911A004C7BDC /* SpecKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0791C5DF15D2911A004C7BDC /* SpecKit-Info.plist */; };
 		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
@@ -229,10 +230,6 @@
 		074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailablePegsViewController.m; sourceTree = "<group>"; };
 		074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAvailablePegsViewController.xib; sourceTree = "<group>"; };
 		0756C48915CEDC1000613DE1 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKit-Info.plist"; sourceTree = "<group>"; };
-		0756C49215CEDC1000613DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0756C49415CEDC1000613DE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0756C49615CEDC1000613DE1 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		0756C49B15CEDC2400613DE1 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		075BA91415C60DF9002E0086 /* GuessChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessChecker.h; sourceTree = "<group>"; };
 		075BA91515C60DF9002E0086 /* GuessChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessChecker.m; sourceTree = "<group>"; };
@@ -248,6 +245,10 @@
 		0784EEFE15C9651600D0A738 /* NSDictionary+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ConciseKit.m"; path = "ConciseKit/src/NSDictionary+ConciseKit.m"; sourceTree = "<group>"; };
 		0784EEFF15C9651600D0A738 /* NSString+ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ConciseKit.h"; path = "ConciseKit/src/NSString+ConciseKit.h"; sourceTree = "<group>"; };
 		0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ConciseKit.m"; path = "ConciseKit/src/NSString+ConciseKit.m"; sourceTree = "<group>"; };
+		0791C5DD15D2911A004C7BDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0791C5DE15D2911A004C7BDC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Specs/SupportingFiles/main.m; sourceTree = SOURCE_ROOT; };
+		0791C5DF15D2911A004C7BDC /* SpecKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SpecKit-Info.plist"; path = "Specs/SupportingFiles/SpecKit-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0791C5E015D2911A004C7BDC /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpecKit-Prefix.pch"; path = "Specs/SupportingFiles/SpecKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		07A1BF9915CCB45C006079BC /* StatementExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = cslim/src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = SOURCE_ROOT; };
 		07A1BF9C15CCB46F006079BC /* SocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketServer.h; path = cslim/include/Com/SocketServer.h; sourceTree = SOURCE_ROOT; };
 		07A1BF9D15CCB46F006079BC /* TcpComLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpComLink.h; path = cslim/include/Com/TcpComLink.h; sourceTree = SOURCE_ROOT; };
@@ -401,10 +402,10 @@
 		0756C48F15CEDC1000613DE1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0756C49015CEDC1000613DE1 /* SpecKit-Info.plist */,
-				0756C49115CEDC1000613DE1 /* InfoPlist.strings */,
-				0756C49415CEDC1000613DE1 /* main.m */,
-				0756C49615CEDC1000613DE1 /* SpecKit-Prefix.pch */,
+				0791C5DB15D2911A004C7BDC /* en.lproj */,
+				0791C5DE15D2911A004C7BDC /* main.m */,
+				0791C5DF15D2911A004C7BDC /* SpecKit-Info.plist */,
+				0791C5E015D2911A004C7BDC /* SpecKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -494,6 +495,15 @@
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
+		};
+		0791C5DB15D2911A004C7BDC /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0791C5DC15D2911A004C7BDC /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = Specs/SupportingFiles/en.lproj;
+			sourceTree = SOURCE_ROOT;
 		};
 		07F5070015CEFCB1008619EF /* View */ = {
 			isa = PBXGroup;
@@ -830,7 +840,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0756C49315CEDC1000613DE1 /* InfoPlist.strings in Resources */,
 				07F5070715CEFE79008619EF /* MMAvailablePegsViewController.xib in Resources */,
 				07F5070815CEFE7C008619EF /* MMPegListViewController.xib in Resources */,
 				07F5071115CF0612008619EF /* empty_peg.png in Resources */,
@@ -844,6 +853,8 @@
 				07F5071915CF0612008619EF /* yellow_peg_active.png in Resources */,
 				07007CB515D14A9C00EB3BE3 /* MMGuessResultsViewController.xib in Resources */,
 				07478F0715D2861B00F2C90D /* MMGuessHistoryViewController.xib in Resources */,
+				0791C5E115D2911A004C7BDC /* InfoPlist.strings in Resources */,
+				0791C5E315D2911A004C7BDC /* SpecKit-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,7 +935,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0756C49515CEDC1000613DE1 /* main.m in Sources */,
 				0756C4B115CEDDBA00613DE1 /* MMGameImplementation.m in Sources */,
 				0756C4B215CEDDCD00613DE1 /* ConciseKit.m in Sources */,
 				0756C4B315CEDDCD00613DE1 /* NSArray+ConciseKit.m in Sources */,
@@ -947,6 +957,7 @@
 				07007CAE15D142DE00EB3BE3 /* MockMMPegListViewController.m in Sources */,
 				07007CB215D1481400EB3BE3 /* MockMMViewWithGame.m in Sources */,
 				07478F0515D2861B00F2C90D /* MMGuessHistoryViewController.m in Sources */,
+				0791C5E215D2911A004C7BDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,10 +1026,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0756C49115CEDC1000613DE1 /* InfoPlist.strings */ = {
+		0791C5DC15D2911A004C7BDC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0756C49215CEDC1000613DE1 /* en */,
+				0791C5DD15D2911A004C7BDC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1058,7 +1069,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs/SupportingFiles/SpecKit-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = SpecKit;
 				INFOPLIST_FILE = "";
@@ -1080,7 +1091,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs/SupportingFiles/SpecKit-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = SpecKit;
 				INFOPLIST_FILE = "";
