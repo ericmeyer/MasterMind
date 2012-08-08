@@ -1,6 +1,6 @@
-#import "MockMMGuessResultsViewController.h"
+#import "MockMMViewWithGame.h"
 
-@implementation MockMMGuessResultsViewController
+@implementation MockMMViewWithGame
 
 @synthesize updateViewCalledWith;
 

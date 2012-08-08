@@ -31,7 +31,7 @@
 		07007CA915D0AB8900EB3BE3 /* MMGuessResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07007CA715D0AB8900EB3BE3 /* MMGuessResult.m */; };
 		07007CAA15D0AB8900EB3BE3 /* MMGuessResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07007CA715D0AB8900EB3BE3 /* MMGuessResult.m */; };
 		07007CAE15D142DE00EB3BE3 /* MockMMPegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07007CAD15D142DE00EB3BE3 /* MockMMPegListViewController.m */; };
-		07007CB215D1481400EB3BE3 /* MockMMGuessResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07007CB115D1481400EB3BE3 /* MockMMGuessResultsViewController.m */; };
+		07007CB215D1481400EB3BE3 /* MockMMViewWithGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07007CB115D1481400EB3BE3 /* MockMMViewWithGame.m */; };
 		07007CB415D14A9C00EB3BE3 /* MMGuessResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */; };
 		07007CB515D14A9C00EB3BE3 /* MMGuessResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */; };
 		0722557C15C80AB3008EFF3F /* blue_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0722557415C80AB3008EFF3F /* blue_peg.png */; };
@@ -55,6 +55,10 @@
 		0722559B15C80E6E008EFF3F /* MMGameImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722559915C80E6E008EFF3F /* MMGameImplementation.m */; };
 		072255A115C8149A008EFF3F /* MMCodePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 072255A015C8149A008EFF3F /* MMCodePeg.m */; };
 		07409D0E15CFE1BA006EEC84 /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07409D0D15CFE1BA006EEC84 /* libSpecKit.a */; };
+		07478F0415D2861B00F2C90D /* MMGuessHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessHistoryViewController.m */; };
+		07478F0515D2861B00F2C90D /* MMGuessHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessHistoryViewController.m */; };
+		07478F0615D2861B00F2C90D /* MMGuessHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessHistoryViewController.xib */; };
+		07478F0715D2861B00F2C90D /* MMGuessHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessHistoryViewController.xib */; };
 		0749FD6315CCB40F00E8CB0A /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6115CCB40F00E8CB0A /* SocketServer.c */; };
 		0749FD6415CCB40F00E8CB0A /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6215CCB40F00E8CB0A /* TcpComLink.c */; };
 		0749FD6D15CCB43100E8CB0A /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6615CCB43100E8CB0A /* ListExecutor.c */; };
@@ -188,8 +192,8 @@
 		07007CAC15D142DE00EB3BE3 /* MockMMPegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMPegListViewController.h; path = Specs/Mocks/MockMMPegListViewController.h; sourceTree = SOURCE_ROOT; };
 		07007CAD15D142DE00EB3BE3 /* MockMMPegListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockMMPegListViewController.m; path = Specs/Mocks/MockMMPegListViewController.m; sourceTree = SOURCE_ROOT; };
 		07007CAF15D147EF00EB3BE3 /* MMViewWithGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewWithGame.h; sourceTree = "<group>"; };
-		07007CB015D1481400EB3BE3 /* MockMMGuessResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMGuessResultsViewController.h; path = Specs/Mocks/MockMMGuessResultsViewController.h; sourceTree = SOURCE_ROOT; };
-		07007CB115D1481400EB3BE3 /* MockMMGuessResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockMMGuessResultsViewController.m; path = Specs/Mocks/MockMMGuessResultsViewController.m; sourceTree = SOURCE_ROOT; };
+		07007CB015D1481400EB3BE3 /* MockMMViewWithGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMViewWithGame.h; path = Specs/Mocks/MockMMViewWithGame.h; sourceTree = SOURCE_ROOT; };
+		07007CB115D1481400EB3BE3 /* MockMMViewWithGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockMMViewWithGame.m; path = Specs/Mocks/MockMMViewWithGame.m; sourceTree = SOURCE_ROOT; };
 		07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMGuessResultsViewController.xib; sourceTree = "<group>"; };
 		0722557415C80AB3008EFF3F /* blue_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg.png; sourceTree = "<group>"; };
 		0722557515C80AB3008EFF3F /* blue_peg_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_peg_active.png; sourceTree = "<group>"; };
@@ -206,6 +210,9 @@
 		0722559F15C8149A008EFF3F /* MMCodePeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCodePeg.h; sourceTree = "<group>"; };
 		072255A015C8149A008EFF3F /* MMCodePeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCodePeg.m; sourceTree = "<group>"; };
 		07409D0D15CFE1BA006EEC84 /* libSpecKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSpecKit.a; sourceTree = "<group>"; };
+		07478F0115D2861B00F2C90D /* MMGuessHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessHistoryViewController.h; sourceTree = "<group>"; };
+		07478F0215D2861B00F2C90D /* MMGuessHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGuessHistoryViewController.m; sourceTree = "<group>"; };
+		07478F0315D2861B00F2C90D /* MMGuessHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMGuessHistoryViewController.xib; sourceTree = "<group>"; };
 		0749FD6115CCB40F00E8CB0A /* SocketServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = SOURCE_ROOT; };
 		0749FD6215CCB40F00E8CB0A /* TcpComLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = SOURCE_ROOT; };
 		0749FD6615CCB43100E8CB0A /* ListExecutor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = SOURCE_ROOT; };
@@ -348,8 +355,8 @@
 				07007C8C15D089BA00EB3BE3 /* MockMMGame.m */,
 				07007CAC15D142DE00EB3BE3 /* MockMMPegListViewController.h */,
 				07007CAD15D142DE00EB3BE3 /* MockMMPegListViewController.m */,
-				07007CB015D1481400EB3BE3 /* MockMMGuessResultsViewController.h */,
-				07007CB115D1481400EB3BE3 /* MockMMGuessResultsViewController.m */,
+				07007CB015D1481400EB3BE3 /* MockMMViewWithGame.h */,
+				07007CB115D1481400EB3BE3 /* MockMMViewWithGame.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -428,6 +435,8 @@
 				072255A015C8149A008EFF3F /* MMCodePeg.m */,
 				07007C9C15D08AB900EB3BE3 /* MMGuessResultsViewController.h */,
 				07007C9D15D08AB900EB3BE3 /* MMGuessResultsViewController.m */,
+				07478F0115D2861B00F2C90D /* MMGuessHistoryViewController.h */,
+				07478F0215D2861B00F2C90D /* MMGuessHistoryViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -435,6 +444,7 @@
 		076E910015D1DBC50089CC59 /* XIbs */ = {
 			isa = PBXGroup;
 			children = (
+				07478F0315D2861B00F2C90D /* MMGuessHistoryViewController.xib */,
 				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
 				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
 				07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */,
@@ -833,6 +843,7 @@
 				07F5071815CF0612008619EF /* yellow_peg.png in Resources */,
 				07F5071915CF0612008619EF /* yellow_peg_active.png in Resources */,
 				07007CB515D14A9C00EB3BE3 /* MMGuessResultsViewController.xib in Resources */,
+				07478F0715D2861B00F2C90D /* MMGuessHistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +884,7 @@
 				0722559115C80AB3008EFF3F /* yellow_peg_active.png in Resources */,
 				077655A115CB5A0C00666F3F /* empty_peg.png in Resources */,
 				07007CB415D14A9C00EB3BE3 /* MMGuessResultsViewController.xib in Resources */,
+				07478F0615D2861B00F2C90D /* MMGuessHistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,7 +945,8 @@
 				07007CA115D0AB2900EB3BE3 /* MMGuessResultSpec.m in Sources */,
 				07007CAA15D0AB8900EB3BE3 /* MMGuessResult.m in Sources */,
 				07007CAE15D142DE00EB3BE3 /* MockMMPegListViewController.m in Sources */,
-				07007CB215D1481400EB3BE3 /* MockMMGuessResultsViewController.m in Sources */,
+				07007CB215D1481400EB3BE3 /* MockMMViewWithGame.m in Sources */,
+				07478F0515D2861B00F2C90D /* MMGuessHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +995,7 @@
 				0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */,
 				07007C9E15D08AB900EB3BE3 /* MMGuessResultsViewController.m in Sources */,
 				07007CA815D0AB8900EB3BE3 /* MMGuessResult.m in Sources */,
+				07478F0415D2861B00F2C90D /* MMGuessHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

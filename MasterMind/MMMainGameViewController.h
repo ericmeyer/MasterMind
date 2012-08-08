@@ -9,6 +9,7 @@
     UIViewController<MMPegList>* secretCodeViewController;
     UIViewController<MMPegList>* guessViewController;
     UIViewController<MMViewWithGame>* guessResultsViewController;
+    UIViewController<MMViewWithGame>* guessHistoryViewController;
     
     NSObject<MMGame>* game;
 }
@@ -16,6 +17,7 @@
 @property (nonatomic, strong) UIViewController<MMPegList>* secretCodeViewController;
 @property (nonatomic, strong) UIViewController<MMPegList>* guessViewController;
 @property (nonatomic, strong) UIViewController<MMViewWithGame>* guessResultsViewController;
+@property (nonatomic, strong) UIViewController<MMViewWithGame>* guessHistoryViewController;
 
 @property (nonatomic, strong) NSObject<MMGame>* game;
 

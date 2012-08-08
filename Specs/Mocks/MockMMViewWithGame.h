@@ -2,7 +2,7 @@
 #import "MMViewWithGame.h"
 #import "MMGame.h"
 
-@interface MockMMGuessResultsViewController : UIViewController<MMViewWithGame> {
+@interface MockMMViewWithGame : UIViewController<MMViewWithGame> {
     NSObject<MMGame>* updateViewCalledWith;
 }
 @property (nonatomic, strong) NSObject<MMGame>* updateViewCalledWith;
