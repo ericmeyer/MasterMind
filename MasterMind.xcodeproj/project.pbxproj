@@ -416,22 +416,32 @@
 		075BA91915C6BD8A002E0086 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				076E910015D1DBC50089CC59 /* XIbs */,
 				07007C9015D08A1C00EB3BE3 /* Protocols */,
 				F83ABA461528A964006FB6EC /* MMMainGameViewController.h */,
 				F83ABA471528A964006FB6EC /* MMMainGameViewController.m */,
 				074A146615C74A14003B1953 /* MMPegListViewController.h */,
 				074A146715C74A14003B1953 /* MMPegListViewController.m */,
-				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
 				074A147815C7817E003B1953 /* MMAvailablePegsViewController.h */,
 				074A147915C7817E003B1953 /* MMAvailablePegsViewController.m */,
-				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
 				0722559F15C8149A008EFF3F /* MMCodePeg.h */,
 				072255A015C8149A008EFF3F /* MMCodePeg.m */,
 				07007C9C15D08AB900EB3BE3 /* MMGuessResultsViewController.h */,
 				07007C9D15D08AB900EB3BE3 /* MMGuessResultsViewController.m */,
-				07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		076E910015D1DBC50089CC59 /* XIbs */ = {
+			isa = PBXGroup;
+			children = (
+				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
+				074A147A15C7817F003B1953 /* MMAvailablePegsViewController.xib */,
+				07007CB315D14A9C00EB3BE3 /* MMGuessResultsViewController.xib */,
+				F83ABA491528A964006FB6EC /* MMMainGameViewController_iPhone.xib */,
+				F83ABA4C1528A964006FB6EC /* MMMainGameViewController_iPad.xib */,
+			);
+			name = XIbs;
 			sourceTree = "<group>";
 		};
 		0784EEF415C9650500D0A738 /* ConciseKit */ = {
@@ -667,8 +677,6 @@
 				075BA91915C6BD8A002E0086 /* View */,
 				F83ABA431528A964006FB6EC /* AppDelegate.h */,
 				F83ABA441528A964006FB6EC /* AppDelegate.m */,
-				F83ABA491528A964006FB6EC /* MMMainGameViewController_iPhone.xib */,
-				F83ABA4C1528A964006FB6EC /* MMMainGameViewController_iPad.xib */,
 				F83ABA3B1528A964006FB6EC /* Supporting Files */,
 			);
 			path = MasterMind;
