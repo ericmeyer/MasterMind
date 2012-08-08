@@ -90,7 +90,7 @@
 		0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0784EF0B15C9651600D0A738 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784EF0015C9651600D0A738 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07A1BF9A15CCB45C006079BC /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BF9915CCB45C006079BC /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; };
+		07A1BFA915CCB4C1006079BC /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFA815CCB4C1006079BC /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07A1BFAC15CCB4F0006079BC /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07A1BFAB15CCB4F0006079BC /* Main.c */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
 		07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */; };
