@@ -22,6 +22,7 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
             controller = [MMGuessResultsViewController new];
             controller.numberCorrectLabel = [UILabel new];
             controller.numberInWrongSpotLabel = [UILabel new];
+            controller.remainingGuessesLabel = [UILabel new];
             game = [MockMMGame gameWithLastCorrect: 123 andInWrongSpot: 456];
             NSLog(@"game: %@", [game lastGuessResult]);
         });
@@ -36,6 +37,13 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
             [controller updateView: game];
             
             [ExpectObj(controller.numberInWrongSpotLabel.text) toBeEqualTo: @"456"];
+        });
+        
+        It(@"updates the remaining guesses", ^{
+            game.numberOfRemainingGuesses = [NSNumber numberWithInt: 314];
+            [controller updateView: game];
+            
+            [ExpectObj(controller.remainingGuessesLabel.text) toBeEqualTo: @"314"];
         });
 
     });

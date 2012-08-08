@@ -6,7 +6,6 @@
     NSArray* secretCode;
     NSMutableArray* guessResults;
 }
-@property (nonatomic, strong) NSNumber* numberOfRemainingGuesses;
 @property (nonatomic, strong) NSMutableArray* guessResults;
 
 +(id) gameWithCode:(NSArray*) givenSecretCode;

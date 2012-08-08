@@ -6,6 +6,8 @@
 // Get rid of this.  Replace with [MMGame gameWithCode: secretCode] on startNewGame;
 @property (nonatomic, strong) NSArray* secretCode;
 
+@property (nonatomic, strong) NSNumber* numberOfRemainingGuesses;
+
 -(MMGuessResult*) lastGuessResult;
 -(void) takeGuess: (NSArray*) guess;
 

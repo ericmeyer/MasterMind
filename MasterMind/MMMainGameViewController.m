@@ -45,6 +45,7 @@
 
 -(IBAction) startNewGame {
     self.game = [MMGameImplementation gameWithCode: self.secretCodeViewController.pegList];
+    [self.guessResultsViewController updateView: game];
 }
 
 -(IBAction) takeGuess {

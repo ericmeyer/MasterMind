@@ -2,11 +2,12 @@
 
 @implementation MMGuessResultsViewController
 
-@synthesize numberCorrectLabel, numberInWrongSpotLabel;
+@synthesize numberCorrectLabel, numberInWrongSpotLabel, remainingGuessesLabel;
 
 -(void) updateView:(NSObject<MMGame>*) game {
     self.numberCorrectLabel.text = [[[game lastGuessResult] numberCorrect] stringValue];
     self.numberInWrongSpotLabel.text = [[[game lastGuessResult] numberInWrongSpot] stringValue];
+    self.remainingGuessesLabel.text = [[game numberOfRemainingGuesses] stringValue];
 }
 
 -(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

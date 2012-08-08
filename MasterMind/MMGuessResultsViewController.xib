@@ -69,7 +69,7 @@
 					<object class="IBUILabel" id="542490610">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{32, 101}, {176, 21}}</string>
+						<string key="NSFrame">{{32, 60}, {176, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="26297603"/>
@@ -112,10 +112,52 @@
 					<object class="IBUILabel" id="26297603">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{309, 101}, {42, 21}}</string>
+						<string key="NSFrame">{{309, 60}, {42, 21}}</string>
+						<reference key="NSSuperview" ref="436186669"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="102122015"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">-</string>
+						<reference key="IBUITextColor" ref="45052482"/>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">0</int>
+						<float key="IBUIMinimumFontSize">10</float>
+						<int key="IBUITextAlignment">1</int>
+						<reference key="IBUIFontDescription" ref="1032738783"/>
+						<reference key="IBUIFont" ref="21536732"/>
+					</object>
+					<object class="IBUILabel" id="102122015">
+						<reference key="NSNextResponder" ref="436186669"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{32, 101}, {154, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">Guesses Remaining</string>
+						<reference key="IBUITextColor" ref="45052482"/>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">0</int>
+						<float key="IBUIMinimumFontSize">10</float>
+						<reference key="IBUIFontDescription" ref="1032738783"/>
+						<reference key="IBUIFont" ref="21536732"/>
+					</object>
+					<object class="IBUILabel" id="983267041">
+						<reference key="NSNextResponder" ref="436186669"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{309, 101}, {42, 21}}</string>
+						<reference key="NSSuperview" ref="436186669"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -173,6 +215,14 @@
 					</object>
 					<int key="connectionID">10</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">remainingGuessesLabel</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="983267041"/>
+					</object>
+					<int key="connectionID">13</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -197,10 +247,12 @@
 						<int key="objectID">2</int>
 						<reference key="object" ref="436186669"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="542490610"/>
 							<reference ref="464219923"/>
-							<reference ref="26297603"/>
 							<reference ref="426228136"/>
+							<reference ref="542490610"/>
+							<reference ref="26297603"/>
+							<reference ref="102122015"/>
+							<reference ref="983267041"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -224,6 +276,16 @@
 						<reference key="object" ref="26297603"/>
 						<reference key="parent" ref="436186669"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">11</int>
+						<reference key="object" ref="102122015"/>
+						<reference key="parent" ref="436186669"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">12</int>
+						<reference key="object" ref="983267041"/>
+						<reference key="parent" ref="436186669"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -231,6 +293,8 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -246,7 +310,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">10</int>
+			<int key="maxID">13</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -256,6 +320,7 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="numberCorrectLabel">UILabel</string>
 						<string key="numberInWrongSpotLabel">UILabel</string>
+						<string key="remainingGuessesLabel">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="numberCorrectLabel">
@@ -264,6 +329,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="numberInWrongSpotLabel">
 							<string key="name">numberInWrongSpotLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="remainingGuessesLabel">
+							<string key="name">remainingGuessesLabel</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 					</dictionary>

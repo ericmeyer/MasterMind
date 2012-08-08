@@ -2,7 +2,7 @@
 
 @implementation MockMMGame
 
-@synthesize lastGuessResult, lastGuess, secretCode;
+@synthesize lastGuessResult, lastGuess, secretCode, numberOfRemainingGuesses;
 
 +(id) gameWithLastCorrect:(int) numberCorrect andInWrongSpot:(int) numberInWrongSpot {
     MockMMGame* game = [MockMMGame new];
