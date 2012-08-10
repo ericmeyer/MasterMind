@@ -3,12 +3,12 @@
 
 @protocol MMGame <NSObject>
 
-// Get rid of this.  Replace with [MMGame gameWithCode: secretCode] on startNewGame;
++(id) gameWithCode:(NSArray*) givenSecretCode;
+
 @property (nonatomic, strong) NSArray* secretCode;
-
 @property (nonatomic, strong) NSNumber* numberOfRemainingGuesses;
+@property (nonatomic, strong) NSMutableArray* guessResults;
 
--(MMGuessResult*) lastGuessResult;
 -(void) takeGuess: (NSArray*) guess;
 
 @end

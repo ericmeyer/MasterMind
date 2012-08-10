@@ -5,8 +5,8 @@
 @synthesize numberCorrectLabel, numberInWrongSpotLabel, remainingGuessesLabel;
 
 -(void) updateView:(NSObject<MMGame>*) game {
-    self.numberCorrectLabel.text = [[[game lastGuessResult] numberCorrect] stringValue];
-    self.numberInWrongSpotLabel.text = [[[game lastGuessResult] numberInWrongSpot] stringValue];
+    self.numberCorrectLabel.text = [[[[game guessResults] lastObject] numberCorrect] stringValue];
+    self.numberInWrongSpotLabel.text = [[[[game guessResults] lastObject] numberInWrongSpot] stringValue];
     self.remainingGuessesLabel.text = [[game numberOfRemainingGuesses] stringValue];
 }
 

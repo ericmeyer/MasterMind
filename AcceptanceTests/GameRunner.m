@@ -26,11 +26,11 @@
 }
 
 -(NSNumber*) lastGuessNumberCorrect {
-    return [[game lastGuessResult] numberCorrect];
+    return [[[game guessResults] lastObject] numberCorrect];
 }
 
 -(NSNumber*) lastGuessNumberInWrongSpot {
-    return [[game lastGuessResult] numberInWrongSpot];
+    return [[[game guessResults] lastObject] numberInWrongSpot];
 }
 
 -(NSString*) guessIs:(NSString*) position {

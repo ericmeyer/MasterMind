@@ -24,7 +24,6 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
             controller.numberInWrongSpotLabel = [UILabel new];
             controller.remainingGuessesLabel = [UILabel new];
             game = [MockMMGame gameWithLastCorrect: 123 andInWrongSpot: 456];
-            NSLog(@"game: %@", [game lastGuessResult]);
         });
         
         It(@"updates the number correct label", ^{

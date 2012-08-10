@@ -2,14 +2,27 @@
 
 @implementation MockMMGame
 
-@synthesize lastGuessResult, lastGuess, secretCode, numberOfRemainingGuesses;
+@synthesize guessResults, lastGuess, secretCode, numberOfRemainingGuesses;
+
+-(id) init {
+    if ((self = [super init])) {
+        self.guessResults = [NSMutableArray array];
+    }
+    return self;
+}
+
++(id) gameWithCode:(NSArray*) givenSecretCode {
+    MockMMGame* game = [MockMMGame new];
+    game.secretCode = givenSecretCode;
+    return game;
+}
 
 +(id) gameWithLastCorrect:(int) numberCorrect andInWrongSpot:(int) numberInWrongSpot {
     MockMMGame* game = [MockMMGame new];
     MMGuessResult* guessResult = [MMGuessResult new];
     guessResult.numberCorrect = [NSNumber numberWithInt: numberCorrect];
     guessResult.numberInWrongSpot = [NSNumber numberWithInt: numberInWrongSpot];
-    game.lastGuessResult = guessResult;
+    [game.guessResults addObject: guessResult];
     return game;
 }
 

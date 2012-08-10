@@ -32,8 +32,4 @@
     [self.guessResults addObject: [MMGuessResult resultFromCode: self.secretCode andGuess: guess]];
 }
 
--(MMGuessResult*) lastGuessResult {
-    return [self.guessResults lastObject];
-}
-
 @end

@@ -43,31 +43,41 @@ SpecKitContext(MMGameImplementationSpec) {
 
             [ExpectObj(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
         });
-        
-        It(@"sets the last guess result", ^{
-            game.secretCode = [@"1234" $chars];
-            [game takeGuess: [@"1342" $chars]];
-
-            [ExpectInt([[[game lastGuessResult] numberCorrect] intValue]) toBe: 1];
-            [ExpectInt([[[game lastGuessResult] numberInWrongSpot] intValue]) toBe: 3];
-        });
-
+    
     });
     
-    Describe(@"guesses", ^{
+    Describe(@"recorded guesses", ^{
         
+        __block MMGuessResult* guessResult;
+        
+        BeforeEach(^{
+            game = [MMGameImplementation gameWithCode: [@"1234" $chars]];
+        });
+
         It(@"starts with no guesses", ^{
             [ExpectInt([[game guessResults] count]) toBe: 0];
         });
         
         It(@"keeps track of one guess", ^{
-            game = [MMGameImplementation gameWithCode: [@"1234" $chars]];
-            
             [game takeGuess: [@"1133" $chars]];
             
             [ExpectInt([[game guessResults] count]) toBe: 1];
-            [ExpectObj([[[[game guessResults] lastObject] guess] $join]) toBeEqualTo: @"1133"];
+            guessResult = [[game guessResults] lastObject];
+            [ExpectObj([[guessResult guess] $join]) toBeEqualTo: @"1133"];
+            [ExpectInt([[guessResult numberCorrect] intValue]) toBe: 2];
+            [ExpectInt([[guessResult numberInWrongSpot] intValue]) toBe: 0];
         });
-        
+
+        It(@"keeps track of two guesses", ^{
+            [game takeGuess: [@"1133" $chars]];
+            [game takeGuess: [@"3344" $chars]];
+            
+            [ExpectInt([[game guessResults] count]) toBe: 2];
+            guessResult = [[game guessResults] lastObject];
+            [ExpectObj([[guessResult guess] $join]) toBeEqualTo: @"3344"];
+            [ExpectInt([[guessResult numberCorrect] intValue]) toBe: 1];
+            [ExpectInt([[guessResult numberInWrongSpot] intValue]) toBe: 1];
+        });
+
     });
 }
