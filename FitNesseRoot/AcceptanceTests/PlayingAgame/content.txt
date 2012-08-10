@@ -8,7 +8,7 @@ Initial Game State
 |reject                  |player did win        |
 
 
-Taking a Guess
+Taking a Wrong Guess
 !|script                 |GameRunner          |
 |start new game with code|1234                |
 |take guess              |1111                |
@@ -16,10 +16,9 @@ Taking a Guess
 |reject                  |game is over        |
 |reject                  |player did win      |
 
-
-Last Guess
-!|script                 |GameRunner                       |
-|start new game with code|1234                             |
-|take guess              |1342                             |
-|check                   |last guess number correct      |1|
-|check                   |last guess number in wrong spot|3|
+Taking a Correct Guess
+!|script                 |GameRunner          |
+|start new game with code|1234                |
+|take guess              |1234                |
+|ensure                  |game is over        |
+|ensure                  |player did win      |

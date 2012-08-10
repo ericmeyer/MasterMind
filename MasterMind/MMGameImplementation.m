@@ -20,11 +20,11 @@
 }
 
 -(BOOL) isOver {
-    return NO;
+    return [[self.guessResults.lastObject numberCorrect] intValue] == 4;
 }
 
 -(BOOL) didWin {
-    return NO;
+    return [[self.guessResults.lastObject numberCorrect] intValue] == 4;
 }
 
 -(void) takeGuess:(NSArray*) guess {

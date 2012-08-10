@@ -36,14 +36,28 @@ SpecKitContext(MMGameImplementationSpec) {
     });
 
     Describe(@"taking a guess", ^{
-
+        
         It(@"uses a remaining guess", ^{
             game.secretCode = [@"1234" $chars];
             [game takeGuess: [@"5678" $chars]];
 
             [ExpectObj(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
         });
-    
+        
+        It(@"is over on a correct guess", ^{
+            game.secretCode = [@"1234" $chars];
+            [game takeGuess: [@"1234" $chars]];
+            
+            [ExpectBool([game isOver]) toBeTrue];
+        });
+
+        It(@"is a winning game on a correct guess", ^{
+            game.secretCode = [@"1234" $chars];
+            [game takeGuess: [@"1234" $chars]];
+            
+            [ExpectBool([game didWin]) toBeTrue];
+        });
+
     });
     
     Describe(@"recorded guesses", ^{
