@@ -53,4 +53,21 @@ SpecKitContext(MMGameImplementationSpec) {
         });
 
     });
+    
+    Describe(@"guesses", ^{
+        
+        It(@"starts with no guesses", ^{
+            [ExpectInt([[game guessResults] count]) toBe: 0];
+        });
+        
+        It(@"keeps track of one guess", ^{
+            game = [MMGameImplementation gameWithCode: [@"1234" $chars]];
+            
+            [game takeGuess: [@"1133" $chars]];
+            
+            [ExpectInt([[game guessResults] count]) toBe: 1];
+            [ExpectObj([[[[game guessResults] lastObject] guess] $join]) toBeEqualTo: @"1133"];
+        });
+        
+    });
 }

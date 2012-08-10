@@ -7,23 +7,26 @@ NSArray* code(NSString* codeAsString) {
     return [codeAsString $chars];
 }
 SpecKitContext(MMGuessResultSpec) {
-    
-    Describe(@"attributes", ^{
+
+    Describe(@"+resultFromCode:andGuess:", ^{
+
+        __block MMGuessResult* result;
         
-        It(@"has a numberCorrect", ^{
-            MMGuessResult* result;
-            result = [MMGuessResult new];
-            result.numberCorrect = [NSNumber numberWithInt: 5];
-            [ExpectInt([result.numberCorrect intValue]) toBe: 5];
+        It(@"stores the guess", ^{
+            result = [MMGuessResult resultFromCode: code(@"1234") andGuess: code(@"4567")];
+            [ExpectObj(result.guess) toBeEqualTo: code(@"4567")];
         });
-        
-        It(@"has a numberInWrongSpot", ^{
-            MMGuessResult* result;
-            result = [MMGuessResult new];
-            result.numberInWrongSpot = [NSNumber numberWithInt: 123];
-            [ExpectInt([result.numberInWrongSpot intValue]) toBe: 123];
+
+        It(@"calculates the number correct", ^{
+            result = [MMGuessResult resultFromCode: code(@"1234") andGuess: code(@"1235")];
+            [ExpectInt([result.numberCorrect intValue]) toBe: 3];
         });
-        
+
+        It(@"calculates the number in the wrong spot", ^{
+            result = [MMGuessResult resultFromCode: code(@"3456") andGuess: code(@"4357")];
+            [ExpectInt([result.numberInWrongSpot intValue]) toBe: 2];
+        });
+
     });
     
     Describe(@"number correct and number in wrong spot", ^{

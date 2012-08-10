@@ -1,0 +1,10 @@
+!|script                 |GameRunner                          |
+|start new game with code|1234                                |
+|take guess              |1342                                |
+|take guess              |2244                                |
+|check                   |guess|1|is                     |1342|
+|check                   |guess|1|number correct is      |1   |
+|check                   |guess|1|number in wrong spot is|3   |
+|check                   |guess|2|is                     |2244|
+|check                   |guess|2|number correct is      |2   |
+|check                   |guess|2|number in wrong spot is|0   |

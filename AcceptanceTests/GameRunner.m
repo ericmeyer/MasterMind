@@ -33,6 +33,21 @@
     return [[game lastGuessResult] numberInWrongSpot];
 }
 
+-(NSString*) guessIs:(NSString*) position {
+    int index = [position intValue] - 1;
+    return [[[[game guessResults] objectAtIndex: index] guess] $join];
+}
+
+-(NSNumber*) guessNumberCorrectIs:(NSString*) position {
+    int index = [position intValue] - 1;
+    return [[[game guessResults] objectAtIndex: index] numberCorrect];
+}
+
+-(NSNumber*) guessNumberInWrongSpotIs:(NSString*) position {
+    int index = [position intValue] - 1;
+    return [[[game guessResults] objectAtIndex: index] numberInWrongSpot];
+}
+
 -(NSNumber*) remainingGuesses {
     return [game numberOfRemainingGuesses];
 }

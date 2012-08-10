@@ -2,12 +2,13 @@
 
 @implementation MMGuessResult
 
-@synthesize numberCorrect, numberInWrongSpot;
+@synthesize numberCorrect, numberInWrongSpot, guess;
 
 +(id) resultFromCode:(NSArray*) code andGuess:(NSArray*) guess {
     MMGuessResult* result = [MMGuessResult new];
     result.numberCorrect = [MMGuessResult numberCorrectForCode: code andGuess: guess];
     result.numberInWrongSpot = [MMGuessResult numberInWrongSpotForCode: code andGuess: guess];
+    result.guess = guess;
     return result;
 }
 
