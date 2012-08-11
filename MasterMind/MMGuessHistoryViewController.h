@@ -1,6 +1,8 @@
-#import <UIKit/UIKit.h>
-#import "MMViewWithGame.h"
+#import <Foundation/Foundation.h>
+#import "MMGuessResult.h"
 
-@interface MMGuessHistoryViewController : UIViewController<MMViewWithGame>
+@protocol MMGuessHistoryViewController <NSObject>
+
+-(void) addGuessResult:(MMGuessResult*) guessResult;
 
 @end

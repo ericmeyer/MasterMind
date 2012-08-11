@@ -3,7 +3,7 @@
 
 @implementation MockMMPegListViewController
 
-@synthesize pegList, availablePegsController;
+@synthesize pegList, availableColorsController;
 
 +(id) mockListWithPegs:(NSString *) pegString {
     MockMMPegListViewController* list = [MockMMPegListViewController new];

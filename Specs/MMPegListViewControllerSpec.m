@@ -1,12 +1,12 @@
 #import <SpecKit/SpecKit.h>
 #import "MMPegListViewController.h"
-#import "MMAvailablePegsViewController.h"
+#import "MMAvailableColorsViewController.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMPegListViewControllerSpec) {
     
     __block MMPegListViewController* controller;
-    __block MMAvailablePegsViewController* availablePegs;
+    __block MMAvailableColorsViewController* availableColors;
     
     Describe(@"on init", ^{
         
@@ -44,7 +44,7 @@ SpecKitContext(MMPegListViewControllerSpec) {
             int count = [controller.view.subviews count];
             NSNumber* numberOfSubviews = [NSNumber numberWithInt: count];
             
-            [ExpectObj(numberOfSubviews) toBeEqualTo: [NSNumber numberWithInt: 4]];
+            [ExpectObj(numberOfSubviews) toBeEqualTo: [NSNumber numberWithInt: 5]];
         });
         
     });
@@ -53,23 +53,23 @@ SpecKitContext(MMPegListViewControllerSpec) {
         
         BeforeEach(^{
             controller = [MMPegListViewController new];
-            availablePegs = [MMAvailablePegsViewController new];
-            controller.availablePegsController = availablePegs;
+            availableColors = [MMAvailableColorsViewController new];
+            controller.availableColorsController = availableColors;
         });
         
-        It(@"changes the touched peg's color to the activePeg's color", ^{
+        It(@"changes the touched peg's color to the active color", ^{
             MMCodePeg* touchedPeg = [controller.pegs objectAtIndex: 2];
-            availablePegs.activePeg = [MMCodePeg pegWithColor: @"blue"];
+            availableColors.activeColor = [MMAvailableColor colorWithName: @"blue"];
             [controller touchPeg: touchedPeg];
             
             [ExpectObj(touchedPeg.color) toBeEqualTo: @"blue"];
         });
         
-        It(@"does nothing if there is no active peg", ^{
+        It(@"does nothing if there is no active color", ^{
             MMCodePeg* touchedPeg = [controller.pegs objectAtIndex: 2];
-            availablePegs.activePeg = [MMCodePeg pegWithColor: @"blue"];
+            availableColors.activeColor = [MMAvailableColor colorWithName: @"blue"];
             [controller touchPeg: touchedPeg];
-            availablePegs.activePeg = [MMCodePeg emptyPeg];
+            availableColors.activeColor = NULL;
             [controller touchPeg: touchedPeg];
             
             [ExpectObj(touchedPeg.color) toBeEqualTo: @"blue"];

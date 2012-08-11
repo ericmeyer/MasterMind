@@ -137,7 +137,6 @@
 						<string key="NSFrame">{{32, 101}, {154, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -205,7 +204,7 @@
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="426228136"/>
 					</object>
-					<int key="connectionID">9</int>
+					<int key="connectionID">14</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -213,7 +212,7 @@
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="26297603"/>
 					</object>
-					<int key="connectionID">10</int>
+					<int key="connectionID">15</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -221,7 +220,7 @@
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="983267041"/>
 					</object>
-					<int key="connectionID">13</int>
+					<int key="connectionID">16</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -310,7 +309,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">13</int>
+			<int key="maxID">16</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

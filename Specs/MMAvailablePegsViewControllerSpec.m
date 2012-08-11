@@ -1,23 +1,24 @@
 #import <SpecKit/SpecKit.h>
-#import "MMAvailablePegsViewController.h"
+#import "MMAvailableColorsViewController.h"
 #import "MMCodePeg.h"
 
 SpecKitContext(MMAvailablePegsViewControllerSpec) {
-    __block MMAvailablePegsViewController* controller;
+    __block MMAvailableColorsViewController* controller;
     __block MMCodePeg* clickedPeg;
     
     Describe(@"on init", ^{
         
-        It(@"has 4 pegs", ^{
-            controller = [MMAvailablePegsViewController new];
+        It(@"has available pegs", ^{
+            controller = [MMAvailableColorsViewController new];
+            [controller viewDidLoad];
             
-            [ExpectInt(controller.availablePegs.count) toBe: 4];            
+            [ExpectInt(controller.availableColors.count) toBe: 6];
         });
         
-        It(@"has no activePeg", ^{
-            controller = [MMAvailablePegsViewController new];
+        It(@"has no activeColor", ^{
+            controller = [MMAvailableColorsViewController new];
             
-            [ExpectObj(controller.activePeg) toBeNil];
+            [ExpectObj(controller.activeColor) toBeNil];
         });
         
     });
@@ -25,18 +26,18 @@ SpecKitContext(MMAvailablePegsViewControllerSpec) {
     Describe(@"clicking a peg", ^{
         
         BeforeEach(^{
-            controller = [MMAvailablePegsViewController new];
-            clickedPeg = [MMCodePeg pegWithColor: @"red"];
+            controller = [MMAvailableColorsViewController new];
+            clickedPeg = [MMAvailableColor colorWithName: @"red"];
         });
         
-        It(@"sets the activePeg to the clicked peg", ^{
+        It(@"sets the activeColor to the clicked color", ^{
             [controller clickPeg: clickedPeg];
             
-            [ExpectObj(controller.activePeg) toBeEqualTo: clickedPeg];
+            [ExpectObj(controller.activeColor) toBeEqualTo: clickedPeg];
         });
         
-        It(@"deactivates the previously clicked peg", ^{
-            MMCodePeg* secondPeg = [MMCodePeg pegWithColor: @"blue"];
+        It(@"deactivates the previously clicked color", ^{
+            MMCodePeg* secondPeg = [MMAvailableColor colorWithName: @"blue"];
             [controller clickPeg: clickedPeg];
             [controller clickPeg: secondPeg];
             
@@ -56,11 +57,11 @@ SpecKitContext(MMAvailablePegsViewControllerSpec) {
             [ExpectBool(clickedPeg.isActive) toBeFalse];
         });
         
-        It(@"clicking the already active peg clears the activePeg", ^{
+        It(@"clicking the already active peg clears the activeColor", ^{
             [controller clickPeg: clickedPeg];
             [controller clickPeg: clickedPeg];
             
-            [ExpectObj(controller.activePeg) toBeNil];
+            [ExpectObj(controller.activeColor) toBeNil];
         });
         
     });

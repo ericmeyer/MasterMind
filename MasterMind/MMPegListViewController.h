@@ -1,15 +1,15 @@
 #import <UIKit/UIKit.h>
 #import "MMPegList.h"
-#import "MMAvailablePegsViewController.h"
+#import "MMAvailableColorsViewController.h"
 
 @interface MMPegListViewController : UIViewController<MMPegList> {
-    MMAvailablePegsViewController* availablePegsController;
+    MMAvailableColorsViewController* availableColorsController;
     NSMutableArray* pegs;
 }
-@property (nonatomic, strong) MMAvailablePegsViewController* availablePegsController;
+@property (nonatomic, strong) MMAvailableColorsViewController* availableColorsController;
 @property (nonatomic, strong) NSMutableArray* pegs;
 
-+(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController;
++(id) controllerWithAvailablePegsViewController:(MMAvailableColorsViewController*) givenAvailablePegsController;
 
 -(IBAction) touchPeg:(id) sender;
 

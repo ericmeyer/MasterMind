@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
-#import "MMAvailablePegsViewController.h"
+#import "MMAvailableColorsViewController.h"
 
 @protocol MMPegList <NSObject>
 
-@property (nonatomic, strong) MMAvailablePegsViewController* availablePegsController;
+@property (nonatomic, strong) MMAvailableColorsViewController* availableColorsController;
 
 -(NSArray*) pegList;
 

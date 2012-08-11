@@ -9,21 +9,21 @@
 
 @implementation MMPegListViewController
 
-@synthesize availablePegsController;
+@synthesize availableColorsController;
 @synthesize pegs;
 
-+(id) controllerWithAvailablePegsViewController:(MMAvailablePegsViewController*) givenAvailablePegsController {
++(id) controllerWithAvailablePegsViewController:(MMAvailableColorsViewController*) givenAvailablePegsController {
     MMPegListViewController* controller;
     controller = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"
-                                                                              bundle: nil];
-    controller.availablePegsController = givenAvailablePegsController;
+                                                           bundle: nil];
+    controller.availableColorsController = givenAvailablePegsController;
     return controller;
 }
 
 -(IBAction) touchPeg:(id) sender {
     MMCodePeg* touchedPeg = (MMCodePeg*) sender;
-    if (self.availablePegsController.activePeg.color) {
-        [touchedPeg changeColor: self.availablePegsController.activePeg.color];
+    if (self.availableColorsController.activeColor.name) {
+        [touchedPeg changeColor: self.availableColorsController.activeColor.name];
     }
 }
 
@@ -35,7 +35,7 @@
 
 -(BOOL) allPegsAreSet {
     MMCodePeg* unsetPeg = [self.pegs $detect:^BOOL(id peg){
-        return ((MMCodePeg*)peg).color == NULL;  
+        return ((MMCodePeg*)peg).color == NULL;
     }];
     return (unsetPeg == NULL);
 }
@@ -61,7 +61,7 @@
     [super viewDidLoad];
     [self.pegs $eachWithIndex:^(id obj, NSUInteger i) {
         MMCodePeg* emptyPeg = (MMCodePeg*)obj;
-        emptyPeg.frame = CGRectMake(i*100, 0, 90, 90);
+        emptyPeg.frame = CGRectMake(i*PEG_SIDE_LENGTH, 0, PEG_SIDE_LENGTH, PEG_SIDE_LENGTH);
         [self.view addSubview: emptyPeg];
     }];
 }

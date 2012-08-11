@@ -4,21 +4,17 @@
 
 @synthesize numberCorrectLabel, numberInWrongSpotLabel, remainingGuessesLabel;
 
--(void) updateView:(NSObject<MMGame>*) game {
-    self.numberCorrectLabel.text = [[[[game guessResults] lastObject] numberCorrect] stringValue];
-    self.numberInWrongSpotLabel.text = [[[[game guessResults] lastObject] numberInWrongSpot] stringValue];
-    self.remainingGuessesLabel.text = [[game numberOfRemainingGuesses] stringValue];
-}
-
--(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+-(id) initWithGuessResult:(MMGuessResult*) givenGuessResult {
+    if ((self = [super initWithNibName:@"MMGuessResultsViewController" bundle:nil])) {
+        self.guessResult = givenGuessResult;
     }
     return self;
 }
 
 -(void) viewDidLoad {
     [super viewDidLoad];
+    self.numberCorrectLabel.text = [[self.guessResult numberCorrect] stringValue];
+    self.numberInWrongSpotLabel.text = [[self.guessResult numberInWrongSpot] stringValue];
 }
 
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
