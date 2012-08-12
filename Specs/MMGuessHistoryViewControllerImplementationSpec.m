@@ -1,6 +1,6 @@
 #import <SpecKit/SpecKit.h>
 #import "MMGuessHistoryViewControllerImplementation.h"
-#import "MMGuessResultsViewController.h"
+#import "MMGuessResultViewController.h"
 #import "MMGuessResult.h"
 #import "ConciseKit.h"
 

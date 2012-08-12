@@ -1,18 +1,16 @@
 #import <SpecKit/SpecKit.h>
-#import "MMGuessResultsViewController.h"
-//#import "MockMMGame.h"
+#import "MMGuessResultViewController.h"
 #import "MMGuessResult.h"
 #import "ConciseKit.h"
 
-SpecKitContext(MMGuessResultsViewControllerSpec) {
+SpecKitContext(MMGuessResultViewControllerSpec) {
     
-    __block MMGuessResultsViewController* controller;
-//    __block MockMMGame* game;
+    __block MMGuessResultViewController* controller;
     
     Describe(@"controller", ^{
         
         It(@"exists", ^{
-            controller = [MMGuessResultsViewController new];
+            controller = [MMGuessResultViewController new];
 
             [ExpectObj(controller) toExist];
         });
@@ -21,11 +19,10 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
  
     Describe(@"-updateView", ^{
         BeforeEach(^{
-            controller = [MMGuessResultsViewController new];
+            controller = [MMGuessResultViewController new];
             controller.numberCorrectLabel = [UILabel new];
             controller.numberInWrongSpotLabel = [UILabel new];
             controller.remainingGuessesLabel = [UILabel new];
-//            game = [MockMMGame gameWithLastCorrect: 123 andInWrongSpot: 456];
             controller.guessResult = [MMGuessResult resultFromCode: [@"1234" $chars] andGuess: [@"1423" $chars]];
         });
         

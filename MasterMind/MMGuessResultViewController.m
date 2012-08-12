@@ -1,11 +1,11 @@
-#import "MMGuessResultsViewController.h"
+#import "MMGuessResultViewController.h"
 
-@implementation MMGuessResultsViewController
+@implementation MMGuessResultViewController
 
 @synthesize numberCorrectLabel, numberInWrongSpotLabel, remainingGuessesLabel;
 
 -(id) initWithGuessResult:(MMGuessResult*) givenGuessResult {
-    if ((self = [super initWithNibName:@"MMGuessResultsViewController" bundle:nil])) {
+    if ((self = [super initWithNibName:@"MMGuessResultViewController" bundle:nil])) {
         self.guessResult = givenGuessResult;
     }
     return self;

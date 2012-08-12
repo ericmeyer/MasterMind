@@ -1,13 +1,13 @@
 #import "MMGuessHistoryViewControllerImplementation.h"
-#import "MMGuessResultsViewController.h"
+#import "MMGuessResultViewController.h"
 
 @implementation MMGuessHistoryViewControllerImplementation
 
 @synthesize guessResultViewControllers;
 
 -(void) addGuessResult:(MMGuessResult*) guessResult {
-    MMGuessResultsViewController* guessResultViewController;
-    guessResultViewController = [[MMGuessResultsViewController alloc] initWithGuessResult: guessResult];
+    MMGuessResultViewController* guessResultViewController;
+    guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
     int offset = [self.guessResultViewControllers count] * 250;
     [self.guessResultViewControllers addObject: guessResultViewController];
     [guessResultViewController.view setFrame: CGRectMake(0, offset, 400, 250)];

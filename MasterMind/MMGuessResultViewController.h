@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "MMGuessResult.h"
 
-@interface MMGuessResultsViewController : UIViewController {
+@interface MMGuessResultViewController : UIViewController {
     IBOutlet UILabel* numberCorrectLabel;
     IBOutlet UILabel* numberInWrongSpotLabel;
     IBOutlet UILabel* remainingGuessesLabel;

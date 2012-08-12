@@ -1,6 +1,6 @@
 #import "MMMainGameViewController.h"
 #import "MMGameImplementation.h"
-#import "MMGuessResultsViewController.h"
+#import "MMGuessResultViewController.h"
 #import "MMGuessHistoryViewControllerImplementation.h"
 #import "MMPegListViewController.h"
 
