@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "MMGuessResult.h"
 
-@protocol MMGuessHistoryViewController <NSObject>
+@protocol MMGuessResultsView <NSObject>
 
 -(void) addGuessResult:(MMGuessResult*) guessResult;
 

@@ -1,6 +1,6 @@
-#import "MockMMGuessHistoryViewController.h"
+#import "MockMMGuessResultsViewController.h"
 
-@implementation MockMMGuessHistoryViewController
+@implementation MockMMGuessResultsViewController
 
 -(void) addGuessResult:(MMGuessResult*) guessResult {
     self.addGuessResultCalldWith = guessResult;

@@ -1,25 +1,25 @@
 #import <SpecKit/SpecKit.h>
-#import "MMGuessHistoryViewControllerImplementation.h"
+#import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
 #import "MMGuessResult.h"
 #import "ConciseKit.h"
 
-SpecKitContext(MMGuessHistoryViewControllerSpec) {
+SpecKitContext(MMGuessResultsViewControllerSpec) {
     
     Describe(@"controller", ^{
         
         It(@"starts with no guessResultViewControllers", ^{
-            MMGuessHistoryViewControllerImplementation* controller;
-            controller = [MMGuessHistoryViewControllerImplementation new];
+            MMGuessResultsViewControllerImplementation* controller;
+            controller = [MMGuessResultsViewControllerImplementation new];
             
             [ExpectInt([controller.guessResultViewControllers count]) toBe: 0];
         });
         
         It(@"adds one guessResultViewController", ^{
-            MMGuessHistoryViewControllerImplementation* controller;
+            MMGuessResultsViewControllerImplementation* controller;
             MMGuessResult* result = [MMGuessResult resultFromCode: [@"1234" $chars]
                                                          andGuess: [@"1234" $chars]];
-            controller = [MMGuessHistoryViewControllerImplementation new];
+            controller = [MMGuessResultsViewControllerImplementation new];
             
             [controller addGuessResult: result];
             

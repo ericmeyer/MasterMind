@@ -1,32 +1,32 @@
 #import "MMMainGameViewController.h"
 #import "MMGameImplementation.h"
 #import "MMGuessResultViewController.h"
-#import "MMGuessHistoryViewControllerImplementation.h"
+#import "MMGuessResultsViewControllerImplementation.h"
 #import "MMPegListViewController.h"
 
 @implementation MMMainGameViewController
 
 @synthesize secretCodeViewController, guessViewController, availableColorsViewController;
-@synthesize game, guessHistoryViewController;
+@synthesize game, guessResultsViewController;
 
 -(void) initializeControllers {
     self.availableColorsViewController = [MMAvailableColorsViewController new];
     self.guessViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availableColorsViewController];
     self.secretCodeViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availableColorsViewController];
-    self.guessHistoryViewController = [MMGuessHistoryViewControllerImplementation new];
+    self.guessResultsViewController = [MMGuessResultsViewControllerImplementation new];
 }
 
 -(void) resizeControllerViews {
     [self.availableColorsViewController.view setFrame: CGRectMake(50, 85, PEG_SIDE_LENGTH*3+30, PEG_SIDE_LENGTH*2+15)];
     [self.secretCodeViewController.view setFrame: CGRectMake(50, 300, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
     [self.guessViewController.view setFrame: CGRectMake(50, 550, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
-    [self.guessHistoryViewController.view setFrame: CGRectMake(350, 0, 515, 748)];
+    [self.guessResultsViewController.view setFrame: CGRectMake(350, 0, 515, 748)];
 }
 
 -(void) addControllerSubviews{
     [self.view addSubview: self.availableColorsViewController.view];
     [self.view addSubview: self.secretCodeViewController.view];
-    [self.view addSubview: self.guessHistoryViewController.view];
+    [self.view addSubview: self.guessResultsViewController.view];
     [self.view addSubview: self.guessViewController.view];
 }
 
@@ -44,7 +44,7 @@
 
 -(IBAction) takeGuess {
     [self.game takeGuess: self.guessViewController.pegList];
-    [self.guessHistoryViewController addGuessResult: [[self.game guessResults] lastObject]];
+    [self.guessResultsViewController addGuessResult: [[self.game guessResults] lastObject]];
 }
 
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) interfaceOrientation {

@@ -49,10 +49,10 @@
 		072D5DE815D6D89600F50E07 /* square_purple_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 072D5DE515D6D89600F50E07 /* square_purple_peg.png */; };
 		072D5DE915D6D89600F50E07 /* square_purple_peg.png in Resources */ = {isa = PBXBuildFile; fileRef = 072D5DE515D6D89600F50E07 /* square_purple_peg.png */; };
 		07409D0E15CFE1BA006EEC84 /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07409D0D15CFE1BA006EEC84 /* libSpecKit.a */; };
-		07478F0415D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m */; };
-		07478F0515D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m */; };
-		07478F0615D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib */; };
-		07478F0715D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib */; };
+		07478F0415D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */; };
+		07478F0515D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */; };
+		07478F0615D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib */; };
+		07478F0715D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07478F0315D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib */; };
 		0749FD6315CCB40F00E8CB0A /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6115CCB40F00E8CB0A /* SocketServer.c */; };
 		0749FD6415CCB40F00E8CB0A /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6215CCB40F00E8CB0A /* TcpComLink.c */; };
 		0749FD6D15CCB43100E8CB0A /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = 0749FD6615CCB43100E8CB0A /* ListExecutor.c */; };
@@ -112,7 +112,7 @@
 		07A47BCB15D81CB800354590 /* MMAvailableColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A47BC915D81CB800354590 /* MMAvailableColor.m */; };
 		07A47BCD15D81F6E00354590 /* MMAvailableColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A47BCC15D81F6E00354590 /* MMAvailableColorSpec.m */; };
 		07D308AD15D8259B00C162F7 /* MMGuessHistoryViewControllerImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D308AC15D8259B00C162F7 /* MMGuessHistoryViewControllerImplementationSpec.m */; };
-		07D308B415D85FAD00C162F7 /* MockMMGuessHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D308B315D85FAD00C162F7 /* MockMMGuessHistoryViewController.m */; };
+		07D308B415D85FAD00C162F7 /* MockMMGuessResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D308B315D85FAD00C162F7 /* MockMMGuessResultsViewController.m */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
 		07F5070215CEFCD2008619EF /* MMMainGameViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */; };
 		07F5070315CEFD57008619EF /* MMMainGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83ABA471528A964006FB6EC /* MMMainGameViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -222,9 +222,9 @@
 		072D5DE415D6D89600F50E07 /* square_green_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_green_peg.png; sourceTree = "<group>"; };
 		072D5DE515D6D89600F50E07 /* square_purple_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_purple_peg.png; sourceTree = "<group>"; };
 		07409D0D15CFE1BA006EEC84 /* libSpecKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSpecKit.a; sourceTree = "<group>"; };
-		07478F0115D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessHistoryViewControllerImplementation.h; sourceTree = "<group>"; };
-		07478F0215D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGuessHistoryViewControllerImplementation.m; sourceTree = "<group>"; };
-		07478F0315D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMGuessHistoryViewControllerImplementation.xib; sourceTree = "<group>"; };
+		07478F0115D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResultsViewControllerImplementation.h; sourceTree = "<group>"; };
+		07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGuessResultsViewControllerImplementation.m; sourceTree = "<group>"; };
+		07478F0315D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMGuessResultsViewControllerImplementation.xib; sourceTree = "<group>"; };
 		0749FD6115CCB40F00E8CB0A /* SocketServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = SOURCE_ROOT; };
 		0749FD6215CCB40F00E8CB0A /* TcpComLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = SOURCE_ROOT; };
 		0749FD6615CCB43100E8CB0A /* ListExecutor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ListExecutor.c; path = cslim/src/CSlim/ListExecutor.c; sourceTree = SOURCE_ROOT; };
@@ -289,9 +289,9 @@
 		07A47BC915D81CB800354590 /* MMAvailableColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailableColor.m; sourceTree = "<group>"; };
 		07A47BCC15D81F6E00354590 /* MMAvailableColorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailableColorSpec.m; path = Specs/MMAvailableColorSpec.m; sourceTree = SOURCE_ROOT; };
 		07D308AC15D8259B00C162F7 /* MMGuessHistoryViewControllerImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGuessHistoryViewControllerImplementationSpec.m; path = Specs/MMGuessHistoryViewControllerImplementationSpec.m; sourceTree = SOURCE_ROOT; };
-		07D308AE15D85F0F00C162F7 /* MMGuessHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessHistoryViewController.h; sourceTree = "<group>"; };
-		07D308B215D85FAD00C162F7 /* MockMMGuessHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMGuessHistoryViewController.h; path = Specs/Mocks/MockMMGuessHistoryViewController.h; sourceTree = SOURCE_ROOT; };
-		07D308B315D85FAD00C162F7 /* MockMMGuessHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockMMGuessHistoryViewController.m; path = Specs/Mocks/MockMMGuessHistoryViewController.m; sourceTree = SOURCE_ROOT; };
+		07D308AE15D85F0F00C162F7 /* MMGuessResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResultsView.h; sourceTree = "<group>"; };
+		07D308B215D85FAD00C162F7 /* MockMMGuessResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMGuessResultsViewController.h; path = Specs/Mocks/MockMMGuessResultsViewController.h; sourceTree = SOURCE_ROOT; };
+		07D308B315D85FAD00C162F7 /* MockMMGuessResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockMMGuessResultsViewController.m; path = Specs/Mocks/MockMMGuessResultsViewController.m; sourceTree = SOURCE_ROOT; };
 		07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGameImplementationSpec.m; path = Specs/MMGameImplementationSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070115CEFCD2008619EF /* MMMainGameViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMMainGameViewControllerSpec.m; path = Specs/MMMainGameViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
 		07F5070B15CF00B4008619EF /* MMPegListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPegListViewControllerSpec.m; path = Specs/MMPegListViewControllerSpec.m; sourceTree = SOURCE_ROOT; };
@@ -387,8 +387,8 @@
 				07007CAD15D142DE00EB3BE3 /* MockMMPegListViewController.m */,
 				07007CB015D1481400EB3BE3 /* MockMMViewWithGame.h */,
 				07007CB115D1481400EB3BE3 /* MockMMViewWithGame.m */,
-				07D308B215D85FAD00C162F7 /* MockMMGuessHistoryViewController.h */,
-				07D308B315D85FAD00C162F7 /* MockMMGuessHistoryViewController.m */,
+				07D308B215D85FAD00C162F7 /* MockMMGuessResultsViewController.h */,
+				07D308B315D85FAD00C162F7 /* MockMMGuessResultsViewController.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 			children = (
 				07007CAF15D147EF00EB3BE3 /* MMViewWithGame.h */,
 				07007CAB15D1426000EB3BE3 /* MMPegList.h */,
-				07D308AE15D85F0F00C162F7 /* MMGuessHistoryViewController.h */,
+				07D308AE15D85F0F00C162F7 /* MMGuessResultsView.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -474,8 +474,8 @@
 				072255A015C8149A008EFF3F /* MMCodePeg.m */,
 				07007C9C15D08AB900EB3BE3 /* MMGuessResultViewController.h */,
 				07007C9D15D08AB900EB3BE3 /* MMGuessResultViewController.m */,
-				07478F0115D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.h */,
-				07478F0215D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m */,
+				07478F0115D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.h */,
+				07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -483,7 +483,7 @@
 		076E910015D1DBC50089CC59 /* XIbs */ = {
 			isa = PBXGroup;
 			children = (
-				07478F0315D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib */,
+				07478F0315D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib */,
 				074A146815C74A14003B1953 /* MMPegListViewController.xib */,
 				074A147A15C7817F003B1953 /* MMAvailableColorsViewController.xib */,
 				07007CB315D14A9C00EB3BE3 /* MMGuessResultViewController.xib */,
@@ -900,7 +900,7 @@
 				07F5071615CF0612008619EF /* square_red_peg.png in Resources */,
 				07F5071815CF0612008619EF /* square_yellow_peg.png in Resources */,
 				07007CB515D14A9C00EB3BE3 /* MMGuessResultViewController.xib in Resources */,
-				07478F0715D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib in Resources */,
+				07478F0715D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib in Resources */,
 				0791C5E115D2911A004C7BDC /* InfoPlist.strings in Resources */,
 				0791C5E315D2911A004C7BDC /* SpecKit-Info.plist in Resources */,
 				07649C6015D535190087111D /* Roboto-Thin.ttf in Resources */,
@@ -941,7 +941,7 @@
 				0722558E15C80AB3008EFF3F /* square_yellow_peg.png in Resources */,
 				077655A115CB5A0C00666F3F /* empty_peg.png in Resources */,
 				07007CB415D14A9C00EB3BE3 /* MMGuessResultViewController.xib in Resources */,
-				07478F0615D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.xib in Resources */,
+				07478F0615D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.xib in Resources */,
 				07649C5F15D535190087111D /* Roboto-Thin.ttf in Resources */,
 				072D5DE615D6D89600F50E07 /* square_green_peg.png in Resources */,
 				072D5DE815D6D89600F50E07 /* square_purple_peg.png in Resources */,
@@ -1013,12 +1013,12 @@
 				07007CAA15D0AB8900EB3BE3 /* MMGuessResult.m in Sources */,
 				07007CAE15D142DE00EB3BE3 /* MockMMPegListViewController.m in Sources */,
 				07007CB215D1481400EB3BE3 /* MockMMViewWithGame.m in Sources */,
-				07478F0515D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m in Sources */,
+				07478F0515D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */,
 				0791C5E215D2911A004C7BDC /* main.m in Sources */,
 				07A47BCB15D81CB800354590 /* MMAvailableColor.m in Sources */,
 				07A47BCD15D81F6E00354590 /* MMAvailableColorSpec.m in Sources */,
 				07D308AD15D8259B00C162F7 /* MMGuessHistoryViewControllerImplementationSpec.m in Sources */,
-				07D308B415D85FAD00C162F7 /* MockMMGuessHistoryViewController.m in Sources */,
+				07D308B415D85FAD00C162F7 /* MockMMGuessResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1067,7 +1067,7 @@
 				0784EF0A15C9651600D0A738 /* NSString+ConciseKit.m in Sources */,
 				07007C9E15D08AB900EB3BE3 /* MMGuessResultViewController.m in Sources */,
 				07007CA815D0AB8900EB3BE3 /* MMGuessResult.m in Sources */,
-				07478F0415D2861B00F2C90D /* MMGuessHistoryViewControllerImplementation.m in Sources */,
+				07478F0415D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */,
 				07A47BCA15D81CB800354590 /* MMAvailableColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

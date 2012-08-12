@@ -1,7 +1,7 @@
-#import "MMGuessHistoryViewControllerImplementation.h"
+#import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
 
-@implementation MMGuessHistoryViewControllerImplementation
+@implementation MMGuessResultsViewControllerImplementation
 
 @synthesize guessResultViewControllers;
 

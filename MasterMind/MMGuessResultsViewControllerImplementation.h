@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
-#import "MMGuessHistoryViewController.h"
+#import "MMGuessResultsView.h"
 
-@interface MMGuessHistoryViewControllerImplementation : UIViewController<MMGuessHistoryViewController> {
+@interface MMGuessResultsViewControllerImplementation : UIViewController<MMGuessResultsView> {
     NSMutableArray* guessResultViewControllers;
 }
 

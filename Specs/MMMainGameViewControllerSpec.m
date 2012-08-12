@@ -2,7 +2,7 @@
 #import "MMMainGameViewController.h"
 #import "MockMMGame.h"
 #import "MockMMPegListViewController.h"
-#import "MockMMGuessHistoryViewController.h"
+#import "MockMMGuessResultsViewController.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMMainGameViewControllerSpec) {
@@ -48,10 +48,10 @@ SpecKitContext(MMMainGameViewControllerSpec) {
              toBeEqualTo: controller.availableColorsViewController];
         });
 
-        It(@"has a guess history view controller", ^{
+        It(@"has a guess results view controller", ^{
             [controller viewDidLoad];
 
-            [ExpectObj(controller.guessHistoryViewController) toExist];
+            [ExpectObj(controller.guessResultsViewController) toExist];
         });
 
     });
@@ -72,13 +72,13 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             [ExpectObj([mockGame.lastGuess $join]) toBeEqualTo: @"1234"];
         });
 
-        It(@"updates the guess history controller", ^{
-            MockMMGuessHistoryViewController* mockGuessHistoryViewController = [MockMMGuessHistoryViewController new];
-            controller.guessHistoryViewController = mockGuessHistoryViewController;
+        It(@"updates the guess results controller", ^{
+            MockMMGuessResultsViewController* mockGuessResultsViewController = [MockMMGuessResultsViewController new];
+            controller.guessResultsViewController = mockGuessResultsViewController;
             
             [controller takeGuess];
             
-            [ExpectObj(mockGuessHistoryViewController.addGuessResultCalldWith) toBeEqualTo: [mockGame.guessResults lastObject]];
+            [ExpectObj(mockGuessResultsViewController.addGuessResultCalldWith) toBeEqualTo: [mockGame.guessResults lastObject]];
         });
 
     });
