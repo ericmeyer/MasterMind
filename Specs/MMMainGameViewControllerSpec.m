@@ -60,7 +60,6 @@ SpecKitContext(MMMainGameViewControllerSpec) {
 
         BeforeEach(^{
             mockGame = [MockMMGame new];
-//            mockGame.lastGuessResult = [MMGuessResult new];
             [mockGame.guessResults addObject: [MMGuessResult new]];
             controller.game = mockGame;
         });
