@@ -1,5 +1,6 @@
 #import <SpecKit/SpecKit.h>
 #import "MMGameImplementation.h"
+#import "MMGuessResultImplementation.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMGameImplementationSpec) {

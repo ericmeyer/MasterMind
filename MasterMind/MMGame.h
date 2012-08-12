@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import "MMGuessResultImplementation.h"
 
 @protocol MMGame <NSObject>
 

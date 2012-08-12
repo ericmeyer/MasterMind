@@ -1,4 +1,5 @@
 #import "GameRunner.h"
+#import "MMGuessResult.h"
 #import "ConciseKit.h"
 
 @implementation GameRunner
@@ -7,14 +8,6 @@
 
 -(void) startNewGameWithCode: (NSString*) givenSecretCode {
     self.game = [MMGameImplementation gameWithCode: [givenSecretCode $chars]];
-}
-
--(void) startNewGame {
-    self.game = [MMGameImplementation new];
-}
-
--(void) setSecretCodeTo:(NSString*) secretCodeAsString {
-    self.game.secretCode = [secretCodeAsString $chars];
 }
 
 -(NSString*) secretCode {
