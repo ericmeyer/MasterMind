@@ -5,8 +5,6 @@
 
 @implementation MMAvailableColorsViewController
 
-@synthesize availableColors, activeColor;
-
 -(IBAction) clickPeg:(id) sender {
     MMAvailableColor* clickedButton = ((MMAvailableColor*)sender);
     [self.activeColor deactivate];

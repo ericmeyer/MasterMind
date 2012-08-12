@@ -6,9 +6,6 @@
 
 @implementation MMMainGameViewController
 
-@synthesize secretCodeViewController, guessViewController, availableColorsViewController;
-@synthesize game, guessResultsViewController;
-
 -(void) initializeControllers {
     self.availableColorsViewController = [MMAvailableColorsViewController new];
     self.guessViewController = [MMPegListViewController controllerWithAvailablePegsViewController: self.availableColorsViewController];

@@ -6,14 +6,8 @@
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultsView.h"
 
-@interface MMMainGameViewController : UIViewController {
-    MMAvailableColorsViewController* availableColorsViewController;
-    UIViewController<MMPegList>* secretCodeViewController;
-    UIViewController<MMPegList>* guessViewController;
-    UIViewController<MMGuessResultsView>* guessResultsViewController;
-    
-    NSObject<MMGame>* game;
-}
+@interface MMMainGameViewController : UIViewController
+
 @property (nonatomic, strong) MMAvailableColorsViewController* availableColorsViewController;
 @property (nonatomic, strong) UIViewController<MMPegList>* secretCodeViewController;
 @property (nonatomic, strong) UIViewController<MMPegList>* guessViewController;

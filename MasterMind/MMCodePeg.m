@@ -9,8 +9,6 @@ float const PEG_SIDE_LENGTH=63;
 
 @implementation MMCodePeg
 
-@synthesize color, isActive;
-
 +(id) pegWithColorName:(NSString*) givenColorName {
     MMCodePeg* peg = [MMCodePeg new];
     [[peg layer] setBorderColor: [[UIColor whiteColor] CGColor]];

@@ -2,10 +2,8 @@
 
 FOUNDATION_EXPORT float const PEG_SIDE_LENGTH;
 
-@interface MMCodePeg : UIButton {
-    NSString* color;
-    BOOL isActive;
-}
+@interface MMCodePeg : UIButton
+
 @property (nonatomic, strong) NSString* color;
 @property (readwrite, assign) BOOL isActive;;
 

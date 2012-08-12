@@ -2,8 +2,6 @@
 
 @implementation MMGuessResultViewController
 
-@synthesize numberCorrectLabel, numberInWrongSpotLabel, remainingGuessesLabel;
-
 -(id) initWithGuessResult:(MMGuessResult*) givenGuessResult {
     if ((self = [super initWithNibName:@"MMGuessResultViewController" bundle:nil])) {
         self.guessResult = givenGuessResult;

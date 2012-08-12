@@ -2,10 +2,8 @@
 #import "MMPegList.h"
 #import "MMAvailableColorsViewController.h"
 
-@interface MMPegListViewController : UIViewController<MMPegList> {
-    MMAvailableColorsViewController* availableColorsController;
-    NSMutableArray* pegs;
-}
+@interface MMPegListViewController : UIViewController<MMPegList>
+
 @property (nonatomic, strong) MMAvailableColorsViewController* availableColorsController;
 @property (nonatomic, strong) NSMutableArray* pegs;
 

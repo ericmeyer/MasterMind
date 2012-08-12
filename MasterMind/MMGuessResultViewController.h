@@ -1,12 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "MMGuessResult.h"
 
-@interface MMGuessResultViewController : UIViewController {
-    IBOutlet UILabel* numberCorrectLabel;
-    IBOutlet UILabel* numberInWrongSpotLabel;
-    IBOutlet UILabel* remainingGuessesLabel;
-    MMGuessResult* guessResult;
-}
+@interface MMGuessResultViewController : UIViewController
+
 @property(nonatomic, strong) UILabel* numberCorrectLabel;
 @property(nonatomic, strong) UILabel* numberInWrongSpotLabel;
 @property(nonatomic, strong) UILabel* remainingGuessesLabel;

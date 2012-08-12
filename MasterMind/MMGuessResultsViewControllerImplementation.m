@@ -3,8 +3,6 @@
 
 @implementation MMGuessResultsViewControllerImplementation
 
-@synthesize guessResultViewControllers;
-
 -(void) addGuessResult:(MMGuessResult*) guessResult {
     MMGuessResultViewController* guessResultViewController;
     guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
@@ -17,7 +15,7 @@
 -(id) initWithNibName:(NSString*) nibNameOrNil bundle:(NSBundle*) nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        guessResultViewControllers = [NSMutableArray array];
+        self.guessResultViewControllers = [NSMutableArray array];
     }
     return self;
 }

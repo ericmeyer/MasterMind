@@ -7,8 +7,6 @@
 
 @implementation MMAvailableColor
 
-@synthesize name, isActive;
-
 +(id) colorWithName:(NSString*) givenName {
     MMAvailableColor* availableColor = [MMAvailableColor new];
     [[availableColor layer] setBorderColor: [[UIColor whiteColor] CGColor]];

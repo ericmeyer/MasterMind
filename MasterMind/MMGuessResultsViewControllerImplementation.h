@@ -1,9 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "MMGuessResultsView.h"
 
-@interface MMGuessResultsViewControllerImplementation : UIViewController<MMGuessResultsView> {
-    NSMutableArray* guessResultViewControllers;
-}
+@interface MMGuessResultsViewControllerImplementation : UIViewController<MMGuessResultsView>
 
 @property (nonatomic, strong) NSMutableArray* guessResultViewControllers;
 

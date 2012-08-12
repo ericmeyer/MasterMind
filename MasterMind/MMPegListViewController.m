@@ -9,9 +9,6 @@
 
 @implementation MMPegListViewController
 
-@synthesize availableColorsController;
-@synthesize pegs;
-
 +(id) controllerWithAvailablePegsViewController:(MMAvailableColorsViewController*) givenAvailablePegsController {
     MMPegListViewController* controller;
     controller = [[MMPegListViewController alloc] initWithNibName: @"MMPegListViewController"

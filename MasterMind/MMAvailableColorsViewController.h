@@ -2,10 +2,8 @@
 #import "MMCodePeg.h"
 #import "MMAvailableColor.h"
 
-@interface MMAvailableColorsViewController : UIViewController {
-    NSMutableArray* availableColors;
-    MMAvailableColor* activeColor;
-}
+@interface MMAvailableColorsViewController : UIViewController
+
 @property (nonatomic, strong) NSMutableArray* availableColors;
 @property (nonatomic, strong) MMAvailableColor* activeColor;
 

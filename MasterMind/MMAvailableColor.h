@@ -1,9 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface MMAvailableColor : UIButton {
-    NSString* name;
-    BOOL isActive;
-}
+@interface MMAvailableColor : UIButton
+
 @property (nonatomic, strong) NSString* name;
 @property (readwrite, assign) BOOL isActive;;
 
