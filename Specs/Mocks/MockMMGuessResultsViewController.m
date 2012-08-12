@@ -2,7 +2,7 @@
 
 @implementation MockMMGuessResultsViewController
 
--(void) addGuessResult:(MMGuessResult*) guessResult {
+-(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
     self.addGuessResultCalldWith = guessResult;
 }
 

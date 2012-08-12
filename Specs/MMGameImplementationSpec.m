@@ -62,7 +62,7 @@ SpecKitContext(MMGameImplementationSpec) {
     
     Describe(@"recorded guesses", ^{
         
-        __block MMGuessResult* guessResult;
+        __block MMGuessResultImplementation* guessResult;
         
         BeforeEach(^{
             game = [MMGameImplementation gameWithCode: [@"1234" $chars]];

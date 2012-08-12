@@ -1,9 +1,9 @@
 #import <UIKit/UIKit.h>
 #import "MMGuessResultsView.h"
-#import "MMGuessResult.h"
+#import "MMGuessResultImplementation.h"
 
 @interface MockMMGuessResultsViewController : UIViewController<MMGuessResultsView>
 
-@property (readwrite, assign) MMGuessResult* addGuessResultCalldWith;
+@property (readwrite, assign) MMGuessResultImplementation* addGuessResultCalldWith;
 
 @end

@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface MMGuessResult : NSObject
+@interface MMGuessResultImplementation : NSObject
 
 @property(nonatomic, strong) NSNumber* numberCorrect;
 @property(nonatomic, strong) NSNumber* numberInWrongSpot;

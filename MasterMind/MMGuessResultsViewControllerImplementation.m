@@ -3,7 +3,7 @@
 
 @implementation MMGuessResultsViewControllerImplementation
 
--(void) addGuessResult:(MMGuessResult*) guessResult {
+-(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
     MMGuessResultViewController* guessResultViewController;
     guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
     int offset = [self.guessResultViewControllers count] * 250;

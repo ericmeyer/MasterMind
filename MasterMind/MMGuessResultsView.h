@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
-#import "MMGuessResult.h"
+#import "MMGuessResultImplementation.h"
 
 @protocol MMGuessResultsView <NSObject>
 
--(void) addGuessResult:(MMGuessResult*) guessResult;
+-(void) addGuessResult:(MMGuessResultImplementation*) guessResult;
 
 @end

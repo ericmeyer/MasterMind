@@ -1,6 +1,6 @@
 #import <SpecKit/SpecKit.h>
 #import "MMGuessResultViewController.h"
-#import "MMGuessResult.h"
+#import "MMGuessResultImplementation.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMGuessResultViewControllerSpec) {
@@ -17,13 +17,12 @@ SpecKitContext(MMGuessResultViewControllerSpec) {
         
     });
  
-    Describe(@"-updateView", ^{
+    Describe(@"-viewDidLoad", ^{
         BeforeEach(^{
             controller = [MMGuessResultViewController new];
             controller.numberCorrectLabel = [UILabel new];
             controller.numberInWrongSpotLabel = [UILabel new];
-            controller.remainingGuessesLabel = [UILabel new];
-            controller.guessResult = [MMGuessResult resultFromCode: [@"1234" $chars] andGuess: [@"1423" $chars]];
+            controller.guessResult = [MMGuessResultImplementation resultFromCode: [@"1234" $chars] andGuess: [@"1423" $chars]];
         });
         
         It(@"updates the number correct label", ^{

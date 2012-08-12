@@ -19,7 +19,7 @@
 
 +(id) gameWithLastCorrect:(int) numberCorrect andInWrongSpot:(int) numberInWrongSpot {
     MockMMGame* game = [MockMMGame new];
-    MMGuessResult* guessResult = [MMGuessResult new];
+    MMGuessResultImplementation* guessResult = [MMGuessResultImplementation new];
     guessResult.numberCorrect = [NSNumber numberWithInt: numberCorrect];
     guessResult.numberInWrongSpot = [NSNumber numberWithInt: numberInWrongSpot];
     [game.guessResults addObject: guessResult];
