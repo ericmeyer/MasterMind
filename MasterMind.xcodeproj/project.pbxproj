@@ -288,6 +288,7 @@
 		07A47BC815D81CB700354590 /* MMAvailableColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvailableColor.h; sourceTree = "<group>"; };
 		07A47BC915D81CB800354590 /* MMAvailableColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailableColor.m; sourceTree = "<group>"; };
 		07A47BCC15D81F6E00354590 /* MMAvailableColorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailableColorSpec.m; path = Specs/MMAvailableColorSpec.m; sourceTree = SOURCE_ROOT; };
+		07BD355315D87828003537AB /* MMGuessResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResult.h; sourceTree = "<group>"; };
 		07D308AC15D8259B00C162F7 /* MMGuessResultsViewControllerImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGuessResultsViewControllerImplementationSpec.m; path = Specs/MMGuessResultsViewControllerImplementationSpec.m; sourceTree = SOURCE_ROOT; };
 		07D308AE15D85F0F00C162F7 /* MMGuessResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResultsView.h; sourceTree = "<group>"; };
 		07D308B215D85FAD00C162F7 /* MockMMGuessResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMGuessResultsViewController.h; path = Specs/Mocks/MockMMGuessResultsViewController.h; sourceTree = SOURCE_ROOT; };
@@ -365,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				07007C8815D0898800EB3BE3 /* MMGame.h */,
+				07BD355315D87828003537AB /* MMGuessResult.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";

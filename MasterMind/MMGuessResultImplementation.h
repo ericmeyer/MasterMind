@@ -1,10 +1,7 @@
 #import <Foundation/Foundation.h>
+#import "MMGuessResult.h"
 
-@interface MMGuessResultImplementation : NSObject
-
-@property(nonatomic, strong) NSNumber* numberCorrect;
-@property(nonatomic, strong) NSNumber* numberInWrongSpot;
-@property(nonatomic, strong) NSArray* guess;
+@interface MMGuessResultImplementation : NSObject<MMGuessResult>
 
 +(id) resultFromCode:(NSArray*) code andGuess:(NSArray*) guess;
 

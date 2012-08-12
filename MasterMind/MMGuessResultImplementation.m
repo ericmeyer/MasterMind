@@ -2,6 +2,8 @@
 
 @implementation MMGuessResultImplementation
 
+@synthesize numberCorrect, numberInWrongSpot, guess;
+
 +(id) resultFromCode:(NSArray*) code andGuess:(NSArray*) guess {
     MMGuessResultImplementation* result = [MMGuessResultImplementation new];
     result.numberCorrect = [MMGuessResultImplementation numberCorrectForCode: code andGuess: guess];
