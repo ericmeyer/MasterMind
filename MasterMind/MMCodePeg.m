@@ -31,6 +31,7 @@ float const PEG_SIDE_LENGTH=63;
 -(void) setImage:(NSString*) imageName {
     UIImage* image = [UIImage imageNamed: imageName];
     [self setImage: image forState: UIControlStateNormal];
+    [self setImage: image forState: UIControlStateDisabled];
 }
 
 @end

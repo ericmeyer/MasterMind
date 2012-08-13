@@ -1,41 +1,35 @@
 #import <SpecKit/SpecKit.h>
 #import "MMGuessResultViewController.h"
-#import "MMGuessResultImplementation.h"
+#import "MockMMGuessResult.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMGuessResultViewControllerSpec) {
     
     __block MMGuessResultViewController* controller;
-    
-    Describe(@"controller", ^{
-        
-        It(@"exists", ^{
-            controller = [MMGuessResultViewController new];
 
-            [ExpectObj(controller) toExist];
-        });
-        
-    });
- 
     Describe(@"-viewDidLoad", ^{
+        
         BeforeEach(^{
             controller = [MMGuessResultViewController new];
             controller.numberCorrectLabel = [UILabel new];
             controller.numberInWrongSpotLabel = [UILabel new];
-            controller.guessResult = [MMGuessResultImplementation resultFromCode: [@"1234" $chars] andGuess: [@"1423" $chars]];
+            NSArray* guess = $arr(@"red", @"blue", @"orange", @"purple");
+            controller.guessResult = [MockMMGuessResult withNumberCorrect: 123
+                                                        numberInWrongSpot: 456
+                                                                 andGuess: guess];
         });
         
         It(@"updates the number correct label", ^{
             [controller viewDidLoad];
             
-            [ExpectObj(controller.numberCorrectLabel.text) toBeEqualTo: @"1"];
+            [ExpectObj(controller.numberCorrectLabel.text) toBeEqualTo: @"123"];
         });
 
         It(@"updates the number in wrong spot label", ^{
             [controller viewDidLoad];
             
-            [ExpectObj(controller.numberInWrongSpotLabel.text) toBeEqualTo: @"3"];
+            [ExpectObj(controller.numberInWrongSpotLabel.text) toBeEqualTo: @"456"];
         });
-        
+
     });
 }

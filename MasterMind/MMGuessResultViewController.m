@@ -2,7 +2,7 @@
 
 @implementation MMGuessResultViewController
 
--(id) initWithGuessResult:(MMGuessResultImplementation*) givenGuessResult {
+-(id) initWithGuessResult:(NSObject<MMGuessResult>*) givenGuessResult {
     if ((self = [super initWithNibName:@"MMGuessResultViewController" bundle:nil])) {
         self.guessResult = givenGuessResult;
     }

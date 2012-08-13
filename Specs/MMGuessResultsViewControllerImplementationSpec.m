@@ -1,7 +1,7 @@
 #import <SpecKit/SpecKit.h>
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
-#import "MMGuessResultImplementation.h"
+#import "MMGuessResult.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMGuessResultsViewControllerSpec) {
@@ -24,7 +24,7 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
             [controller addGuessResult: result];
             
             [ExpectInt([controller.guessResultViewControllers count]) toBe: 1];
-            MMGuessResultImplementation* actualGuessResult = [[controller.guessResultViewControllers objectAtIndex: 0] guessResult];
+            NSObject<MMGuessResult>* actualGuessResult = [[controller.guessResultViewControllers objectAtIndex: 0] guessResult];
             [ExpectObj(actualGuessResult) toBeEqualTo: result];
         });
         
