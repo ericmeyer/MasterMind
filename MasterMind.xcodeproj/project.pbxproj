@@ -52,6 +52,8 @@
 		0733445915D88AE200376542 /* peg_in_correct_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0733445615D88AE200376542 /* peg_in_correct_spot.png */; };
 		0733445A15D88AE200376542 /* peg_in_wrong_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0733445715D88AE200376542 /* peg_in_wrong_spot.png */; };
 		0733445B15D88AE200376542 /* peg_in_wrong_spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0733445715D88AE200376542 /* peg_in_wrong_spot.png */; };
+		0733445D15D8A4AC00376542 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0733445C15D8A4AC00376542 /* button.png */; };
+		0733445E15D8A4AC00376542 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0733445C15D8A4AC00376542 /* button.png */; };
 		07409D0E15CFE1BA006EEC84 /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07409D0D15CFE1BA006EEC84 /* libSpecKit.a */; };
 		07478F0415D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */; };
 		07478F0515D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */; };
@@ -232,6 +234,7 @@
 		072D5DE515D6D89600F50E07 /* square_purple_peg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_purple_peg.png; sourceTree = "<group>"; };
 		0733445615D88AE200376542 /* peg_in_correct_spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peg_in_correct_spot.png; sourceTree = "<group>"; };
 		0733445715D88AE200376542 /* peg_in_wrong_spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peg_in_wrong_spot.png; sourceTree = "<group>"; };
+		0733445C15D8A4AC00376542 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		07409D0D15CFE1BA006EEC84 /* libSpecKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSpecKit.a; sourceTree = "<group>"; };
 		07478F0115D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResultsViewControllerImplementation.h; sourceTree = "<group>"; };
 		07478F0215D2861B00F2C90D /* MMGuessResultsViewControllerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGuessResultsViewControllerImplementation.m; sourceTree = "<group>"; };
@@ -567,6 +570,7 @@
 		07A47BAF15D729A800354590 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				0733445C15D8A4AC00376542 /* button.png */,
 				07BD355715D87C59003537AB /* guess_result_gray_background.png */,
 				07BD355415D87A9D003537AB /* guess_results_background.png */,
 				07A47BB015D729A800354590 /* guess_result_background.png */,
@@ -941,6 +945,7 @@
 				07BD355915D87C59003537AB /* guess_result_gray_background.png in Resources */,
 				0733445915D88AE200376542 /* peg_in_correct_spot.png in Resources */,
 				0733445B15D88AE200376542 /* peg_in_wrong_spot.png in Resources */,
+				0733445E15D8A4AC00376542 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +989,7 @@
 				07BD355815D87C59003537AB /* guess_result_gray_background.png in Resources */,
 				0733445815D88AE200376542 /* peg_in_correct_spot.png in Resources */,
 				0733445A15D88AE200376542 /* peg_in_wrong_spot.png in Resources */,
+				0733445D15D8A4AC00376542 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

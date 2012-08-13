@@ -16,6 +16,10 @@
 @property (nonatomic, strong) NSObject<MMGame>* game;
 
 @property (nonatomic, strong) IBOutlet UILabel* bankLabel;
+@property (nonatomic, strong) IBOutlet UILabel* codeLabel;
+@property (nonatomic, strong) IBOutlet UILabel* guessLabel;
+@property (nonatomic, strong) IBOutlet UIButton* gameButton;
+@property (nonatomic, strong) IBOutlet UIButton* guessButton;
 
 -(IBAction) startNewGame;
 -(IBAction) takeGuess;

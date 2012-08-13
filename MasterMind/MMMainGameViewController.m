@@ -14,9 +14,9 @@
 }
 
 -(void) resizeControllerViews {
-    [self.availableColorsViewController.view setFrame: CGRectMake(50, 85, PEG_SIDE_LENGTH*3+30, PEG_SIDE_LENGTH*2+15)];
-    [self.secretCodeViewController.view setFrame: CGRectMake(50, 300, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
-    [self.guessViewController.view setFrame: CGRectMake(50, 550, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
+    [self.availableColorsViewController.view setFrame: CGRectMake(50, 110, PEG_SIDE_LENGTH*3+30, PEG_SIDE_LENGTH*2+15)];
+    [self.secretCodeViewController.view setFrame: CGRectMake(50, 345, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
+    [self.guessViewController.view setFrame: CGRectMake(50, 572, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
     [self.guessResultsViewController.view setFrame: CGRectMake(350, 40, 351, 934)];
 }
 
@@ -29,10 +29,19 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    [self.bankLabel setFont: [UIFont fontWithName: @"Roboto-Thin" size: 48.0]];
+    [self setFonts];
     [self initializeControllers];
     [self resizeControllerViews];
     [self addControllerSubviews];
+}
+
+-(void) setFonts {
+    UIFont* robotoThin = [UIFont fontWithName: @"Roboto-Thin" size: 48.0];
+    [self.bankLabel setFont: robotoThin];
+    [self.codeLabel setFont: robotoThin];
+    [self.guessLabel setFont: robotoThin];
+    [self.gameButton.titleLabel setFont: robotoThin];
+    [self.guessButton.titleLabel setFont: robotoThin];
 }
 
 -(IBAction) startNewGame {
