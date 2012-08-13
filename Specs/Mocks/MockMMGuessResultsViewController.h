@@ -4,6 +4,7 @@
 
 @interface MockMMGuessResultsViewController : UIViewController<MMGuessResultsView>
 
-@property (readwrite, assign) MMGuessResultImplementation* addGuessResultCalldWith;
+@property (nonatomic, strong) MMGuessResultImplementation* addGuessResultCalldWith;
+@property (readwrite, assign) BOOL wasResetCalled;
 
 @end

@@ -91,5 +91,13 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             [ExpectObj([controller.game.secretCode $join]) toBeEqualTo: @"5678"];
         });
 
+        It(@"resets the guess results view", ^{
+            MockMMGuessResultsViewController* guessResultsView = [MockMMGuessResultsViewController new];
+            controller.guessResultsViewController = guessResultsView;
+            [controller startNewGame];
+            
+            [ExpectBool(guessResultsView.wasResetCalled) toBeTrue];
+        });
+
     });
 }

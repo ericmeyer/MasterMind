@@ -2,23 +2,23 @@
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
 #import "MMGuessResult.h"
+#import "MockMMGuessResult.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMGuessResultsViewControllerSpec) {
-    
+
+    __block MMGuessResultsViewControllerImplementation* controller;
+
     Describe(@"controller", ^{
         
         It(@"starts with no guessResultViewControllers", ^{
-            MMGuessResultsViewControllerImplementation* controller;
             controller = [MMGuessResultsViewControllerImplementation new];
             
             [ExpectInt([controller.guessResultViewControllers count]) toBe: 0];
         });
         
         It(@"adds one guessResultViewController", ^{
-            MMGuessResultsViewControllerImplementation* controller;
-            MMGuessResultImplementation* result = [MMGuessResultImplementation resultFromCode: [@"1234" $chars]
-                                                         andGuess: [@"1234" $chars]];
+            MMGuessResultImplementation* result = [MMGuessResultImplementation new];
             controller = [MMGuessResultsViewControllerImplementation new];
             
             [controller addGuessResult: result];
@@ -29,5 +29,33 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
         });
         
     });
+    
+    Describe(@"reset", ^{
+        BeforeEach(^{
+            controller = [MMGuessResultsViewControllerImplementation new];
+        });
+        
+        It(@"removes the view from its parent", ^{
+            UIViewController* parentController = [UIViewController new];
+            MMGuessResultViewController* guessResultView = [MMGuessResultViewController new];
+            [parentController.view addSubview: guessResultView.view];
+            controller.guessResultViewControllers = $marr(guessResultView);
+
+            [controller reset];
+            
+            [ExpectBool([parentController.view.subviews containsObject: guessResultView.view]) toBeFalse];
+        });
+        
+        It(@"resets the array to empty", ^{
+            MMGuessResultImplementation* result = [MMGuessResultImplementation new];
+            [controller addGuessResult: result];
+
+            [controller reset];
+            
+            [ExpectInt([controller.guessResultViewControllers count]) toBe: 0];
+        });
+        
+    });
+
     
 }

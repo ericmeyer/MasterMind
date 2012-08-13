@@ -1,16 +1,30 @@
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
+#import "ConciseKit.h"
 
 @implementation MMGuessResultsViewControllerImplementation
+
+-(void) reset {
+    [self.guessResultViewControllers $each:^(id controller) {
+        [((MMGuessResultViewController*)controller).view removeFromSuperview];
+    }];
+    self.guessResultViewControllers = [NSMutableArray array];
+}
 
 -(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
     MMGuessResultViewController* guessResultViewController;
     guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
-    int height = CGRectGetHeight(guessResultViewController.view.frame);
-    int offset = [self.guessResultViewControllers count] * height;
+
+    [guessResultViewController.view setFrame: [self adjustedFrame: guessResultViewController.view.frame]];
     [self.guessResultViewControllers addObject: guessResultViewController];
-    [guessResultViewController.view setFrame: CGRectMake(0, offset, 351, height)];
     [self.view addSubview: guessResultViewController.view];
+}
+
+-(CGRect) adjustedFrame:(CGRect) originalFrame {
+    int height = CGRectGetHeight(originalFrame);
+    int offset = [self.guessResultViewControllers count] * height;
+    int width = CGRectGetWidth(originalFrame);
+    return CGRectMake(0, offset, width, height);
 }
 
 -(id) initWithNibName:(NSString*) nibNameOrNil bundle:(NSBundle*) nibBundleOrNil {

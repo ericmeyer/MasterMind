@@ -9,7 +9,7 @@ SpecKitContext(MMGuessResultViewControllerSpec) {
     __block MMGuessResultViewController* controller;
     __block MockMMGuessResult* guessResult;
     
-    Describe(@"-viewDidLoad", ^{
+    Describe(@"showing the guess", ^{
         
         BeforeEach(^{
             NSArray* guess = $arr(@"red", @"blue", @"orange", @"purple");
@@ -95,4 +95,5 @@ SpecKitContext(MMGuessResultViewControllerSpec) {
         });
         
     });
+    
 }

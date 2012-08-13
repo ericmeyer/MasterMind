@@ -3,6 +3,7 @@
 
 @protocol MMGuessResultsView <NSObject>
 
+-(void) reset;
 -(void) addGuessResult:(MMGuessResultImplementation*) guessResult;
 
 @end
