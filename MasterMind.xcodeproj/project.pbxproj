@@ -111,6 +111,8 @@
 		07A47BCA15D81CB800354590 /* MMAvailableColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A47BC915D81CB800354590 /* MMAvailableColor.m */; };
 		07A47BCB15D81CB800354590 /* MMAvailableColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A47BC915D81CB800354590 /* MMAvailableColor.m */; };
 		07A47BCD15D81F6E00354590 /* MMAvailableColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A47BCC15D81F6E00354590 /* MMAvailableColorSpec.m */; };
+		07BD355515D87A9D003537AB /* guess_results_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 07BD355415D87A9D003537AB /* guess_results_background.png */; };
+		07BD355615D87A9D003537AB /* guess_results_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 07BD355415D87A9D003537AB /* guess_results_background.png */; };
 		07D308AD15D8259B00C162F7 /* MMGuessResultsViewControllerImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D308AC15D8259B00C162F7 /* MMGuessResultsViewControllerImplementationSpec.m */; };
 		07D308B415D85FAD00C162F7 /* MockMMGuessResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D308B315D85FAD00C162F7 /* MockMMGuessResultsViewController.m */; };
 		07F506FF15CEFA4B008619EF /* MMGameImplementationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F506FE15CEFA4B008619EF /* MMGameImplementationSpec.m */; };
@@ -289,6 +291,7 @@
 		07A47BC915D81CB800354590 /* MMAvailableColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvailableColor.m; sourceTree = "<group>"; };
 		07A47BCC15D81F6E00354590 /* MMAvailableColorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMAvailableColorSpec.m; path = Specs/MMAvailableColorSpec.m; sourceTree = SOURCE_ROOT; };
 		07BD355315D87828003537AB /* MMGuessResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResult.h; sourceTree = "<group>"; };
+		07BD355415D87A9D003537AB /* guess_results_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guess_results_background.png; sourceTree = "<group>"; };
 		07D308AC15D8259B00C162F7 /* MMGuessResultsViewControllerImplementationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMGuessResultsViewControllerImplementationSpec.m; path = Specs/MMGuessResultsViewControllerImplementationSpec.m; sourceTree = SOURCE_ROOT; };
 		07D308AE15D85F0F00C162F7 /* MMGuessResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGuessResultsView.h; sourceTree = "<group>"; };
 		07D308B215D85FAD00C162F7 /* MockMMGuessResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockMMGuessResultsViewController.h; path = Specs/Mocks/MockMMGuessResultsViewController.h; sourceTree = SOURCE_ROOT; };
@@ -548,6 +551,7 @@
 		07A47BAF15D729A800354590 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				07BD355415D87A9D003537AB /* guess_results_background.png */,
 				07A47BB015D729A800354590 /* guess_result_background.png */,
 				07A47BB115D729A800354590 /* peg_list_background.png */,
 			);
@@ -916,6 +920,7 @@
 				07A47BC315D72D7100354590 /* round_purple_peg.png in Resources */,
 				07A47BC515D72D7100354590 /* round_red_peg.png in Resources */,
 				07A47BC715D72D7100354590 /* round_yellow_peg.png in Resources */,
+				07BD355615D87A9D003537AB /* guess_results_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +960,7 @@
 				07A47BC215D72D7100354590 /* round_purple_peg.png in Resources */,
 				07A47BC415D72D7100354590 /* round_red_peg.png in Resources */,
 				07A47BC615D72D7100354590 /* round_yellow_peg.png in Resources */,
+				07BD355515D87A9D003537AB /* guess_results_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

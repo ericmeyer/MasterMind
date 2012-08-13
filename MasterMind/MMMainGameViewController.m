@@ -17,7 +17,7 @@
     [self.availableColorsViewController.view setFrame: CGRectMake(50, 85, PEG_SIDE_LENGTH*3+30, PEG_SIDE_LENGTH*2+15)];
     [self.secretCodeViewController.view setFrame: CGRectMake(50, 300, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
     [self.guessViewController.view setFrame: CGRectMake(50, 550, PEG_SIDE_LENGTH*4, PEG_SIDE_LENGTH)];
-    [self.guessResultsViewController.view setFrame: CGRectMake(350, 0, 515, 748)];
+    [self.guessResultsViewController.view setFrame: CGRectMake(350, 40, 351, 934)];
 }
 
 -(void) addControllerSubviews{
