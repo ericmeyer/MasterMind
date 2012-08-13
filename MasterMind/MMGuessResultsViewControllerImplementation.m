@@ -21,10 +21,6 @@
     return self;
 }
 
--(void) viewDidLoad {
-    [super viewDidLoad];
-}
-
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
