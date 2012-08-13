@@ -1,5 +1,4 @@
 #import "MMMainGameViewController.h"
-#import "MMGameImplementation.h"
 #import "MMGuessResultViewController.h"
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMPegListViewController.h"
@@ -45,7 +44,7 @@
 }
 
 -(IBAction) startNewGame {
-    self.game = [MMGameImplementation gameWithCode: self.secretCodeViewController.pegList];
+//    self.game = [MMGameImplementation gameWithCode: self.secretCodeViewController.pegList];
     [self.guessResultsViewController reset];
     [self.guessButton setEnabled: YES];
 }

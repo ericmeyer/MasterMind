@@ -1,4 +1,5 @@
 #import "MockMMGuessResultsViewController.h"
+#import "MMGuessResult.h"
 
 @implementation MockMMGuessResultsViewController
 
@@ -6,7 +7,7 @@
     self.wasResetCalled = YES;
 }
 
--(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
+-(void) addGuessResult:(NSObject<MMGuessResult>*) guessResult {
     self.addGuessResultCalldWith = guessResult;
 }
 

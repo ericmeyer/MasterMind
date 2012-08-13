@@ -3,6 +3,7 @@
 #import "MockMMGame.h"
 #import "MockMMPegListViewController.h"
 #import "MockMMGuessResultsViewController.h"
+#import "MockMMGuessResult.h"
 #import "ConciseKit.h"
 
 SpecKitContext(MMMainGameViewControllerSpec) {
@@ -60,7 +61,7 @@ SpecKitContext(MMMainGameViewControllerSpec) {
 
         BeforeEach(^{
             mockGame = [MockMMGame new];
-            [mockGame.guessResults addObject: [MMGuessResultImplementation new]];
+            [mockGame.guessResults addObject: [MockMMGuessResult new]];
             controller.game = mockGame;
             controller.guessButton = [UIButton new];
         });
@@ -104,10 +105,11 @@ SpecKitContext(MMMainGameViewControllerSpec) {
         });
         
         It(@"creates a new game with the secret code", ^{
-            controller.secretCodeViewController = [MockMMPegListViewController mockListWithPegs: @"5678"];;
-            [controller startNewGame];
-
-            [ExpectObj([controller.game.secretCode $join]) toBeEqualTo: @"5678"];
+            PendingStr(@"Un-pend this test once your game exists");
+//            controller.secretCodeViewController = [MockMMPegListViewController mockListWithPegs: @"5678"];;
+//            [controller startNewGame];
+//
+//            [ExpectObj([controller.game.secretCode $join]) toBeEqualTo: @"5678"];
         });
 
         It(@"resets the guess results view", ^{

@@ -1,4 +1,5 @@
 #import "MockMMGame.h"
+#import "MockMMGuessResult.h"
 
 @implementation MockMMGame
 
@@ -19,10 +20,10 @@
 
 +(id) gameWithLastCorrect:(int) numberCorrect andInWrongSpot:(int) numberInWrongSpot {
     MockMMGame* game = [MockMMGame new];
-    MMGuessResultImplementation* guessResult = [MMGuessResultImplementation new];
-    guessResult.numberCorrect = [NSNumber numberWithInt: numberCorrect];
-    guessResult.numberInWrongSpot = [NSNumber numberWithInt: numberInWrongSpot];
-    [game.guessResults addObject: guessResult];
+    MockMMGuessResult* result;
+    result = [MockMMGuessResult withNumberCorrect: numberCorrect
+                                numberInWrongSpot: numberInWrongSpot];
+    [game.guessResults addObject: result];
     return game;
 }
 

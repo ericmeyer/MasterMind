@@ -18,7 +18,7 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
         });
         
         It(@"adds one guessResultViewController", ^{
-            MMGuessResultImplementation* result = [MMGuessResultImplementation new];
+            MockMMGuessResult* result = [MockMMGuessResult new];
             controller = [MMGuessResultsViewControllerImplementation new];
             
             [controller addGuessResult: result];
@@ -47,7 +47,7 @@ SpecKitContext(MMGuessResultsViewControllerSpec) {
         });
         
         It(@"resets the array to empty", ^{
-            MMGuessResultImplementation* result = [MMGuessResultImplementation new];
+            MockMMGuessResult* result = [MockMMGuessResult new];
             [controller addGuessResult: result];
 
             [controller reset];

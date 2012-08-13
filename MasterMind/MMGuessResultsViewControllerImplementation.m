@@ -1,5 +1,6 @@
 #import "MMGuessResultsViewControllerImplementation.h"
 #import "MMGuessResultViewController.h"
+#import "MMGuessResult.h"
 #import "ConciseKit.h"
 
 @implementation MMGuessResultsViewControllerImplementation
@@ -11,7 +12,7 @@
     self.guessResultViewControllers = [NSMutableArray array];
 }
 
--(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
+-(void) addGuessResult:(NSObject<MMGuessResult>*) guessResult {
     MMGuessResultViewController* guessResultViewController;
     guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
 

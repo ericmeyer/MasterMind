@@ -1,0 +1,5 @@
+!|Division                    |
+|numerator|denominator|result?|
+|6        |3          |2      |
+|100      |5          |20     |
+|10       |2          |5      |
