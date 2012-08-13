@@ -30,4 +30,8 @@
     self.lastGuess = guess;
 }
 
+-(BOOL) didWin {
+    return NO;
+}
+
 @end

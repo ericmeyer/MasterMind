@@ -3,6 +3,4 @@
 
 @interface MMGameImplementation : NSObject<MMGame>
 
--(BOOL) didWin;
-
 @end

@@ -11,5 +11,6 @@
 -(void) takeGuess: (NSArray*) guess;
 
 -(BOOL) isOver;
+-(BOOL) didWin;
 
 @end
