@@ -7,4 +7,7 @@
       numberInWrongSpot: (int) givenNumberInWrongSpot
                andGuess: (NSArray*) givenGuess;
 
++(id) withNumberCorrect: (int) givenNumberCorrect
+      numberInWrongSpot: (int) givenNumberInWrongSpot;
+
 @end

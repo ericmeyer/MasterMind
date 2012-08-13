@@ -7,29 +7,16 @@
 SpecKitContext(MMGuessResultViewControllerSpec) {
     
     __block MMGuessResultViewController* controller;
-
+    __block MockMMGuessResult* guessResult;
+    
     Describe(@"-viewDidLoad", ^{
         
         BeforeEach(^{
             NSArray* guess = $arr(@"red", @"blue", @"orange", @"purple");
-            MockMMGuessResult* guessResult = [MockMMGuessResult withNumberCorrect: 123
-                                                                numberInWrongSpot: 456
-                                                                         andGuess: guess];
+            guessResult = [MockMMGuessResult withNumberCorrect: 1
+                                             numberInWrongSpot: 2
+                                                      andGuess: guess];
             controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
-            controller.numberCorrectLabel = [UILabel new];
-            controller.numberInWrongSpotLabel = [UILabel new];
-        });
-        
-        It(@"updates the number correct label", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.numberCorrectLabel.text) toBeEqualTo: @"123"];
-        });
-
-        It(@"updates the number in wrong spot label", ^{
-            [controller viewDidLoad];
-            
-            [ExpectObj(controller.numberInWrongSpotLabel.text) toBeEqualTo: @"456"];
         });
         
         It(@"builds the pegs", ^{
@@ -47,5 +34,65 @@ SpecKitContext(MMGuessResultViewControllerSpec) {
             }];
         });
 
+    });
+    
+    Describe(@"showing results of the guess", ^{
+        
+        It(@"has no pegs when nothing is right", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 0
+                                             numberInWrongSpot: 0];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+            
+            [ExpectInt([controller.resultPegs count]) toBe: 0];
+        });
+
+        It(@"has 1 peg when one is in the right spot", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 1
+                                             numberInWrongSpot: 0];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+
+            [ExpectInt([controller.resultPegs count]) toBe: 1];
+        });
+
+        It(@"has 2 pegs when two are in the right spot", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 2
+                                             numberInWrongSpot: 0];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+            
+            [ExpectInt([controller.resultPegs count]) toBe: 2];
+        });
+
+        It(@"has 2 pegs when two are in the wrong spot", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 0
+                                             numberInWrongSpot: 2];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+            
+            [ExpectInt([controller.resultPegs count]) toBe: 2];
+        });
+
+        It(@"has 2 pegs when there are both result", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 1
+                                             numberInWrongSpot: 2];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+            
+            [ExpectInt([controller.resultPegs count]) toBe: 3];
+        });
+
+        It(@"adds the result pegs to the view", ^{
+            guessResult = [MockMMGuessResult withNumberCorrect: 1
+                                             numberInWrongSpot: 2];
+            controller = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
+            [controller viewDidLoad];
+
+            [controller.resultPegs $each:^(id peg) {
+                [ExpectBool([controller.view.subviews containsObject: peg]) toBeTrue];
+            }];
+        });
+        
     });
 }

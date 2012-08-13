@@ -14,4 +14,11 @@
     return guessResult;
 }
 
++(id) withNumberCorrect: (int) givenNumberCorrect
+      numberInWrongSpot: (int) givenNumberInWrongSpot {
+    return [self withNumberCorrect: givenNumberCorrect
+                 numberInWrongSpot: givenNumberInWrongSpot
+                          andGuess: [NSArray array]];
+}
+
 @end
