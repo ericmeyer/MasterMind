@@ -62,6 +62,7 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             mockGame = [MockMMGame new];
             [mockGame.guessResults addObject: [MMGuessResultImplementation new]];
             controller.game = mockGame;
+            controller.guessButton = [UIButton new];
         });
 
         It(@"calls takeGuess on the game with the given guess", ^{
@@ -79,11 +80,29 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             
             [ExpectObj(mockGuessResultsViewController.addGuessResultCalldWith) toBeEqualTo: [mockGame.guessResults lastObject]];
         });
+        
+        It(@"disables the guess button if the game is over", ^{
+            mockGame.isOver = YES;
+            [controller takeGuess];
+            
+            [ExpectBool(controller.guessButton.enabled) toBeFalse];
+        });
+
+        It(@"does not disable the guess button if the game is not over", ^{
+            mockGame.isOver = NO;
+            [controller takeGuess];
+            
+            [ExpectBool(controller.guessButton.enabled) toBeTrue];
+        });
 
     });
 
     Describe(@"start new game", ^{
 
+        BeforeEach(^{
+            controller.guessButton = [UIButton new];
+        });
+        
         It(@"creates a new game with the secret code", ^{
             controller.secretCodeViewController = [MockMMPegListViewController mockListWithPegs: @"5678"];;
             [controller startNewGame];
@@ -97,6 +116,14 @@ SpecKitContext(MMMainGameViewControllerSpec) {
             [controller startNewGame];
             
             [ExpectBool(guessResultsView.wasResetCalled) toBeTrue];
+        });
+        
+        It(@"reenables the guess button if it is disabled", ^{
+            [controller.guessButton setEnabled: NO];
+
+            [controller startNewGame];
+            
+            [ExpectBool(controller.guessButton.enabled) toBeTrue];
         });
 
     });

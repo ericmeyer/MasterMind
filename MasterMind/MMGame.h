@@ -10,4 +10,6 @@
 
 -(void) takeGuess: (NSArray*) guess;
 
+-(BOOL) isOver;
+
 @end

@@ -47,11 +47,15 @@
 -(IBAction) startNewGame {
     self.game = [MMGameImplementation gameWithCode: self.secretCodeViewController.pegList];
     [self.guessResultsViewController reset];
+    [self.guessButton setEnabled: YES];
 }
 
 -(IBAction) takeGuess {
     [self.game takeGuess: self.guessViewController.pegList];
     [self.guessResultsViewController addGuessResult: [[self.game guessResults] lastObject]];
+    if (self.game.isOver) {
+        [self.guessButton setEnabled: NO];
+    }
 }
 
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) interfaceOrientation {

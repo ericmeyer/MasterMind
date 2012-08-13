@@ -13,18 +13,22 @@
 
 -(id) init {
     if ((self = [super init])) {
-        self.numberOfRemainingGuesses = [NSNumber numberWithInt: 20];
+        self.numberOfRemainingGuesses = [NSNumber numberWithInt: 12];
         self.guessResults = [NSMutableArray array];
     }
     return self;
 }
 
 -(BOOL) isOver {
-    return [[self.guessResults.lastObject numberCorrect] intValue] == 4;
+    return [self didWin] || [self outOfGuesses];
 }
 
 -(BOOL) didWin {
     return [[self.guessResults.lastObject numberCorrect] intValue] == 4;
+}
+
+-(BOOL) outOfGuesses {
+    return [self.numberOfRemainingGuesses intValue] == 0;
 }
 
 -(void) takeGuess:(NSArray*) guess {

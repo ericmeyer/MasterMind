@@ -7,6 +7,7 @@
     NSNumber* numberOfRemainingGuesses;
 }
 @property(nonatomic, strong) NSArray* lastGuess;
+@property(readwrite, assign) BOOL isOver;
 
 +(id) gameWithLastCorrect:(int) numberCorrect andInWrongSpot:(int) numberInWrongSpot;
 

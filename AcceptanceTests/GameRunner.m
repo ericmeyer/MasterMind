@@ -41,6 +41,10 @@
     return [[[game guessResults] objectAtIndex: index] numberInWrongSpot];
 }
 
+-(void) setRemainingGuessesTo:(NSString*) remainingGuesses {
+    game.numberOfRemainingGuesses = [NSNumber numberWithInt: [remainingGuesses intValue]];
+}
+
 -(NSNumber*) remainingGuesses {
     return [game numberOfRemainingGuesses];
 }

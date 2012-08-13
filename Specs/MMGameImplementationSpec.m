@@ -27,7 +27,7 @@ SpecKitContext(MMGameImplementationSpec) {
         });
         
         It(@"has 20 remaining guesses", ^{
-            [ExpectInt([game.numberOfRemainingGuesses intValue]) toBe: 20];
+            [ExpectInt([game.numberOfRemainingGuesses intValue]) toBe: 12];
         });
                 
         It(@"has no winner", ^{
@@ -42,7 +42,7 @@ SpecKitContext(MMGameImplementationSpec) {
             game.secretCode = [@"1234" $chars];
             [game takeGuess: [@"5678" $chars]];
 
-            [ExpectObj(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 19]];
+            [ExpectObj(game.numberOfRemainingGuesses) toBeEqualTo: [NSNumber numberWithInt: 11]];
         });
         
         It(@"is over on a correct guess", ^{
@@ -59,6 +59,17 @@ SpecKitContext(MMGameImplementationSpec) {
             [ExpectBool([game didWin]) toBeTrue];
         });
 
+    });
+    
+    Describe(@"isOver", ^{
+        
+        It(@"is over when there are no more remaining guesses", ^{
+            game = [MMGameImplementation gameWithCode: [@"1234" $chars]];
+            game.numberOfRemainingGuesses = [NSNumber numberWithInt: 0];
+            
+            [ExpectBool(game.isOver) toBeTrue];
+        });
+        
     });
     
     Describe(@"recorded guesses", ^{
