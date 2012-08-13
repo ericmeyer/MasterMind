@@ -6,9 +6,10 @@
 -(void) addGuessResult:(MMGuessResultImplementation*) guessResult {
     MMGuessResultViewController* guessResultViewController;
     guessResultViewController = [[MMGuessResultViewController alloc] initWithGuessResult: guessResult];
-    int offset = [self.guessResultViewControllers count] * 250;
+    int height = CGRectGetHeight(guessResultViewController.view.frame);
+    int offset = [self.guessResultViewControllers count] * height;
     [self.guessResultViewControllers addObject: guessResultViewController];
-    [guessResultViewController.view setFrame: CGRectMake(0, offset, 400, 250)];
+    [guessResultViewController.view setFrame: CGRectMake(0, offset, 351, height)];
     [self.view addSubview: guessResultViewController.view];
 }
 

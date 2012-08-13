@@ -12,6 +12,7 @@
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
+			<string>IBUIImageView</string>
 			<string>IBUILabel</string>
 			<string>IBUIView</string>
 		</array>
@@ -38,7 +39,7 @@
 					<object class="IBUILabel" id="464219923">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{32, 20}, {123, 21}}</string>
+						<string key="NSFrame">{{20, 4}, {123, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="426228136"/>
@@ -69,7 +70,7 @@
 					<object class="IBUILabel" id="542490610">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{32, 60}, {176, 21}}</string>
+						<string key="NSFrame">{{20, 41}, {176, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="26297603"/>
@@ -90,7 +91,7 @@
 					<object class="IBUILabel" id="426228136">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{309, 20}, {42, 21}}</string>
+						<string key="NSFrame">{{208, 4}, {42, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="542490610"/>
@@ -112,10 +113,10 @@
 					<object class="IBUILabel" id="26297603">
 						<reference key="NSNextResponder" ref="436186669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{309, 60}, {42, 21}}</string>
+						<string key="NSFrame">{{208, 41}, {42, 21}}</string>
 						<reference key="NSSuperview" ref="436186669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="342207741"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -131,8 +132,23 @@
 						<reference key="IBUIFontDescription" ref="1032738783"/>
 						<reference key="IBUIFont" ref="21536732"/>
 					</object>
+					<object class="IBUIImageView" id="342207741">
+						<reference key="NSNextResponder" ref="436186669"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{287, 1}, {63, 63}}</string>
+						<reference key="NSSuperview" ref="436186669"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">guess_result_gray_background.png</string>
+						</object>
+					</object>
 				</array>
-				<string key="NSFrameSize">{425, 142}</string>
+				<string key="NSFrameSize">{425, 79}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="464219923"/>
@@ -194,9 +210,10 @@
 						<int key="objectID">2</int>
 						<reference key="object" ref="436186669"/>
 						<array class="NSMutableArray" key="children">
+							<reference ref="342207741"/>
 							<reference ref="464219923"/>
-							<reference ref="426228136"/>
 							<reference ref="542490610"/>
+							<reference ref="426228136"/>
 							<reference ref="26297603"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -221,6 +238,11 @@
 						<reference key="object" ref="26297603"/>
 						<reference key="parent" ref="436186669"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">17</int>
+						<reference key="object" ref="342207741"/>
+						<reference key="parent" ref="436186669"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -228,6 +250,7 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -243,7 +266,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">17</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -265,6 +288,10 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NS.key.0">guess_result_gray_background.png</string>
+			<string key="NS.object.0">{63, 63}</string>
+		</object>
 		<string key="IBCocoaTouchPluginVersion">1498</string>
 	</data>
 </archive>
