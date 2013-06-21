@@ -1,4 +1,4 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMGuessResultImplementation.h"
 #import "ConciseKit.h"
 
@@ -6,7 +6,7 @@ NSArray* code(NSString* codeAsString);
 NSArray* code(NSString* codeAsString) {
     return [codeAsString $chars];
 }
-SpecKitContext(MMGuessResultSpec) {
+OCDSpec2Context(MMGuessResultSpec) {
 
     Describe(@"+resultFromCode:andGuess:", ^{
 

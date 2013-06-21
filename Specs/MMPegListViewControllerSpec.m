@@ -1,9 +1,9 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMPegListViewController.h"
 #import "MMAvailableColorsViewController.h"
 #import "ConciseKit.h"
 
-SpecKitContext(MMPegListViewControllerSpec) {
+OCDSpec2Context(MMPegListViewControllerSpec) {
     
     __block MMPegListViewController* controller;
     __block MMAvailableColorsViewController* availableColors;

@@ -1,4 +1,4 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import <QuartzCore/QuartzCore.h>
 #import "MMAvailableColor.h"
 
@@ -6,7 +6,7 @@ UIImage* imageForColor(MMAvailableColor* givenColor);
 UIImage* imageForColor(MMAvailableColor* givenColor) {
     return [givenColor imageForState: UIControlStateNormal];
 }
-SpecKitContext(MMAvailableColorSpec) {
+OCDSpec2Context(MMAvailableColorSpec) {
     
     __block MMAvailableColor* color;
     

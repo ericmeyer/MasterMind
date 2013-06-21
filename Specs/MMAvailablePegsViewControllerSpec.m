@@ -1,8 +1,8 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMAvailableColorsViewController.h"
 #import "MMCodePeg.h"
 
-SpecKitContext(MMAvailablePegsViewControllerSpec) {
+OCDSpec2Context(MMAvailablePegsViewControllerSpec) {
     __block MMAvailableColorsViewController* controller;
     __block MMCodePeg* clickedPeg;
     

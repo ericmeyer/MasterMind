@@ -1,11 +1,11 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMMainGameViewController.h"
 #import "MockMMGame.h"
 #import "MockMMPegListViewController.h"
 #import "MockMMGuessResultsViewController.h"
 #import "ConciseKit.h"
 
-SpecKitContext(MMMainGameViewControllerSpec) {
+OCDSpec2Context(MMMainGameViewControllerSpec) {
 
     __block MMMainGameViewController* controller;
     __block MockMMGame* mockGame;

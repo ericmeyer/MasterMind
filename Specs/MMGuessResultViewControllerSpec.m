@@ -1,10 +1,10 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMGuessResultViewController.h"
 #import "MockMMGuessResult.h"
 #import "ConciseKit.h"
 #import "MMCodePeg.h"
 
-SpecKitContext(MMGuessResultViewControllerSpec) {
+OCDSpec2Context(MMGuessResultViewControllerSpec) {
     
     __block MMGuessResultViewController* controller;
     __block MockMMGuessResult* guessResult;

@@ -1,4 +1,4 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import <QuartzCore/QuartzCore.h>
 #import "MMCodePeg.h"
 
@@ -6,7 +6,7 @@ UIImage* imageFor(MMCodePeg* givenPeg);
 UIImage* imageFor(MMCodePeg* givenPeg) {
     return [givenPeg imageForState: UIControlStateNormal];
 }
-SpecKitContext(MMCodePegSpec) {
+OCDSpec2Context(MMCodePegSpec) {
 
     __block MMCodePeg* peg;
 

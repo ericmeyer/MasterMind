@@ -1,9 +1,9 @@
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 #import "MMGameImplementation.h"
 #import "MMGuessResultImplementation.h"
 #import "ConciseKit.h"
 
-SpecKitContext(MMGameImplementationSpec) {
+OCDSpec2Context(MMGameImplementationSpec) {
 
     __block MMGameImplementation* game;
     
