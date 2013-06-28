@@ -215,6 +215,13 @@
 			remoteGlobalIDString = F812EF7E152BC6E1005E5D13;
 			remoteInfo = AcceptanceTests;
 		};
+		079BE943177DF54400C33A49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0771AB4D17721317008FA802 /* OCDSpec2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 149894DA1762D39E0036608B;
+			remoteInfo = OCDSpec2Specs;
+		};
 		07E286161774F15900B6FA18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F83ABA271528A964006FB6EC /* Project object */;
@@ -534,6 +541,7 @@
 				0771AB5717721318008FA802 /* libOCDSpec2Mac.a */,
 				0771AB5917721318008FA802 /* OCDSpec2Tests.octest */,
 				0771AB5B17721318008FA802 /* OCDSpec2AcceptanceTest.octest */,
+				079BE944177DF54400C33A49 /* OCDSpec2Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -876,7 +884,7 @@
 		F83ABA271528A964006FB6EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = F83ABA2A1528A964006FB6EC /* Build configuration list for PBXProject "MasterMind" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -931,6 +939,13 @@
 			fileType = wrapper.cfbundle;
 			path = OCDSpec2AcceptanceTest.octest;
 			remoteRef = 0771AB5A17721318008FA802 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079BE944177DF54400C33A49 /* OCDSpec2Specs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OCDSpec2Specs.app;
+			remoteRef = 079BE943177DF54400C33A49 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1308,6 +1323,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1321,6 +1340,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -1333,12 +1353,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
